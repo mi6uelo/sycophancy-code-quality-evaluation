@@ -119,8 +119,10 @@ Mejora de métricas de evaluación
 Estudios de replicación
 
 📢 Citación sugerida
+```
 @article{guevara2026sycophancy,
   title={Evaluación del impacto del sycophancy bias en la calidad del código en entornos de desarrollo asistido por IA},
   author={Guevara, Miguel},
   year={2026}
 }
+```
