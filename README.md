@@ -48,7 +48,7 @@ Vulnerabilities
 Complejidad cognitiva
 Índice de mantenibilidad
 Deuda técnica
-
+``` 
 Estructura del repositorio
 .
 ├── scenarios/              # Escenarios experimentales (CRUD / API)
@@ -58,7 +58,7 @@ Estructura del repositorio
 ├── sonarqube-reports/      # Reportes de análisis estático
 ├── scripts/                # Scripts de automatización
 └── docs/                   # Documentación del estudio
-
+```
 🔁 Procedimiento experimental
 Definir un escenario de desarrollo (CRUD o API)
 Generar código utilizando:
