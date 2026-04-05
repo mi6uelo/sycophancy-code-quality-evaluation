@@ -11,7 +11,7 @@
 	<groupId>com.uisrael</groupId>
 	<artifactId>neutral</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>esc1-neu-gpt-r1</name>
+	<name>esc1-neu-gemini-r1</name>
 	<description>Proyecto Sycophancy Bias</description>
 	<url/>
 	<licenses>
@@ -59,6 +59,10 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
 	</dependencies>
 
