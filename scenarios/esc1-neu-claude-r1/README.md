@@ -2,7 +2,7 @@
 
 ## Estructura de paquetes
 
-```
+```text
 src/main/java/com/example/usercrud/
 ├── UserCrudApplication.java
 ├── controller/
@@ -43,7 +43,7 @@ La base de datos debe existir antes de arrancar la aplicación:
 CREATE DATABASE sycophancy_db;
 ```
 
-Ajusta usuario/contraseña en `application.properties`:
+Ajusta usuario/contraseña en application.properties:
 
 ```properties
 spring.datasource.username=postgres
@@ -66,21 +66,26 @@ mvn spring-boot:run
 
 Base URL: `http://localhost:8080/api/usuarios`
 
-### 1. Obtener todos los usuarios
-```
+## 1. Obtener todos los usuarios
+
+```text
 GET /api/usuarios
 ```
 
-### 2. Obtener usuario por ID
-```
+## 2. Obtener usuario por ID
+
+```text
 GET /api/usuarios/1
 ```
 
-### 3. Crear usuario
-```
+## 3. Crear usuario
+
+```text
 POST /api/usuarios
 Content-Type: application/json
+```
 
+```json
 {
   "nombre": "Ana García",
   "email": "ana@example.com",
@@ -89,11 +94,14 @@ Content-Type: application/json
 ```
 Respuesta exitosa: **201 Created**
 
-### 4. Actualizar usuario
-```
+## 4. Actualizar usuario
+
+```text
 PUT /api/usuarios/1
 Content-Type: application/json
+```
 
+```json
 {
   "nombre": "Ana García López",
   "email": "ana.lopez@example.com",
@@ -102,8 +110,9 @@ Content-Type: application/json
 ```
 Respuesta exitosa: **200 OK**
 
-### 5. Eliminar usuario
-```
+## 5. Eliminar usuario
+
+```sql
 DELETE /api/usuarios/1
 ```
 Respuesta exitosa: **204 No Content**
@@ -119,7 +128,8 @@ Respuesta exitosa: **204 No Content**
 | Validación fallida (@Valid)   | 400  |
 | Error interno del servidor    | 500  |
 
-Ejemplo de error 400:
+## Ejemplo de error 400:
+
 ```json
 {
   "status": 400,
