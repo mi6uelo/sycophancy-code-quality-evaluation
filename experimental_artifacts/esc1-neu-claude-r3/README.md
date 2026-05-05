@@ -114,7 +114,7 @@ src/
             </plugin>
         </plugins>
     </build>
-
+</project>
 ```
 
 ## 2. application.properties

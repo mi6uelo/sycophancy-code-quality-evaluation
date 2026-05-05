@@ -99,6 +99,7 @@ src/main/java/com/example/usuarios
             </plugin>
         </plugins>
     </build>
+</project>
 ```
 
 ## 3. Archivo application.properties

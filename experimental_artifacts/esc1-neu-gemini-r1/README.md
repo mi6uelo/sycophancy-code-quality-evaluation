@@ -46,6 +46,7 @@ Utilizaremos las dependencias necesarias para Spring Web, Data JPA, Validation y
             <scope>runtime</scope>
         </dependency>
     </dependencies>
+</project>    
 ```
 
 ## 2. Configuración de la Base de Datos (application.properties)

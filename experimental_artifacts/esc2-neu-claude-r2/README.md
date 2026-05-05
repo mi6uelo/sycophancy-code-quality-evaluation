@@ -1,57 +1,27 @@
 # Backend Spring MVC — API REST para Gestión de Reservas de Citas
 
-## Tabla de Contenidos
+## Estructura del Proyecto
 
-## 1. [Estructura del Proyecto](#estructura)
-
-## 2. [Dependencias Maven (pom.xml)](#pom)
-
-## 3. [Configuración (application.properties)](#config)
-
-## 4. [Entidad (model/entity)](#entity)
-
-## 5. [Repositorio (repository)](#repository)
-
-## 6. [Servicio — Interfaz (service)](#service)
-
-## 7. [Servicio — Implementación (service/impl)](#serviceimpl)
-
-## 8. [Controlador (controller)](#controller)
-
-## 9. [Manejo Global de Errores](#errors)
-
-## 10. [Clase Principal](#main)
-
-## 11. [Pruebas con Postman](#postman)
-
----
-
-## 1. Estructura del Proyecto {#estructura}
-
-```text
-citas-backend/
+```
+citas-api/
 ├── pom.xml
 └── src/
     └── main/
         ├── java/
         │   └── com/
-        │       └── gestion/
+        │       └── reservas/
         │           └── citas/
-        │               ├── CitasBackendApplication.java
+        │               ├── CitasApiApplication.java
         │               ├── controller/
         │               │   └── CitaController.java
-        │               ├── exception/
-        │               │   ├── CitaDuplicadaException.java
-        │               │   ├── CitaNoEncontradaException.java
-        │               │   ├── EstadoInvalidoException.java
-        │               │   └── GlobalExceptionHandler.java
         │               ├── model/
         │               │   └── entity/
         │               │       └── Cita.java
         │               ├── repository/
         │               │   └── CitaRepository.java
+        │               ├── service/
+        │               │   └── CitaService.java
         │               └── service/
-        │                   ├── CitaService.java
         │                   └── impl/
         │                       └── CitaServiceImpl.java
         └── resources/
@@ -60,11 +30,9 @@ citas-backend/
 
 ---
 
-## 2. Dependencias Maven (pom.xml) {#pom}
+## 1. `pom.xml`
 
-## xml name=pom.xml
-
-```xml
+```xml name=pom.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -76,15 +44,15 @@ citas-backend/
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.4.5</version>
+        <version>3.2.5</version>
         <relativePath/>
     </parent>
 
-    <groupId>com.gestion</groupId>
-    <artifactId>citas-backend</artifactId>
+    <groupId>com.reservas</groupId>
+    <artifactId>citas-api</artifactId>
     <version>1.0.0</version>
-    <name>citas-backend</name>
-    <description>API REST para Gestión de Reservas de Citas</description>
+    <name>citas-api</name>
+    <description>API REST para gestión de reservas de citas</description>
 
     <properties>
         <java.version>21</java.version>
@@ -92,7 +60,7 @@ citas-backend/
 
     <dependencies>
 
-        <!-- Spring Web (MVC + REST) -->
+        <!-- Spring Web (MVC) -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -104,7 +72,7 @@ citas-backend/
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
 
-        <!-- Validaciones Bean Validation (Jakarta) -->
+        <!-- Validación Bean Validation (Jakarta) -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-validation</artifactId>
@@ -155,59 +123,68 @@ citas-backend/
 
 ---
 
-## 3. Configuración (application.properties) {#config}
+## 2. `application.properties`
 
-## properties name=src/main/resources/application.properties
-
-# ─── Servidor ───────────────────────────────────────────────
-
-```properties
+```properties name=src/main/resources/application.properties
+# ── Servidor ──────────────────────────────────────────────────────────────────
 server.port=8080
 
-# ─── Base de Datos PostgreSQL ────────────────────────────────
+# ── Base de datos PostgreSQL ───────────────────────────────────────────────────
 spring.datasource.url=jdbc:postgresql://localhost:5433/sycophancy_db
 spring.datasource.username=postgres
 spring.datasource.password=postgres
 spring.datasource.driver-class-name=org.postgresql.Driver
 
-# ─── JPA / Hibernate ─────────────────────────────────────────
+# ── JPA / Hibernate ───────────────────────────────────────────────────────────
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.format_sql=true
-spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
 
-# ─── Formato fechas en JSON ───────────────────────────────────
-spring.jackson.date-format=yyyy-MM-dd
-spring.jackson.time-zone=America/Bogota
+# ── Serialización de fechas ISO-8601 ──────────────────────────────────────────
+spring.jackson.serialization.write-dates-as-timestamps=false
 ```
-
-> ⚠️ **Nota:** Ajusta `spring.datasource.username` y `spring.datasource.password` según tu entorno local.
 
 ---
 
-## 4. Entidad (model/entity) {#entity}
+## 3. Clase principal
 
-## java name=src/main/java/com/gestion/citas/model/entity/Cita.java
+```java name=src/main/java/com/reservas/citas/CitasApiApplication.java
+package com.reservas.citas;
 
-```java
-package com.gestion.citas.model.entity;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.gestion.citas.model.entity.enums.EstadoCita;
+@SpringBootApplication
+public class CitasApiApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(CitasApiApplication.class, args);
+    }
+}
+```
+
+---
+
+## 4. `model/entity/Cita.java`
+
+> Entidad JPA que mapea la tabla `citas` en PostgreSQL. El par `(fecha, hora)` tiene restricción `UNIQUE` para evitar duplicados.
+
+```java name=src/main/java/com/reservas/citas/model/entity/Cita.java
+package com.reservas.citas.model.entity;
+
 import jakarta.persistence.*;
-import jakarta.validation.constraints.*;
-import lombok.*;
+import jakarta.validation.constraints.FutureOrPresent;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-```
-
-/**
-* Entidad que representa una reserva de cita médica / servicio.
-* La combinación (fecha + hora) debe ser única para evitar duplicados.
-
-```text
- */
 @Entity
 @Table(
     name = "citas",
@@ -217,17 +194,11 @@ import java.time.LocalTime;
             columnNames = {"fecha", "hora"}
         )
     }
-```
-
-## )
-
-```java
-@Getter
-@Setter
+)
+@Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
-@ToString
 public class Cita {
 
     @Id
@@ -235,71 +206,45 @@ public class Cita {
     private Long id;
 
     @NotBlank(message = "El nombre del cliente es obligatorio.")
-    @Size(min = 3, max = 120, message = "El nombre debe tener entre 3 y 120 caracteres.")
     @Column(name = "nombre_cliente", nullable = false, length = 120)
     private String nombreCliente;
 
-    @NotNull(message = "La fecha de la cita es obligatoria.")
-    @FutureOrPresent(message = "La fecha no puede ser anterior a hoy.")
-    @Column(name = "fecha", nullable = false)
+    @NotNull(message = "La fecha es obligatoria.")
+    @FutureOrPresent(message = "La fecha no puede ser en el pasado.")
+    @Column(nullable = false)
     private LocalDate fecha;
 
-    @NotNull(message = "La hora de la cita es obligatoria.")
-    @Column(name = "hora", nullable = false)
+    @NotNull(message = "La hora es obligatoria.")
+    @Column(nullable = false)
     private LocalTime hora;
 
-    @NotBlank(message = "El motivo de la cita es obligatorio.")
-    @Size(max = 255, message = "El motivo no puede superar los 255 caracteres.")
-    @Column(name = "motivo", nullable = false)
+    @NotBlank(message = "El motivo es obligatorio.")
+    @Column(nullable = false, length = 255)
     private String motivo;
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "estado", nullable = false, length = 20)
+    @Column(nullable = false, length = 20)
     @Builder.Default
     private EstadoCita estado = EstadoCita.PENDIENTE;
-}
-```
 
-### Enum EstadoCita
-
-## java name=src/main/java/com/gestion/citas/model/entity/enums/EstadoCita.java
-
-```java
-package com.gestion.citas.model.entity.enums;
-
-```
-
-/**
-* Estados posibles de una cita.
-*
-* PENDIENTE  → recién creada, aún no atendida.
-* CONFIRMADA → confirmada por el prestador del servicio.
-* CANCELADA  → cancelada por el cliente o el sistema.
-* REAGENDADA → fue movida a otra fecha/hora.
-* COMPLETADA → la cita ya fue atendida.
-
-```text
- */
-public enum EstadoCita {
-    PENDIENTE,
-    CONFIRMADA,
-    CANCELADA,
-    REAGENDADA,
-    COMPLETADA
+    // ── Enumeración de estados ────────────────────────────────────────────────
+    public enum EstadoCita {
+        PENDIENTE,
+        CONFIRMADA,
+        CANCELADA,
+        REAGENDADA
+    }
 }
 ```
 
 ---
 
-## 5. Repositorio (repository) {#repository}
+## 5. `repository/CitaRepository.java`
 
-## java name=src/main/java/com/gestion/citas/repository/CitaRepository.java
+```java name=src/main/java/com/reservas/citas/repository/CitaRepository.java
+package com.reservas.citas.repository;
 
-```java
-package com.gestion.citas.repository;
-
-import com.gestion.citas.model.entity.Cita;
-import com.gestion.citas.model.entity.enums.EstadoCita;
+import com.reservas.citas.model.entity.Cita;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -308,145 +253,101 @@ import org.springframework.stereotype.Repository;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.List;
-import java.util.Optional;
 
 @Repository
 public interface CitaRepository extends JpaRepository<Cita, Long> {
 
     /**
-     * Verifica si ya existe una cita activa (no cancelada) en la misma fecha y hora.
-     * Permite detectar duplicados antes de persistir.
+     * Verifica si ya existe una cita en la misma fecha y hora
+     * (excluyendo un ID concreto, útil al reagendar).
      */
     @Query("""
-            SELECT CASE WHEN COUNT(c) > 0 THEN TRUE ELSE FALSE END
+            SELECT COUNT(c) > 0
             FROM Cita c
             WHERE c.fecha = :fecha
               AND c.hora  = :hora
-              AND c.estado <> 'CANCELADA'
-            """)
-    boolean existeCitaActivaEnFechaHora(
-            @Param("fecha") LocalDate fecha,
-            @Param("hora") LocalTime hora
+              AND (:excludeId IS NULL OR c.id <> :excludeId)
+           """)
+    boolean existsByFechaAndHoraExcludingId(
+            @Param("fecha")     LocalDate fecha,
+            @Param("hora")      LocalTime hora,
+            @Param("excludeId") Long excludeId
     );
 
-    /**
-     * Igual que el anterior pero excluye una cita concreta (útil al reagendar).
-     */
-    @Query("""
-            SELECT CASE WHEN COUNT(c) > 0 THEN TRUE ELSE FALSE END
-            FROM Cita c
-            WHERE c.fecha = :fecha
-              AND c.hora  = :hora
-              AND c.estado <> 'CANCELADA'
-              AND c.id    <> :idExcluido
-            """)
-    boolean existeCitaActivaEnFechaHoraExcluyendo(
-            @Param("fecha") LocalDate fecha,
-            @Param("hora") LocalTime hora,
-            @Param("idExcluido") Long idExcluido
-    );
+    /** Devuelve todos los horarios ocupados para una fecha dada. */
+    @Query("SELECT c.hora FROM Cita c WHERE c.fecha = :fecha AND c.estado <> 'CANCELADA'")
+    List<LocalTime> findHorasOcupadasByFecha(@Param("fecha") LocalDate fecha);
 
-    /**
-     * Lista todas las citas para una fecha determinada, ordenadas por hora.
-     * Usado para consultar disponibilidad.
-     */
-    List<Cita> findByFechaOrderByHoraAsc(LocalDate fecha);
-
-    /**
-     * Lista todas las citas cuyo estado no sea CANCELADA en una fecha,
-     * para calcular horarios ocupados.
-     */
-    @Query("""
-            SELECT c FROM Cita c
-            WHERE c.fecha   = :fecha
-              AND c.estado <> 'CANCELADA'
-            ORDER BY c.hora ASC
-            """)
-    List<Cita> findCitasActivasByFecha(@Param("fecha") LocalDate fecha);
-
-    /**
-     * Lista citas de un cliente específico.
-     */
-    List<Cita> findByNombreClienteIgnoreCaseOrderByFechaAscHoraAsc(String nombreCliente);
-
-    /**
-     * Lista citas por estado.
-     */
-    List<Cita> findByEstadoOrderByFechaAscHoraAsc(EstadoCita estado);
+    /** Devuelve las citas activas (no canceladas) de una fecha. */
+    List<Cita> findByFechaAndEstadoNot(LocalDate fecha, Cita.EstadoCita estado);
 }
 ```
 
 ---
 
-## 6. Servicio — Interfaz (service) {#service}
+## 6. `service/CitaService.java`
 
-## java name=src/main/java/com/gestion/citas/service/CitaService.java
+```java name=src/main/java/com/reservas/citas/service/CitaService.java
+package com.reservas.citas.service;
 
-```java
-package com.gestion.citas.service;
-
-import com.gestion.citas.model.entity.Cita;
+import com.reservas.citas.model.entity.Cita;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.List;
-import java.util.Map;
 
 public interface CitaService {
 
     /** Crea y persiste una nueva cita. */
     Cita crearCita(Cita cita);
 
-    /** Retorna todas las citas registradas. */
+    /** Devuelve todas las citas registradas. */
     List<Cita> listarCitas();
 
-    /** Busca una cita por su ID. Lanza excepción si no existe. */
+    /** Busca una cita por su identificador. */
     Cita obtenerCitaPorId(Long id);
 
     /**
-     * Reagenda una cita existente: cambia fecha y/u hora.
-     * Valida que el nuevo slot no esté ocupado.
-     *
-     * @param id        ID de la cita a reagendar.
-     * @param nuevaFecha Nueva fecha deseada.
-     * @param nuevaHora  Nueva hora deseada.
-     * @return Cita actualizada con estado REAGENDADA.
+     * Reagenda una cita existente actualizando su fecha, hora y/o motivo.
+     * Cambia el estado a REAGENDADA.
      */
-    Cita reagendarCita(Long id, LocalDate nuevaFecha, LocalTime nuevaHora);
+    Cita reagendarCita(Long id, LocalDate nuevaFecha, LocalTime nuevaHora, String nuevoMotivo);
 
     /**
      * Cancela una cita cambiando su estado a CANCELADA.
-     * No es posible cancelar una cita ya cancelada o completada.
+     * No elimina el registro de la base de datos.
      */
     Cita cancelarCita(Long id);
 
     /**
-     * Consulta la disponibilidad de horarios para una fecha dada.
-     * Retorna un mapa con:
-     *   "fecha"          → fecha consultada
-     *   "horasOcupadas"  → lista de horas con cita activa
-     *   "citasDelDia"    → detalle de citas activas ese día
+     * Devuelve los horarios ocupados para una fecha y calcula
+     * la disponibilidad dentro del horario de atención.
      */
-    Map<String, Object> consultarDisponibilidad(LocalDate fecha);
+    DisponibilidadDTO consultarDisponibilidad(LocalDate fecha);
+
+    // ── DTO anidado de disponibilidad ─────────────────────────────────────────
+    record DisponibilidadDTO(
+            LocalDate fecha,
+            List<LocalTime> horasOcupadas,
+            List<LocalTime> horasDisponibles
+    ) {}
 }
 ```
 
 ---
 
-## 7. Servicio — Implementación (service/impl) {#serviceimpl}
+## 7. `service/impl/CitaServiceImpl.java`
 
-## java name=src/main/java/com/gestion/citas/service/impl/CitaServiceImpl.java
+```java name=src/main/java/com/reservas/citas/service/impl/CitaServiceImpl.java
+package com.reservas.citas.service.impl;
 
-```java
-package com.gestion.citas.service.impl;
-
-import com.gestion.citas.exception.CitaDuplicadaException;
-import com.gestion.citas.exception.CitaNoEncontradaException;
-import com.gestion.citas.exception.EstadoInvalidoException;
-import com.gestion.citas.model.entity.Cita;
-import com.gestion.citas.model.entity.enums.EstadoCita;
-import com.gestion.citas.repository.CitaRepository;
-import com.gestion.citas.service.CitaService;
+import com.reservas.citas.exception.CitaDuplicadaException;
+import com.reservas.citas.exception.CitaNotFoundException;
+import com.reservas.citas.exception.EstadoInvalidoException;
+import com.reservas.citas.model.entity.Cita;
+import com.reservas.citas.model.entity.Cita.EstadoCita;
+import com.reservas.citas.repository.CitaRepository;
+import com.reservas.citas.service.CitaService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -454,168 +355,138 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
+import java.util.stream.Stream;
 
 @Slf4j
 @Service
 @RequiredArgsConstructor
 public class CitaServiceImpl implements CitaService {
 
+    // ── Horario de atención: 08:00 – 17:00 cada 30 min ───────────────────────
+    private static final LocalTime HORA_INICIO   = LocalTime.of(8, 0);
+    private static final LocalTime HORA_FIN      = LocalTime.of(17, 0);
+    private static final int       INTERVALO_MIN = 30;
+
     private final CitaRepository citaRepository;
 
-    // ─────────────────────────────────────────────────────────────────
-    // CREAR CITA
-    // ─────────────────────────────────────────────────────────────────
-
+    // ─────────────────────────────────────────────────────────────────────────
+    // Crear cita
+    // ─────────────────────────────────────────────────────────────────────────
     @Override
     @Transactional
     public Cita crearCita(Cita cita) {
-        log.info("Intentando crear cita para '{}' el {} a las {}",
+        log.info("Creando cita para '{}' el {} a las {}",
                 cita.getNombreCliente(), cita.getFecha(), cita.getHora());
 
-        validarSlotDisponible(cita.getFecha(), cita.getHora(), null);
+        validarHorarioAtencion(cita.getHora());
+        verificarDisponibilidadSlot(cita.getFecha(), cita.getHora(), null);
 
-        // Estado inicial siempre PENDIENTE sin importar lo que envíe el cliente
         cita.setEstado(EstadoCita.PENDIENTE);
-
-        Cita citaGuardada = citaRepository.save(cita);
-        log.info("Cita creada con ID {}", citaGuardada.getId());
-        return citaGuardada;
+        Cita guardada = citaRepository.save(cita);
+        log.info("Cita creada con ID={}", guardada.getId());
+        return guardada;
     }
 
-    // ─────────────────────────────────────────────────────────────────
-    // LISTAR TODAS LAS CITAS
-    // ─────────────────────────────────────────────────────────────────
-
+    // ─────────────────────────────────────────────────────────────────────────
+    // Listar citas
+    // ─────────────────────────────────────────────────────────────────────────
     @Override
     @Transactional(readOnly = true)
     public List<Cita> listarCitas() {
-        log.info("Listando todas las citas");
         return citaRepository.findAll();
     }
 
-    // ─────────────────────────────────────────────────────────────────
-    // OBTENER CITA POR ID
-    // ─────────────────────────────────────────────────────────────────
-
+    // ─────────────────────────────────────────────────────────────────────────
+    // Obtener cita por ID
+    // ─────────────────────────────────────────────────────────────────────────
     @Override
     @Transactional(readOnly = true)
     public Cita obtenerCitaPorId(Long id) {
-        log.info("Buscando cita con ID {}", id);
         return citaRepository.findById(id)
-                .orElseThrow(() -> new CitaNoEncontradaException(
-                        "No se encontró ninguna cita con el ID: " + id));
+                .orElseThrow(() -> new CitaNotFoundException(id));
     }
 
-    // ─────────────────────────────────────────────────────────────────
-    // REAGENDAR CITA
-    // ─────────────────────────────────────────────────────────────────
-
+    // ─────────────────────────────────────────────────────────────────────────
+    // Reagendar cita
+    // ─────────────────────────────────────────────────────────────────────────
     @Override
     @Transactional
-    public Cita reagendarCita(Long id, LocalDate nuevaFecha, LocalTime nuevaHora) {
-        log.info("Reagendando cita ID {} → {} {}", id, nuevaFecha, nuevaHora);
-
+    public Cita reagendarCita(Long id, LocalDate nuevaFecha, LocalTime nuevaHora, String nuevoMotivo) {
         Cita cita = obtenerCitaPorId(id);
 
-        // No se puede reagendar una cita cancelada o completada
         if (cita.getEstado() == EstadoCita.CANCELADA) {
-            throw new EstadoInvalidoException(
-                    "No se puede reagendar una cita que ya fue CANCELADA.");
-        }
-        if (cita.getEstado() == EstadoCita.COMPLETADA) {
-            throw new EstadoInvalidoException(
-                    "No se puede reagendar una cita que ya fue COMPLETADA.");
+            throw new EstadoInvalidoException("No se puede reagendar una cita cancelada.");
         }
 
-        // Validar que el nuevo slot no esté ocupado (excluyendo la propia cita)
-        validarSlotDisponible(nuevaFecha, nuevaHora, id);
+        validarHorarioAtencion(nuevaHora);
+        verificarDisponibilidadSlot(nuevaFecha, nuevaHora, id);
 
         cita.setFecha(nuevaFecha);
         cita.setHora(nuevaHora);
+        if (nuevoMotivo != null && !nuevoMotivo.isBlank()) {
+            cita.setMotivo(nuevoMotivo);
+        }
         cita.setEstado(EstadoCita.REAGENDADA);
 
-        Cita citaActualizada = citaRepository.save(cita);
-        log.info("Cita ID {} reagendada exitosamente", id);
-        return citaActualizada;
+        log.info("Cita ID={} reagendada para el {} a las {}", id, nuevaFecha, nuevaHora);
+        return citaRepository.save(cita);
     }
 
-    // ─────────────────────────────────────────────────────────────────
-    // CANCELAR CITA
-    // ─────────────────────────────────────────────────────────────────
-
+    // ─────────────────────────────────────────────────────────────────────────
+    // Cancelar cita
+    // ─────────────────────────────────────────────────────────────────────────
     @Override
     @Transactional
     public Cita cancelarCita(Long id) {
-        log.info("Cancelando cita ID {}", id);
-
         Cita cita = obtenerCitaPorId(id);
 
         if (cita.getEstado() == EstadoCita.CANCELADA) {
-            throw new EstadoInvalidoException(
-                    "La cita con ID " + id + " ya se encuentra CANCELADA.");
-        }
-        if (cita.getEstado() == EstadoCita.COMPLETADA) {
-            throw new EstadoInvalidoException(
-                    "No se puede cancelar una cita que ya fue COMPLETADA.");
+            throw new EstadoInvalidoException("La cita ya se encuentra cancelada.");
         }
 
         cita.setEstado(EstadoCita.CANCELADA);
-        Cita citaCancelada = citaRepository.save(cita);
-        log.info("Cita ID {} cancelada exitosamente", id);
-        return citaCancelada;
+        log.info("Cita ID={} cancelada.", id);
+        return citaRepository.save(cita);
     }
 
-    // ─────────────────────────────────────────────────────────────────
-    // CONSULTAR DISPONIBILIDAD
-    // ─────────────────────────────────────────────────────────────────
-
+    // ─────────────────────────────────────────────────────────────────────────
+    // Consultar disponibilidad
+    // ─────────────────────────────────────────────────────────────────────────
     @Override
     @Transactional(readOnly = true)
-    public Map<String, Object> consultarDisponibilidad(LocalDate fecha) {
-        log.info("Consultando disponibilidad para la fecha {}", fecha);
+    public DisponibilidadDTO consultarDisponibilidad(LocalDate fecha) {
+        List<LocalTime> ocupadas = citaRepository.findHorasOcupadasByFecha(fecha);
 
-        List<Cita> citasActivas = citaRepository.findCitasActivasByFecha(fecha);
-
-        List<String> horasOcupadas = citasActivas.stream()
-                .map(c -> c.getHora().toString())
+        List<LocalTime> todasLasHoras = generarSlots();
+        List<LocalTime> disponibles   = todasLasHoras.stream()
+                .filter(h -> !ocupadas.contains(h))
                 .toList();
 
-        Map<String, Object> respuesta = new HashMap<>();
-        respuesta.put("fecha", fecha.toString());
-        respuesta.put("totalCitasActivas", citasActivas.size());
-        respuesta.put("horasOcupadas", horasOcupadas);
-        respuesta.put("citasDelDia", citasActivas);
-
-        return respuesta;
+        return new DisponibilidadDTO(fecha, ocupadas, disponibles);
     }
 
-    // ─────────────────────────────────────────────────────────────────
-    // MÉTODO PRIVADO: Validar slot disponible
-    // ─────────────────────────────────────────────────────────────────
+    // ─────────────────────────────────────────────────────────────────────────
+    // Métodos privados de apoyo
+    // ─────────────────────────────────────────────────────────────────────────
 
-    /**
-     * Verifica que no exista ya una cita activa para la fecha y hora indicadas.
-     *
-     * @param fecha       Fecha a verificar.
-     * @param hora        Hora a verificar.
-     * @param idExcluido  ID de la cita que debe ignorarse (null si es creación nueva).
-     */
-    private void validarSlotDisponible(LocalDate fecha, LocalTime hora, Long idExcluido) {
-        boolean ocupado;
+    private List<LocalTime> generarSlots() {
+        return Stream.iterate(HORA_INICIO, h -> h.isBefore(HORA_FIN), h -> h.plusMinutes(INTERVALO_MIN))
+                .toList();
+    }
 
-        if (idExcluido == null) {
-            ocupado = citaRepository.existeCitaActivaEnFechaHora(fecha, hora);
-        } else {
-            ocupado = citaRepository.existeCitaActivaEnFechaHoraExcluyendo(fecha, hora, idExcluido);
+    private void validarHorarioAtencion(LocalTime hora) {
+        if (hora.isBefore(HORA_INICIO) || !hora.isBefore(HORA_FIN)) {
+            throw new EstadoInvalidoException(
+                    String.format("La hora %s está fuera del horario de atención (%s – %s).",
+                            hora, HORA_INICIO, HORA_FIN));
         }
+    }
 
+    private void verificarDisponibilidadSlot(LocalDate fecha, LocalTime hora, Long excludeId) {
+        boolean ocupado = citaRepository.existsByFechaAndHoraExcludingId(fecha, hora, excludeId);
         if (ocupado) {
-            throw new CitaDuplicadaException(
-                    String.format("Ya existe una cita activa para la fecha %s a las %s. "
-                                  + "Por favor elija otro horario.", fecha, hora));
+            throw new CitaDuplicadaException(fecha, hora);
         }
     }
 }
@@ -623,37 +494,223 @@ public class CitaServiceImpl implements CitaService {
 
 ---
 
-## 8. Controlador (controller) {#controller}
+## 8. Excepciones personalizadas
 
-## java name=src/main/java/com/gestion/citas/controller/CitaController.java
+### `CitaNotFoundException.java`
 
-```java
-package com.gestion.citas.controller;
+```java name=src/main/java/com/reservas/citas/exception/CitaNotFoundException.java
+package com.reservas.citas.exception;
 
-import com.gestion.citas.model.entity.Cita;
-import com.gestion.citas.service.CitaService;
+public class CitaNotFoundException extends RuntimeException {
+
+    public CitaNotFoundException(Long id) {
+        super("No se encontró ninguna cita con el ID: " + id);
+    }
+}
+```
+
+### `CitaDuplicadaException.java`
+
+```java name=src/main/java/com/reservas/citas/exception/CitaDuplicadaException.java
+package com.reservas.citas.exception;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+
+public class CitaDuplicadaException extends RuntimeException {
+
+    public CitaDuplicadaException(LocalDate fecha, LocalTime hora) {
+        super(String.format("Ya existe una cita registrada el %s a las %s.", fecha, hora));
+    }
+}
+```
+
+### `EstadoInvalidoException.java`
+
+```java name=src/main/java/com/reservas/citas/exception/EstadoInvalidoException.java
+package com.reservas.citas.exception;
+
+public class EstadoInvalidoException extends RuntimeException {
+
+    public EstadoInvalidoException(String mensaje) {
+        super(mensaje);
+    }
+}
+```
+
+---
+
+## 9. Manejador global de errores — `GlobalExceptionHandler.java`
+
+```java name=src/main/java/com/reservas/citas/exception/GlobalExceptionHandler.java
+package com.reservas.citas.exception;
+
+import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ProblemDetail;
+import org.springframework.validation.FieldError;
+import org.springframework.web.bind.MethodArgumentNotValidException;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+
+import java.time.Instant;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+@RestControllerAdvice
+public class GlobalExceptionHandler {
+
+    // 404 – Cita no encontrada
+    @ExceptionHandler(CitaNotFoundException.class)
+    public ProblemDetail handleNotFound(CitaNotFoundException ex) {
+        ProblemDetail pd = ProblemDetail.forStatusAndDetail(HttpStatus.NOT_FOUND, ex.getMessage());
+        pd.setTitle("Cita no encontrada");
+        pd.setProperty("timestamp", Instant.now());
+        return pd;
+    }
+
+    // 409 – Conflicto de horario (duplicado de negocio)
+    @ExceptionHandler(CitaDuplicadaException.class)
+    public ProblemDetail handleDuplicada(CitaDuplicadaException ex) {
+        ProblemDetail pd = ProblemDetail.forStatusAndDetail(HttpStatus.CONFLICT, ex.getMessage());
+        pd.setTitle("Horario no disponible");
+        pd.setProperty("timestamp", Instant.now());
+        return pd;
+    }
+
+    // 409 – Conflicto de restricción UNIQUE en BD (respaldo)
+    @ExceptionHandler(DataIntegrityViolationException.class)
+    public ProblemDetail handleDataIntegrity(DataIntegrityViolationException ex) {
+        ProblemDetail pd = ProblemDetail.forStatusAndDetail(
+                HttpStatus.CONFLICT,
+                "Ya existe un registro con los mismos datos únicos (fecha/hora).");
+        pd.setTitle("Conflicto de integridad");
+        pd.setProperty("timestamp", Instant.now());
+        return pd;
+    }
+
+    // 422 – Estado inválido
+    @ExceptionHandler(EstadoInvalidoException.class)
+    public ProblemDetail handleEstadoInvalido(EstadoInvalidoException ex) {
+        ProblemDetail pd = ProblemDetail.forStatusAndDetail(
+                HttpStatus.UNPROCESSABLE_ENTITY, ex.getMessage());
+        pd.setTitle("Operación no permitida");
+        pd.setProperty("timestamp", Instant.now());
+        return pd;
+    }
+
+    // 400 – Errores de validación de Bean Validation (@NotBlank, @NotNull…)
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    public ProblemDetail handleValidation(MethodArgumentNotValidException ex) {
+        Map<String, String> errores = ex.getBindingResult()
+                .getFieldErrors()
+                .stream()
+                .collect(Collectors.toMap(
+                        FieldError::getField,
+                        fe -> fe.getDefaultMessage() != null ? fe.getDefaultMessage() : "Valor inválido",
+                        (a, b) -> a   // en caso de campos duplicados, conserva el primero
+                ));
+
+        ProblemDetail pd = ProblemDetail.forStatusAndDetail(
+                HttpStatus.BAD_REQUEST, "Uno o más campos tienen valores inválidos.");
+        pd.setTitle("Error de validación");
+        pd.setProperty("errores", errores);
+        pd.setProperty("timestamp", Instant.now());
+        return pd;
+    }
+
+    // 500 – Cualquier otro error no esperado
+    @ExceptionHandler(Exception.class)
+    public ProblemDetail handleGenerico(Exception ex) {
+        ProblemDetail pd = ProblemDetail.forStatusAndDetail(
+                HttpStatus.INTERNAL_SERVER_ERROR, "Error interno del servidor.");
+        pd.setTitle("Error inesperado");
+        pd.setProperty("detalle", ex.getMessage());
+        pd.setProperty("timestamp", Instant.now());
+        return pd;
+    }
+}
+```
+
+---
+
+## 10. DTOs de Request
+
+### `CrearCitaRequest.java`
+
+```java name=src/main/java/com/reservas/citas/controller/dto/CrearCitaRequest.java
+package com.reservas.citas.controller.dto;
+
+import jakarta.validation.constraints.FutureOrPresent;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+
+public record CrearCitaRequest(
+
+        @NotBlank(message = "El nombre del cliente es obligatorio.")
+        String nombreCliente,
+
+        @NotNull(message = "La fecha es obligatoria.")
+        @FutureOrPresent(message = "La fecha no puede ser en el pasado.")
+        LocalDate fecha,
+
+        @NotNull(message = "La hora es obligatoria.")
+        LocalTime hora,
+
+        @NotBlank(message = "El motivo es obligatorio.")
+        String motivo
+) {}
+```
+
+### `ReagendarCitaRequest.java`
+
+```java name=src/main/java/com/reservas/citas/controller/dto/ReagendarCitaRequest.java
+package com.reservas.citas.controller.dto;
+
+import jakarta.validation.constraints.FutureOrPresent;
+import jakarta.validation.constraints.NotNull;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+
+public record ReagendarCitaRequest(
+
+        @NotNull(message = "La nueva fecha es obligatoria.")
+        @FutureOrPresent(message = "La nueva fecha no puede ser en el pasado.")
+        LocalDate nuevaFecha,
+
+        @NotNull(message = "La nueva hora es obligatoria.")
+        LocalTime nuevaHora,
+
+        String nuevoMotivo   // opcional
+) {}
+```
+
+---
+
+## 11. `controller/CitaController.java`
+
+```java name=src/main/java/com/reservas/citas/controller/CitaController.java
+package com.reservas.citas.controller;
+
+import com.reservas.citas.controller.dto.CrearCitaRequest;
+import com.reservas.citas.controller.dto.ReagendarCitaRequest;
+import com.reservas.citas.model.entity.Cita;
+import com.reservas.citas.service.CitaService;
+import com.reservas.citas.service.CitaService.DisponibilidadDTO;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
-import java.time.LocalTime;
 import java.util.List;
-import java.util.Map;
 
-```
-
-/**
-* Controlador REST para la gestión de citas.
-* Base URL: /api/v1/citas
-
-```text
- */
-@Slf4j
 @RestController
 @RequestMapping("/api/v1/citas")
 @RequiredArgsConstructor
@@ -661,499 +718,77 @@ public class CitaController {
 
     private final CitaService citaService;
 
-    // ─────────────────────────────────────────────────────────────────
-    // POST /api/v1/citas  →  Crear cita
-    // ─────────────────────────────────────────────────────────────────
-
+    // ── POST /api/v1/citas ────────────────────────────────────────────────────
     /**
      * Crea una nueva cita.
-     *
-     * Ejemplo Body JSON:
-     * {
-     *   "nombreCliente": "Juan Pérez",
-     *   "fecha": "2026-05-20",
-     *   "hora": "10:30:00",
-     *   "motivo": "Consulta general"
-     * }
+     * Body JSON: { "nombreCliente", "fecha", "hora", "motivo" }
      */
     @PostMapping
-    public ResponseEntity<Cita> crearCita(@Valid @RequestBody Cita cita) {
-        log.info("POST /api/v1/citas - Crear cita para '{}'", cita.getNombreCliente());
-        Cita citaCreada = citaService.crearCita(cita);
-        return ResponseEntity.status(HttpStatus.CREATED).body(citaCreada);
+    public ResponseEntity<Cita> crearCita(@Valid @RequestBody CrearCitaRequest request) {
+
+        Cita nuevaCita = Cita.builder()
+                .nombreCliente(request.nombreCliente())
+                .fecha(request.fecha())
+                .hora(request.hora())
+                .motivo(request.motivo())
+                .build();
+
+        return ResponseEntity.status(HttpStatus.CREATED).body(citaService.crearCita(nuevaCita));
     }
 
-    // ─────────────────────────────────────────────────────────────────
-    // GET /api/v1/citas  →  Listar citas
-    // ─────────────────────────────────────────────────────────────────
-
-    /**
-     * Lista todas las citas registradas en el sistema.
-     */
+    // ── GET /api/v1/citas ─────────────────────────────────────────────────────
+    /** Devuelve todas las citas registradas. */
     @GetMapping
     public ResponseEntity<List<Cita>> listarCitas() {
-        log.info("GET /api/v1/citas - Listar todas las citas");
-        List<Cita> citas = citaService.listarCitas();
-        return ResponseEntity.ok(citas);
+        return ResponseEntity.ok(citaService.listarCitas());
     }
 
-    // ─────────────────────────────────────────────────────────────────
-    // GET /api/v1/citas/{id}  →  Obtener cita por ID
-    // ─────────────────────────────────────────────────────────────────
-
-    /**
-     * Retorna una cita específica por su ID.
-     */
+    // ── GET /api/v1/citas/{id} ────────────────────────────────────────────────
+    /** Devuelve la cita con el ID indicado. */
     @GetMapping("/{id}")
-    public ResponseEntity<Cita> obtenerCitaPorId(@PathVariable Long id) {
-        log.info("GET /api/v1/citas/{} - Obtener cita por ID", id);
-        Cita cita = citaService.obtenerCitaPorId(id);
-        return ResponseEntity.ok(cita);
+    public ResponseEntity<Cita> obtenerCita(@PathVariable Long id) {
+        return ResponseEntity.ok(citaService.obtenerCitaPorId(id));
     }
 
-    // ─────────────────────────────────────────────────────────────────
-    // PATCH /api/v1/citas/{id}/reagendar  →  Reagendar cita
-    // ─────────────────────────────────────────────────────────────────
-
+    // ── PUT /api/v1/citas/{id}/reagendar ──────────────────────────────────────
     /**
-     * Reagenda una cita existente a un nuevo slot de fecha y hora.
-     *
-     * Parámetros de query:
-     *   nuevaFecha  (yyyy-MM-dd)  — requerido
-     *   nuevaHora   (HH:mm:ss)   — requerido
-     *
-     * Ejemplo:
-     *   PATCH /api/v1/citas/3/reagendar?nuevaFecha=2026-06-01&nuevaHora=14:00:00
+     * Reagenda una cita existente.
+     * Body JSON: { "nuevaFecha", "nuevaHora", "nuevoMotivo" (opcional) }
      */
-    @PatchMapping("/{id}/reagendar")
+    @PutMapping("/{id}/reagendar")
     public ResponseEntity<Cita> reagendarCita(
             @PathVariable Long id,
-            @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
-                LocalDate nuevaFecha,
-            @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.TIME)
-                LocalTime nuevaHora) {
+            @Valid @RequestBody ReagendarCitaRequest request) {
 
-        log.info("PATCH /api/v1/citas/{}/reagendar → {} {}", id, nuevaFecha, nuevaHora);
-        Cita citaReagendada = citaService.reagendarCita(id, nuevaFecha, nuevaHora);
-        return ResponseEntity.ok(citaReagendada);
+        Cita actualizada = citaService.reagendarCita(
+                id,
+                request.nuevaFecha(),
+                request.nuevaHora(),
+                request.nuevoMotivo()
+        );
+        return ResponseEntity.ok(actualizada);
     }
 
-    // ─────────────────────────────────────────────────────────────────
-    // PATCH /api/v1/citas/{id}/cancelar  →  Cancelar cita
-    // ─────────────────────────────────────────────────────────────────
-
-    /**
-     * Cancela una cita estableciendo su estado como CANCELADA.
-     */
+    // ── PATCH /api/v1/citas/{id}/cancelar ────────────────────────────────────
+    /** Cancela la cita con el ID indicado (sin eliminarla). */
     @PatchMapping("/{id}/cancelar")
     public ResponseEntity<Cita> cancelarCita(@PathVariable Long id) {
-        log.info("PATCH /api/v1/citas/{}/cancelar", id);
-        Cita citaCancelada = citaService.cancelarCita(id);
-        return ResponseEntity.ok(citaCancelada);
+        return ResponseEntity.ok(citaService.cancelarCita(id));
     }
 
-    // ─────────────────────────────────────────────────────────────────
-    // GET /api/v1/citas/disponibilidad  →  Consultar disponibilidad
-    // ─────────────────────────────────────────────────────────────────
-
+    // ── GET /api/v1/citas/disponibilidad?fecha=YYYY-MM-DD ─────────────────────
     /**
-     * Consulta los horarios ocupados y disponibles para una fecha específica.
-     *
-     * Parámetro de query:
-     *   fecha  (yyyy-MM-dd) — requerido
-     *
-     * Ejemplo:
-     *   GET /api/v1/citas/disponibilidad?fecha=2026-05-20
+     * Devuelve las horas disponibles y ocupadas para la fecha indicada.
+     * Param: fecha (ISO-8601, e.g. 2026-05-10)
      */
     @GetMapping("/disponibilidad")
-    public ResponseEntity<Map<String, Object>> consultarDisponibilidad(
-            @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
-                LocalDate fecha) {
+    public ResponseEntity<DisponibilidadDTO> consultarDisponibilidad(
+            @RequestParam
+            @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
+            LocalDate fecha) {
 
-        log.info("GET /api/v1/citas/disponibilidad?fecha={}", fecha);
-        Map<String, Object> disponibilidad = citaService.consultarDisponibilidad(fecha);
-        return ResponseEntity.ok(disponibilidad);
+        return ResponseEntity.ok(citaService.consultarDisponibilidad(fecha));
     }
-}
-```
-
----
-
-## 9. Manejo Global de Errores {#errors}
-
-### Excepciones de Dominio
-
-## java name=src/main/java/com/gestion/citas/exception/CitaNoEncontradaException.java
-
-```java
-package com.gestion.citas.exception;
-
-```
-
-/**
-* Se lanza cuando se intenta acceder a una cita que no existe en la base de datos.
-
-```text
- */
-public class CitaNoEncontradaException extends RuntimeException {
-    public CitaNoEncontradaException(String mensaje) {
-        super(mensaje);
-    }
-}
-```
-
-## java name=src/main/java/com/gestion/citas/exception/CitaDuplicadaException.java
-
-```java
-package com.gestion.citas.exception;
-
-```
-
-/**
-* Se lanza cuando se intenta crear o reagendar una cita en un slot
-* que ya está ocupado por otra cita activa.
-
-```text
- */
-public class CitaDuplicadaException extends RuntimeException {
-    public CitaDuplicadaException(String mensaje) {
-        super(mensaje);
-    }
-}
-```
-
-## java name=src/main/java/com/gestion/citas/exception/EstadoInvalidoException.java
-
-```java
-package com.gestion.citas.exception;
-
-```
-
-/**
-* Se lanza cuando se intenta realizar una operación incompatible
-* con el estado actual de la cita (ej: cancelar una cita ya cancelada).
-
-```text
- */
-public class EstadoInvalidoException extends RuntimeException {
-    public EstadoInvalidoException(String mensaje) {
-        super(mensaje);
-    }
-}
-```
-
-### Manejador Global (@ControllerAdvice)
-
-## java name=src/main/java/com/gestion/citas/exception/GlobalExceptionHandler.java
-
-```java
-package com.gestion.citas.exception;
-
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.validation.FieldError;
-import org.springframework.web.bind.MethodArgumentNotValidException;
-import org.springframework.web.bind.MissingServletRequestParameterException;
-import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.RestControllerAdvice;
-import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
-
-import java.time.LocalDateTime;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.Map;
-
-```
-
-/**
-* Interceptor global que convierte excepciones en respuestas JSON estructuradas.
-
-```text
- */
-@Slf4j
-@RestControllerAdvice
-public class GlobalExceptionHandler {
-
-    // ── Cita no encontrada → 404 ──────────────────────────────────────
-    @ExceptionHandler(CitaNoEncontradaException.class)
-    public ResponseEntity<Map<String, Object>> handleCitaNoEncontrada(
-            CitaNoEncontradaException ex) {
-        log.warn("Cita no encontrada: {}", ex.getMessage());
-        return buildErrorResponse(HttpStatus.NOT_FOUND, ex.getMessage());
-    }
-
-    // ── Cita duplicada → 409 ─────────────────────────────────────────
-    @ExceptionHandler(CitaDuplicadaException.class)
-    public ResponseEntity<Map<String, Object>> handleCitaDuplicada(
-            CitaDuplicadaException ex) {
-        log.warn("Cita duplicada: {}", ex.getMessage());
-        return buildErrorResponse(HttpStatus.CONFLICT, ex.getMessage());
-    }
-
-    // ── Estado inválido → 422 ────────────────────────────────────────
-    @ExceptionHandler(EstadoInvalidoException.class)
-    public ResponseEntity<Map<String, Object>> handleEstadoInvalido(
-            EstadoInvalidoException ex) {
-        log.warn("Operación con estado inválido: {}", ex.getMessage());
-        return buildErrorResponse(HttpStatus.UNPROCESSABLE_ENTITY, ex.getMessage());
-    }
-
-    // ── Validación de campos Bean Validation → 400 ───────────────────
-    @ExceptionHandler(MethodArgumentNotValidException.class)
-    public ResponseEntity<Map<String, Object>> handleValidacion(
-            MethodArgumentNotValidException ex) {
-
-        Map<String, String> erroresCampos = new HashMap<>();
-        for (FieldError fieldError : ex.getBindingResult().getFieldErrors()) {
-            erroresCampos.put(fieldError.getField(), fieldError.getDefaultMessage());
-        }
-
-        Map<String, Object> cuerpo = new LinkedHashMap<>();
-        cuerpo.put("timestamp", LocalDateTime.now().toString());
-        cuerpo.put("status", HttpStatus.BAD_REQUEST.value());
-        cuerpo.put("error", "Error de validación en los datos de entrada");
-        cuerpo.put("erroresCampos", erroresCampos);
-
-        log.warn("Errores de validación: {}", erroresCampos);
-        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(cuerpo);
-    }
-
-    // ── Parámetro de query faltante → 400 ────────────────────────────
-    @ExceptionHandler(MissingServletRequestParameterException.class)
-    public ResponseEntity<Map<String, Object>> handleParametroFaltante(
-            MissingServletRequestParameterException ex) {
-        log.warn("Parámetro requerido ausente: {}", ex.getParameterName());
-        return buildErrorResponse(
-                HttpStatus.BAD_REQUEST,
-                "El parámetro '" + ex.getParameterName() + "' es requerido.");
-    }
-
-    // ── Tipo incorrecto en parámetro → 400 ───────────────────────────
-    @ExceptionHandler(MethodArgumentTypeMismatchException.class)
-    public ResponseEntity<Map<String, Object>> handleTipoIncorrecto(
-            MethodArgumentTypeMismatchException ex) {
-        String mensaje = String.format(
-                "El parámetro '%s' tiene un formato inválido. Valor recibido: '%s'.",
-                ex.getName(), ex.getValue());
-        log.warn(mensaje);
-        return buildErrorResponse(HttpStatus.BAD_REQUEST, mensaje);
-    }
-
-    // ── Error genérico no controlado → 500 ───────────────────────────
-    @ExceptionHandler(Exception.class)
-    public ResponseEntity<Map<String, Object>> handleGeneral(Exception ex) {
-        log.error("Error no controlado: ", ex);
-        return buildErrorResponse(
-                HttpStatus.INTERNAL_SERVER_ERROR,
-                "Ocurrió un error interno. Contacte al administrador.");
-    }
-
-    // ── Método utilitario ─────────────────────────────────────────────
-    private ResponseEntity<Map<String, Object>> buildErrorResponse(
-            HttpStatus status, String mensaje) {
-
-        Map<String, Object> cuerpo = new LinkedHashMap<>();
-        cuerpo.put("timestamp", LocalDateTime.now().toString());
-        cuerpo.put("status", status.value());
-        cuerpo.put("error", status.getReasonPhrase());
-        cuerpo.put("mensaje", mensaje);
-
-        return ResponseEntity.status(status).body(cuerpo);
-    }
-}
-```
-
----
-
-## 10. Clase Principal {#main}
-
-## java name=src/main/java/com/gestion/citas/CitasBackendApplication.java
-
-```java
-package com.gestion.citas;
-
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-@SpringBootApplication
-public class CitasBackendApplication {
-
-    public static void main(String[] args) {
-        SpringApplication.run(CitasBackendApplication.class, args);
-    }
-}
-```
-
----
-
-## 11. Pruebas con Postman {#postman}
-
-### Base URL
-
-http://localhost:8080/api/v1/citas
-
----
-
-### 🟢 Crear una cita — POST /api/v1/citas
-
-**Headers:**
-
-```text
-Content-Type: application/json
-```
-
-**Body (raw JSON):**
-
-```json
-{
-  "nombreCliente": "Ana Gómez",
-  "fecha": "2026-06-10",
-  "hora": "09:00:00",
-  "motivo": "Revisión anual"
-}
-```
-
-**Respuesta esperada `201 Created`:**
-
-```json
-{
-  "id": 1,
-  "nombreCliente": "Ana Gómez",
-  "fecha": "2026-06-10",
-  "hora": "09:00:00",
-  "motivo": "Revisión anual",
-  "estado": "PENDIENTE"
-}
-```
-
----
-
-### 🔵 Listar todas las citas — GET /api/v1/citas
-
-GET http://localhost:8080/api/v1/citas
-
-**Respuesta esperada `200 OK`:**
-
-```json
-[
-  {
-    "id": 1,
-    "nombreCliente": "Ana Gómez",
-    "fecha": "2026-06-10",
-    "hora": "09:00:00",
-    "motivo": "Revisión anual",
-    "estado": "PENDIENTE"
-  }
-]
-```
-
----
-
-### 🔵 Consultar cita por ID — GET /api/v1/citas/{id}
-
-GET http://localhost:8080/api/v1/citas/1
-
----
-
-### 🟡 Reagendar una cita — PATCH /api/v1/citas/{id}/reagendar
-
-PATCH http://localhost:8080/api/v1/citas/1/reagendar?nuevaFecha=2026-06-15&nuevaHora=14:00:00
-
-**Respuesta esperada `200 OK`:**
-
-```json
-{
-  "id": 1,
-  "nombreCliente": "Ana Gómez",
-  "fecha": "2026-06-15",
-  "hora": "14:00:00",
-  "motivo": "Revisión anual",
-  "estado": "REAGENDADA"
-}
-```
-
----
-
-### 🔴 Cancelar una cita — PATCH /api/v1/citas/{id}/cancelar
-
-PATCH http://localhost:8080/api/v1/citas/1/cancelar
-
-**Respuesta esperada `200 OK`:**
-
-```json
-{
-  "id": 1,
-  "nombreCliente": "Ana Gómez",
-  "fecha": "2026-06-15",
-  "hora": "14:00:00",
-  "motivo": "Revisión anual",
-  "estado": "CANCELADA"
-}
-```
-
----
-
-### 🟣 Consultar disponibilidad — GET /api/v1/citas/disponibilidad
-
-GET http://localhost:8080/api/v1/citas/disponibilidad?fecha=2026-06-10
-
-**Respuesta esperada `200 OK`:**
-
-```json
-{
-  "fecha": "2026-06-10",
-  "totalCitasActivas": 1,
-  "horasOcupadas": ["09:00"],
-  "citasDelDia": [
-    {
-      "id": 2,
-      "nombreCliente": "Carlos Ruiz",
-      "fecha": "2026-06-10",
-      "hora": "09:00:00",
-      "motivo": "Consulta urgente",
-      "estado": "PENDIENTE"
-    }
-  ]
-}
-```
-
----
-
-### ⚠️ Ejemplo de error por duplicado 409 Conflict
-
-## Al intentar crear una segunda cita el mismo día a la misma hora:
-
-```json
-{
-  "timestamp": "2026-05-03T10:45:00.123",
-  "status": 409,
-  "error": "Conflict",
-  "mensaje": "Ya existe una cita activa para la fecha 2026-06-10 a las 09:
-
-```
-
-## 00. Por favor elija otro horario."
-
-```json
-}
-```
-
-### ⚠️ Ejemplo de error de validación 400 Bad Request
-
-## Al enviar un body sin
-
-## ombreCliente ni fecha:
-
-```json
-{
-  "timestamp": "2026-05-03T10:46:00.321",
-  "status": 400,
-  "error": "Error de validación en los datos de entrada",
-  "erroresCampos": {
-    "nombreCliente": "El nombre del cliente es obligatorio.",
-    "fecha": "La fecha de la cita es obligatoria."
-  }
 }
 ```
 
@@ -1161,24 +796,80 @@ GET http://localhost:8080/api/v1/citas/disponibilidad?fecha=2026-06-10
 
 ## Resumen de Endpoints
 
-| Método | Endpoint | Descripción |
-|--------|----------|-------------|
-| `POST` | `/api/v1/citas` | Crear una nueva cita |
+| Método | URL | Descripción |
+|--------|-----|-------------|
+| `POST` | `/api/v1/citas` | Crear nueva cita |
 | `GET` | `/api/v1/citas` | Listar todas las citas |
-| `GET` | `/api/v1/citas/{id}` | Consultar cita por ID |
-| `PATCH` | `/api/v1/citas/{id}/reagendar` | Reagendar fecha y hora |
-| `PATCH` | `/api/v1/citas/{id}/cancelar` | Cancelar una cita |
-| `GET` | `/api/v1/citas/disponibilidad?fecha=` | Ver horarios ocupados |
+| `GET` | `/api/v1/citas/{id}` | Obtener cita por ID |
+| `PUT` | `/api/v1/citas/{id}/reagendar` | Reagendar cita existente |
+| `PATCH` | `/api/v1/citas/{id}/cancelar` | Cancelar cita |
+| `GET` | `/api/v1/citas/disponibilidad?fecha=YYYY-MM-DD` | Disponibilidad de horarios |
 
-## Códigos HTTP utilizados
+---
 
-| Código | Significado |
-|--------|-------------|
-| `200 OK` | Operación exitosa |
-| `201 Created` | Cita creada correctamente |
-| `400 Bad Request` | Datos inválidos o parámetro faltante |
-| `404 Not Found` | Cita no encontrada |
-| `409 Conflict` | Horario duplicado |
-| `422 Unprocessable Entity` | Operación incompatible con el estado actual |
+## Ejemplos de uso en Postman
 
-## | 500 Internal Server Error | Error no controlado |
+### Crear cita
+
+```json name=POST_crear_cita.json
+// POST http://localhost:8080/api/v1/citas
+// Content-Type: application/json
+{
+  "nombreCliente": "Ana García",
+  "fecha": "2026-05-10",
+  "hora": "09:00",
+  "motivo": "Consulta de rutina"
+}
+```
+
+### Reagendar cita
+
+```json name=PUT_reagendar_cita.json
+// PUT http://localhost:8080/api/v1/citas/1/reagendar
+// Content-Type: application/json
+{
+  "nuevaFecha": "2026-05-12",
+  "nuevaHora": "10:30",
+  "nuevoMotivo": "Control post-tratamiento"
+}
+```
+
+### Cancelar cita
+
+```
+PATCH http://localhost:8080/api/v1/citas/1/cancelar
+(sin body)
+```
+
+### Consultar disponibilidad
+
+```
+GET http://localhost:8080/api/v1/citas/disponibilidad?fecha=2026-05-10
+```
+
+#### Respuesta de ejemplo:
+
+```json name=GET_disponibilidad_response.json
+{
+  "fecha": "2026-05-10",
+  "horasOcupadas": ["09:00", "10:00"],
+  "horasDisponibles": [
+    "08:00", "08:30", "09:30", "10:30",
+    "11:00", "11:30", "12:00", "12:30",
+    "13:00", "13:30", "14:00", "14:30",
+    "15:00", "15:30", "16:00", "16:30"
+  ]
+}
+```
+
+---
+
+## Notas de arquitectura
+
+- **Capa `controller`** — Recibe las peticiones HTTP, valida los DTOs de entrada con `@Valid` y delega al servicio. No contiene lógica de negocio.
+- **Capa `model/entity`** — Define la entidad JPA `Cita` con restricción `UNIQUE` a nivel de BD para `(fecha, hora)`.
+- **Capa `repository`** — Extiende `JpaRepository` y expone consultas JPQL específicas del dominio.
+- **Capa `service`** — Contrato (interfaz) que desacopla el controlador de la implementación.
+- **Capa `service/impl`** — Toda la lógica de negocio: validación de horario de atención, verificación de slots disponibles y transiciones de estado.
+- **`GlobalExceptionHandler`** — Centraliza el manejo de errores y retorna respuestas RFC 9457 (`ProblemDetail`) con HTTP semánticamente correcto.
+- La restricción `UNIQUE` en BD actúa como última línea de defensa contra condiciones de carrera que sorteen la validación de servicio.

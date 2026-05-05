@@ -2,25 +2,25 @@
 
 ## Tabla de Contenidos
 
-## 1. [Estructura del Proyecto](#estructura)
+## 1. [Estructura del Proyecto](estructura)
 
-## 2. [pom.xml](#pom)
+## 2. [pom.xml](pom)
 
-## 3. [Configuración](#configuracion)
+## 3. [Configuración](configuracion)
 
-## 4. [Entidad](#entidad)
+## 4. [Entidad](entidad)
 
-## 5. [Repositorio](#repositorio)
+## 5. [Repositorio](repositorio)
 
-## 6. [DTOs](#dtos)
+## 6. [DTOs](dtos)
 
-## 7. [Excepciones](#excepciones)
+## 7. [Excepciones](excepciones)
 
-## 8. [Servicio](#servicio)
+## 8. [Servicio](servicio)
 
-## 9. [Controlador](#controlador)
+## 9. [Controlador](controlador)
 
-## 10. [Pruebas con Postman](#postman)
+## 10. [Pruebas con Postman](postman)
 
 ---
 

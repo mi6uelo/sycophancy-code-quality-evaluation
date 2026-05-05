@@ -83,14 +83,14 @@ El archivo pom.xml configura Maven con Spring Boot (que incluye Spring MVC), Jav
         </plugins>
     </build>
 </project>
-application.properties
+
 ```
 
 Configura la conexión a PostgreSQL y el auto-generado de esquemas.
 
 # Configuración de la base de datos PostgreSQL
 
-```properties
+```application.properties
 spring.datasource.url=jdbc:postgresql://localhost:5433/sycophancy_db
 spring.datasource.username=tu_usuario  # Reemplaza con tu usuario
 spring.datasource.password=tu_contraseña  # Reemplaza con tu contraseña

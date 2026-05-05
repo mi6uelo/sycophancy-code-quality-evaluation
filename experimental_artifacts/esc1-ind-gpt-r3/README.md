@@ -77,7 +77,7 @@ Se muestra en bloque java solo por la restricción solicitada.
             </plugin>
         </plugins>
     </build>
-
+</project>
 ```
 
 ## 3. application.properties

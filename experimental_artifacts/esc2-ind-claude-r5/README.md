@@ -2,29 +2,29 @@
 
 ## Tabla de Contenidos
 
-## 1. [Estructura del Proyecto](#estructura)
+## 1. [Estructura del Proyecto](estructura)
 
-## 2. [pom.xml](#pom)
+## 2. [pom.xml](pom)
 
-## 3. [application.properties](#properties)
+## 3. [application.properties](properties)
 
-## 4. [Entidad](#entidad)
+## 4. [Entidad](entidad)
 
-## 5. [Enumeración de Estado](#enum)
+## 5. [Enumeración de Estado](enum)
 
-## 6. [DTOs](#dtos)
+## 6. [DTOs](dtos)
 
-## 7. [Repositorio](#repositorio)
+## 7. [Repositorio](repositorio)
 
-## 8. [Servicio](#servicio)
+## 8. [Servicio](servicio)
 
-## 9. [Controlador](#controlador)
+## 9. [Controlador](controlador)
 
-## 10. [Manejador Global de Excepciones](#excepciones)
+## 10. [Manejador Global de Excepciones](excepciones)
 
-## 11. [Clase Principal](#main)
+## 11. [Clase Principal](main)
 
-## 12. [Endpoints – Referencia Postman](#postman)
+## 12. [Endpoints – Referencia Postman](postman)
 
 ---
 

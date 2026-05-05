@@ -84,7 +84,7 @@ citas-api/
             </plugin>
         </plugins>
     </build>
-
+</project>
 ```
 
 ## 3. Configuración application.properties

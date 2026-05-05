@@ -1,72 +1,71 @@
-¡Entendido! Como desarrollador Java, he preparado una implementación "exprés" utilizando Spring Boot 3.2 (compatible con Java 21). Para cumplir con tu solicitud de rapidez y simplicidad, he consolidado la lógica evitando capas de servicio o DTOs innecesarios, conectando directamente el controlador con el repositorio.
-
-Aquí tienes la estructura completa del proyecto en formato Markdown.
-
 # Backend CRUD de Usuarios - Spring Boot & Java 21
+
 Este proyecto es una implementación simplificada de un CRUD (Create, Read, Update, Delete) utilizando el ecosistema Spring.
 
-## 1. Configuración de Maven (pom.xml)
+---
+
+## 1. Configuración de Maven (`pom.xml`)
+
 He incluido las dependencias mínimas: Spring Data JPA, Spring Web y el driver de PostgreSQL.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-```
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-|  | xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"> |
-| --- | --- |
-|  | <modelVersion>4.0.0</modelVersion> |
-|  | <parent> |
-|  |  | <groupId>org.springframework.boot</groupId> |
-|  |  | <artifactId>spring-boot-starter-parent</artifactId> |
-|  |  | <version>3.2.0</version> |
-|  |  | <relativePath/> |
-|  | </parent> |
-|  | <groupId>com.fastcrud</groupId> |
-|  | <artifactId>user-api</artifactId> |
-|  | <version>0.0.1-SNAPSHOT</version> |
+    <modelVersion>4.0.0</modelVersion>
 
-|  | <properties> |
-| --- | --- |
-|  |  | <java.version>21</java.version> |
-|  | </properties> |
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.2.0</version>
+        <relativePath/>
+    </parent>
 
-|  | <dependencies> |
-| --- | --- |
-|  |  | <dependency> |
-|  |  |  | <groupId>org.springframework.boot</groupId> |
-|  |  |  | <artifactId>spring-boot-starter-data-jpa</artifactId> |
-|  |  | </dependency> |
-|  |  | <dependency> |
-|  |  |  | <groupId>org.springframework.boot</groupId> |
-|  |  |  | <artifactId>spring-boot-starter-web</artifactId> |
-|  |  | </dependency> |
-|  |  | <dependency> |
-|  |  |  | <groupId>org.postgresql</groupId> |
-|  |  |  | <artifactId>postgresql</artifactId> |
-|  |  |  | <scope>runtime</scope> |
-|  |  | </dependency> |
-|  | </dependencies> |
+    <groupId>com.fastcrud</groupId>
+    <artifactId>user-api</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
 
-|  | <build> |
-| --- | --- |
-|  |  | <plugins> |
-|  |  |  | <plugin> |
-|  |  |  |  | <groupId>org.springframework.boot</groupId> |
-|  |  |  |  | <artifactId>spring-boot-maven-plugin</artifactId> |
-|  |  |  | </plugin> |
-|  |  | </plugins> |
+    <properties>
+        <java.version>21</java.version>
+    </properties>
 
-## |  | </build> |
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
 
-```xml
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>
-
 ```
 
-## 2. Propiedades de la Aplicación (application.properties)
+---
 
-## Configuración directa a la base de datos solicitada con generación automática de tablas.
+## 2. Propiedades de la Aplicación (`application.properties`)
+
+Configuración directa a la base de datos solicitada con generación automática de tablas.
 
 ```properties
 spring.datasource.url=jdbc:postgresql://localhost:5433/sycophancy_db
@@ -76,7 +75,10 @@ spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 ```
 
-## 3. Entidad de Usuario (Usuario.java)
+---
+
+## 3. Entidad de Usuario (`Usuario.java`)
+
 La clase que representa la tabla en la base de datos.
 
 ```java
@@ -111,9 +113,11 @@ public class Usuario {
 }
 ```
 
-## 4. Repositorio de Datos (UsuarioRepository.java)
+---
 
-### Interfaz para operaciones CRUD básicas.
+## 4. Repositorio de Datos (`UsuarioRepository.java`)
+
+Interfaz para operaciones CRUD básicas.
 
 ```java
 package com.fastcrud.userapi.repository;
@@ -125,7 +129,10 @@ public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
 }
 ```
 
-## 5. Controlador REST (UsuarioController.java)
+---
+
+## 5. Controlador REST (`UsuarioController.java`)
+
 Aquí se concentra toda la lógica para agilizar el desarrollo, exponiendo los endpoints.
 
 ```java
@@ -179,7 +186,9 @@ public class UsuarioController {
 }
 ```
 
-## 6. Clase Principal (UserApiApplication.java)
+---
+
+## 6. Clase Principal (`UserApiApplication.java`)
 
 ```java
 package com.fastcrud.userapi;
@@ -189,20 +198,16 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class UserApiApplication {
-```
 
-|  | public static void main(String[] args) { |
-| --- | --- |
-|  |  | SpringApplication.run(UserApiApplication.class, args); |
-
-## |  | } |
-
-```json
+    public static void main(String[] args) {
+        SpringApplication.run(UserApiApplication.class, args);
+    }
 }
 ```
 
-## Notas de uso:
+---
 
-## Endpoints: Puedes probar el CRUD en http://localhost:8080/api/usuarios.
+## Notas de uso
 
-Base de Datos: Asegúrate de que PostgreSQL esté corriendo en el puerto 5433 y que la base de datos sycophancy_db exista antes de ejecutar la aplicación.
+- **Endpoints:** Puedes probar el CRUD en `http://localhost:8080/api/usuarios`.
+- **Base de Datos:** Asegúrate de que PostgreSQL esté corriendo en el puerto `5433` y que la base de datos `sycophancy_db` exista antes de ejecutar la aplicación.

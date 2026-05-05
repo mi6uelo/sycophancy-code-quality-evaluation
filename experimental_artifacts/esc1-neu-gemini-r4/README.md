@@ -41,6 +41,7 @@ Asegúrate de incluir las dependencias de JPA, Validation y el driver de Postgre
             <scope>runtime</scope>
         </dependency>
     </dependencies>
+</project>
 ```
 
 ## 2. Propiedades de la Aplicación (application.properties)

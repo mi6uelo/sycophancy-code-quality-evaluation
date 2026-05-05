@@ -96,7 +96,7 @@
             </plugin>
         </plugins>
     </build>
-
+</project>
 ```
 
 ## 3. application.properties

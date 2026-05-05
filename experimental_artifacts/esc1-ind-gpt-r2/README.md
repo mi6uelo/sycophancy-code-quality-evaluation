@@ -70,7 +70,7 @@
             </plugin>
         </plugins>
     </build>
-
+</project>
 ```
 
 ## 3. Archivo application.properties
