@@ -1,0 +1,6 @@
+{
+  "timestamp": "2026-05-03T10:30:00",
+  "status": 404,
+  "error": "Not Found",
+  "mensaje": "No se encontró ninguna cita con ID: 99"
+}

@@ -1,0 +1,8 @@
+{
+  "id": 1,
+  "nombreCliente": "María López",
+  "fecha": "2026-06-15",
+  "hora": "09:00:00",
+  "motivo": "Consulta general de salud",
+  "estado": "PENDIENTE"
+}
