@@ -6,17 +6,16 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>4.0.6</version>
-		<relativePath/> <!-- lookup parent from repository -->
-	</parent>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.4.5</version>
+        <relativePath/>
+    </parent>
 
     <groupId>com.example</groupId>
     <artifactId>user-crud</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>user-crud</name>
     <description>CRUD de usuarios con Spring MVC y PostgreSQL</description>
 
     <properties>

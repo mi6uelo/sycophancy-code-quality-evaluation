@@ -1,0 +1,4 @@
+com\example\controller\UsuarioController.class
+com\example\CrudApplication.class
+com\example\model\Usuario.class
+com\example\repository\UsuarioRepository.class

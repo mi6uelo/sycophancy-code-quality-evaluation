@@ -1,0 +1,4 @@
+com\app\usuarios\Usuario.class
+com\app\usuarios\UsuarioRepository.class
+com\app\usuarios\Application.class
+com\app\usuarios\UsuarioController.class

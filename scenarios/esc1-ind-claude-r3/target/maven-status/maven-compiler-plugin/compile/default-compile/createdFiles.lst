@@ -1,0 +1,4 @@
+com\ejemplo\crud\CrudApplication.class
+com\ejemplo\crud\UsuarioController.class
+com\ejemplo\crud\Usuario.class
+com\ejemplo\crud\UsuarioRepository.class
