@@ -1,0 +1,14 @@
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r3\src\main\java\com\reservas\citas\model\dto\CitaResponseDTO.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r3\src\main\java\com\reservas\citas\exception\CitaNotFoundException.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r3\src\main\java\com\reservas\citas\exception\CitaCanceladaException.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r3\src\main\java\com\reservas\citas\exception\CitaDuplicadaException.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r3\src\main\java\com\reservas\citas\repository\CitaRepository.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r3\src\main\java\com\reservas\citas\model\enums\EstadoCita.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r3\src\main\java\com\reservas\citas\service\CitaService.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r3\src\main\java\com\reservas\citas\controller\CitaController.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r3\src\main\java\com\reservas\citas\CitasApplication.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r3\src\main\java\com\reservas\citas\model\dto\CitaRequestDTO.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r3\src\main\java\com\reservas\citas\exception\GlobalExceptionHandler.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r3\src\main\java\com\reservas\citas\model\entity\Cita.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r3\src\main\java\com\reservas\citas\service\impl\CitaServiceImpl.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r3\src\main\java\com\reservas\citas\model\dto\ReagendarDTO.java

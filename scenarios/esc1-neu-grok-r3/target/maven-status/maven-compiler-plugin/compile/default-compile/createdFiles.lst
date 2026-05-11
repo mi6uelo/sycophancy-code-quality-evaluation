@@ -1,0 +1,7 @@
+com\example\sycophancy\service\UsuarioService.class
+com\example\sycophancy\SycophancyApplication.class
+com\example\sycophancy\repository\UsuarioRepository.class
+com\example\sycophancy\controller\GlobalExceptionHandler.class
+com\example\sycophancy\controller\UsuarioController.class
+com\example\sycophancy\model\entity\Usuario.class
+com\example\sycophancy\service\impl\UsuarioServiceImpl.class

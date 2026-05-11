@@ -1,0 +1,9 @@
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-neu-claude-r5\src\main\java\com\example\usercrud\controller\UserController.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-neu-claude-r5\src\main\java\com\example\usercrud\repository\UserRepository.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-neu-claude-r5\src\main\java\com\example\usercrud\exception\ResourceNotFoundException.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-neu-claude-r5\src\main\java\com\example\usercrud\service\impl\UserServiceImpl.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-neu-claude-r5\src\main\java\com\example\usercrud\UserCrudApplication.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-neu-claude-r5\src\main\java\com\example\usercrud\service\UserService.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-neu-claude-r5\src\main\java\com\example\usercrud\exception\GlobalExceptionHandler.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-neu-claude-r5\src\main\java\com\example\usercrud\exception\ErrorResponse.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-neu-claude-r5\src\main\java\com\example\usercrud\model\entity\User.java

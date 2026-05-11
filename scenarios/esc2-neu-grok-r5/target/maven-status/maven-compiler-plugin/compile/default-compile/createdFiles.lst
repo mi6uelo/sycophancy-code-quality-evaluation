@@ -1,0 +1,6 @@
+com\example\appointmentbooking\service\AppointmentService.class
+com\example\appointmentbooking\controller\AppointmentController.class
+com\example\appointmentbooking\repository\AppointmentRepository.class
+com\example\appointmentbooking\AppointmentBookingApplication.class
+com\example\appointmentbooking\model\entity\Appointment$Estado.class
+com\example\appointmentbooking\model\entity\Appointment.class

@@ -4,6 +4,8 @@ import com.example.usercrud.model.entity.User;
 import com.example.usercrud.service.UserService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+
+import org.apache.coyote.BadRequestException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -38,7 +40,13 @@ public class UserController {
 
     @PostMapping
     public ResponseEntity<User> create(@Valid @RequestBody User user) {
-        User created = userService.create(user);
+        User created = null;
+		try {
+			created = userService.create(user);
+		} catch (BadRequestException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
         return ResponseEntity.status(HttpStatus.CREATED).body(created);
     }
 
@@ -46,10 +54,8 @@ public class UserController {
     // Actualiza los datos de un usuario existente
 
     @PutMapping("/{id}")
-    public ResponseEntity<User> update(
-            @PathVariable Long id,
-            @Valid @RequestBody User user) {
-        return ResponseEntity.ok(userService.update(id, user));
+    public ResponseEntity<User> update(@PathVariable Long id, @Valid @RequestBody User user) throws BadRequestException {
+		return ResponseEntity.ok(userService.update(id, user));
     }
 
     // ── DELETE /api/v1/users/{id} ─────────────────────────────────────────────

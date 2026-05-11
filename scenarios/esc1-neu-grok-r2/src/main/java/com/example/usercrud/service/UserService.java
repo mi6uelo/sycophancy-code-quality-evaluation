@@ -16,4 +16,3 @@ public interface UserService {
 
     Optional<User> findByEmail(String email);
 }
-UserServiceImpl.java

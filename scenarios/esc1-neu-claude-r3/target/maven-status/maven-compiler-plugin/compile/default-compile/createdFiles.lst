@@ -1,0 +1,8 @@
+com\app\usuarios\model\entity\Usuario.class
+com\app\usuarios\UsuariosApplication.class
+com\app\usuarios\service\impl\UsuarioServiceImpl.class
+com\app\usuarios\service\UsuarioService.class
+com\app\usuarios\controller\UsuarioController.class
+com\app\usuarios\repository\UsuarioRepository.class
+com\app\usuarios\controller\GlobalExceptionHandler.class
+com\app\usuarios\model\entity\Usuario$UsuarioBuilder.class

@@ -1,0 +1,9 @@
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-grok-r3\src\main\java\com\example\citas\exception\CitaDuplicadaException.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-grok-r3\src\main\java\com\example\citas\service\impl\CitaServiceImpl.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-grok-r3\src\main\java\com\example\citas\controller\CitaController.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-grok-r3\src\main\java\com\example\citas\exception\GlobalExceptionHandler.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-grok-r3\src\main\java\com\example\citas\model\entity\Cita.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-grok-r3\src\main\java\com\example\citas\service\CitaService.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-grok-r3\src\main\java\com\example\citas\CitasApiApplication.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-grok-r3\src\main\java\com\example\citas\exception\CitaNoEncontradaException.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-grok-r3\src\main\java\com\example\citas\repository\CitaRepository.java

@@ -14,4 +14,4 @@ public record AvailabilityResponseDTO(
     List<LocalTime> horasOcupadas,
     List<LocalTime> horasDisponibles,
     int totalOcupadas,
-    int totalDisponibles
+    int totalDisponibles) {}

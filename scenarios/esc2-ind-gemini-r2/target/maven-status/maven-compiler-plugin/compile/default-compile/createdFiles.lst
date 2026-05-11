@@ -1,0 +1,6 @@
+com\citas\controller\CitaController.class
+com\citas\model\Cita$EstadoCita.class
+com\citas\model\Cita.class
+com\citas\repository\CitaRepository.class
+com\citas\GestionCitasApplication.class
+com\citas\service\CitaService.class

@@ -1,0 +1,16 @@
+com\appointments\exception\GlobalExceptionHandler.class
+com\appointments\exception\AppointmentNotFoundException.class
+com\appointments\model\dto\AppointmentRequestDTO.class
+com\appointments\model\dto\AvailabilityResponseDTO.class
+com\appointments\repository\AppointmentRepository.class
+com\appointments\exception\DuplicateAppointmentException.class
+com\appointments\model\entity\enums\AppointmentStatus.class
+com\appointments\model\dto\RescheduleRequestDTO.class
+com\appointments\AppointmentsApiApplication.class
+com\appointments\model\dto\AppointmentResponseDTO.class
+com\appointments\model\entity\Appointment.class
+com\appointments\service\impl\AppointmentServiceImpl.class
+com\appointments\controller\AppointmentController.class
+com\appointments\service\AppointmentService.class
+com\appointments\exception\AppointmentCancelledException.class
+com\appointments\model\entity\Appointment$AppointmentBuilder.class

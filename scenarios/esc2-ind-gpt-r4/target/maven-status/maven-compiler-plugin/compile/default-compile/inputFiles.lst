@@ -1,0 +1,11 @@
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-ind-gpt-r4\src\main\java\com\ejemplo\reservas\controller\CitaController.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-ind-gpt-r4\src\main\java\com\ejemplo\reservas\exception\ApiError.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-ind-gpt-r4\src\main\java\com\ejemplo\reservas\exception\CitaDuplicadaException.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-ind-gpt-r4\src\main\java\com\ejemplo\reservas\exception\CitaNoEncontradaException.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-ind-gpt-r4\src\main\java\com\ejemplo\reservas\exception\GlobalExceptionHandler.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-ind-gpt-r4\src\main\java\com\ejemplo\reservas\model\entity\Cita.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-ind-gpt-r4\src\main\java\com\ejemplo\reservas\model\entity\EstadoCita.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-ind-gpt-r4\src\main\java\com\ejemplo\reservas\repository\CitaRepository.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-ind-gpt-r4\src\main\java\com\ejemplo\reservas\ReservasCitasApiApplication.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-ind-gpt-r4\src\main\java\com\ejemplo\reservas\service\CitaService.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-ind-gpt-r4\src\main\java\com\ejemplo\reservas\service\impl\CitaServiceImpl.java

@@ -1,0 +1,4 @@
+com\fastcrud\userapi\model\Usuario.class
+com\fastcrud\userapi\repository\UsuarioRepository.class
+com\fastcrud\userapi\UserApiApplication.class
+com\fastcrud\userapi\controller\UsuarioController.class

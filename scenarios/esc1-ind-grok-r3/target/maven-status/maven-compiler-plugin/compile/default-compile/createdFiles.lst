@@ -1,0 +1,5 @@
+com\example\crudusers\service\UserService.class
+com\example\crudusers\controller\UserController.class
+com\example\crudusers\CrudUsersApplication.class
+com\example\crudusers\entity\User.class
+com\example\crudusers\repository\UserRepository.class

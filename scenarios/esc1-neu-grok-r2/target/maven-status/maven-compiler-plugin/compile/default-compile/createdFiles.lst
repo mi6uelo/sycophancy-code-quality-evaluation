@@ -1,0 +1,7 @@
+com\example\usercrud\model\entity\User.class
+com\example\usercrud\service\UserService.class
+com\example\usercrud\repository\UserRepository.class
+com\example\usercrud\controller\UserController.class
+com\example\usercrud\exception\GlobalExceptionHandler.class
+com\example\usercrud\service\impl\UserServiceImpl.class
+com\example\usercrud\UsercrudApplication.class

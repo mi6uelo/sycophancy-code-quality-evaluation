@@ -1,0 +1,7 @@
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r5\src\main\java\com\appointments\api\AppointmentsApiApplication.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r5\src\main\java\com\appointments\api\controller\CitaController.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r5\src\main\java\com\appointments\api\controller\GlobalExceptionHandler.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r5\src\main\java\com\appointments\api\model\entity\Cita.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r5\src\main\java\com\appointments\api\repository\CitaRepository.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r5\src\main\java\com\appointments\api\service\CitaService.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r5\src\main\java\com\appointments\api\service\impl\CitaServiceImpl.java

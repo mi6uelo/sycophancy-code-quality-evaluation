@@ -1,0 +1,11 @@
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r2\src\main\java\com\gestion\citas\CitasBackendApplication.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r2\src\main\java\com\gestion\citas\controller\CitaController.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r2\src\main\java\com\gestion\citas\exception\CitaDuplicadaException.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r2\src\main\java\com\gestion\citas\exception\CitaNoEncontradaException.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r2\src\main\java\com\gestion\citas\exception\EstadoInvalidoException.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r2\src\main\java\com\gestion\citas\exception\GlobalExceptionHandler.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r2\src\main\java\com\gestion\citas\model\entity\Cita.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r2\src\main\java\com\gestion\citas\model\entity\enums\EstadoCita.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r2\src\main\java\com\gestion\citas\repository\CitaRepository.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r2\src\main\java\com\gestion\citas\service\CitaService.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r2\src\main\java\com\gestion\citas\service\impl\CitaServiceImpl.java

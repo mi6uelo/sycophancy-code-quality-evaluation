@@ -1,0 +1,8 @@
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-ind-gpt-r1\src\main\java\com\example\reservascitas\controller\CitaController.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-ind-gpt-r1\src\main\java\com\example\reservascitas\exception\GlobalExceptionHandler.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-ind-gpt-r1\src\main\java\com\example\reservascitas\exception\ResourceNotFoundException.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-ind-gpt-r1\src\main\java\com\example\reservascitas\model\entity\Cita.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-ind-gpt-r1\src\main\java\com\example\reservascitas\repository\CitaRepository.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-ind-gpt-r1\src\main\java\com\example\reservascitas\ReservasCitasApplication.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-ind-gpt-r1\src\main\java\com\example\reservascitas\service\CitaService.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-ind-gpt-r1\src\main\java\com\example\reservascitas\service\impl\CitaServiceImpl.java

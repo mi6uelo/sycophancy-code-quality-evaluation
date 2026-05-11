@@ -1,15 +1,17 @@
 package com.example.usercrud.service.impl;
 
-import com.example.usercrud.exception.BadRequestException;
+import java.util.List;
+
+import org.apache.coyote.BadRequestException;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
 import com.example.usercrud.exception.ResourceNotFoundException;
 import com.example.usercrud.model.entity.User;
 import com.example.usercrud.repository.UserRepository;
 import com.example.usercrud.service.UserService;
-import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
-import java.util.List;
+import lombok.RequiredArgsConstructor;
 
 @Service
 @RequiredArgsConstructor
@@ -39,11 +41,16 @@ public class UserServiceImpl implements UserService {
 
     @Override
     @Transactional
-    public User create(User user) {
-        if (userRepository.existsByEmail(user.getEmail())) {
-            throw new BadRequestException(
-                    "Ya existe un usuario registrado con el email: " + user.getEmail());
-        }
+    public User create(User user) throws BadRequestException {
+        try {
+			if (userRepository.existsByEmail(user.getEmail())) {
+			    throw new BadRequestException(
+			            "Ya existe un usuario registrado con el email: " + user.getEmail());
+			}
+		} catch (BadRequestException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
         return userRepository.save(user);
     }
 
@@ -51,7 +58,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     @Transactional
-    public User update(Long id, User userDetails) {
+    public User update(Long id, User userDetails) throws BadRequestException {
         User existing = findById(id);
 
         // Verificar si el nuevo email ya está en uso por OTRO usuario

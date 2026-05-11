@@ -1,0 +1,4 @@
+com\example\crudusuarios\repository\UsuarioRepository.class
+com\example\crudusuarios\entity\Usuario.class
+com\example\crudusuarios\controller\UsuarioController.class
+com\example\crudusuarios\CrudUsuariosApplication.class

@@ -16,4 +16,4 @@ public record RescheduleRequestDTO(
 
     @NotNull(message = "La nueva hora es obligatoria.")
     @JsonFormat(pattern = "HH:mm")
-    LocalTime nuevaHora
+    LocalTime nuevaHora) {}

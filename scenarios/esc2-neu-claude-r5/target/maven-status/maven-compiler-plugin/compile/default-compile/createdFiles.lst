@@ -1,0 +1,9 @@
+com\appointments\api\model\entity\Cita$CitaBuilder.class
+com\appointments\api\service\impl\CitaServiceImpl.class
+com\appointments\api\controller\GlobalExceptionHandler.class
+com\appointments\api\AppointmentsApiApplication.class
+com\appointments\api\model\entity\Cita$EstadoCita.class
+com\appointments\api\model\entity\Cita.class
+com\appointments\api\repository\CitaRepository.class
+com\appointments\api\controller\CitaController.class
+com\appointments\api\service\CitaService.class

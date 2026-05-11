@@ -1,0 +1,9 @@
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-ind-gpt-r5\src\main\java\com\ejemplo\citas\controller\CitaController.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-ind-gpt-r5\src\main\java\com\ejemplo\citas\exception\GlobalExceptionHandler.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-ind-gpt-r5\src\main\java\com\ejemplo\citas\exception\RecursoNoEncontradoException.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-ind-gpt-r5\src\main\java\com\ejemplo\citas\exception\ReglaNegocioException.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-ind-gpt-r5\src\main\java\com\ejemplo\citas\model\entity\Cita.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-ind-gpt-r5\src\main\java\com\ejemplo\citas\repository\CitaRepository.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-ind-gpt-r5\src\main\java\com\ejemplo\citas\ReservasCitasApplication.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-ind-gpt-r5\src\main\java\com\ejemplo\citas\service\CitaService.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-ind-gpt-r5\src\main\java\com\ejemplo\citas\service\impl\CitaServiceImpl.java

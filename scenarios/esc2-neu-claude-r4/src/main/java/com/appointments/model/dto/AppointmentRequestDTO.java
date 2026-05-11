@@ -26,4 +26,4 @@ public record AppointmentRequestDTO(
 
     @NotBlank(message = "El motivo es obligatorio.")
     @Size(max = 255, message = "El motivo no puede superar 255 caracteres.")
-    String motivo
+    String motivo) {}

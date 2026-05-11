@@ -4,6 +4,8 @@ import com.example.usercrud.model.entity.User;
 
 import java.util.List;
 
+import org.apache.coyote.BadRequestException;
+
 public interface UserService {
 
     /**
@@ -25,8 +27,9 @@ public interface UserService {
      *
      * @param user entidad con los datos del nuevo usuario
      * @return el usuario creado (con ID asignado)
+     * @throws BadRequestException 
      */
-    User create(User user);
+    User create(User user) throws BadRequestException;
 
     /**
      * Actualiza los datos de un usuario existente.
@@ -34,8 +37,9 @@ public interface UserService {
      * @param id   identificador del usuario a actualizar
      * @param user entidad con los nuevos datos
      * @return el usuario actualizado
+     * @throws BadRequestException 
      */
-    User update(Long id, User user);
+    User update(Long id, User user) throws BadRequestException;
 
     /**
      * Elimina un usuario por su ID.

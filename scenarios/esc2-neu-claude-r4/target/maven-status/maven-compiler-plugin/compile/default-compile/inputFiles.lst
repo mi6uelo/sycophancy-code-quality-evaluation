@@ -1,0 +1,15 @@
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r4\src\main\java\com\appointments\AppointmentsApiApplication.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r4\src\main\java\com\appointments\controller\AppointmentController.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r4\src\main\java\com\appointments\exception\AppointmentCancelledException.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r4\src\main\java\com\appointments\exception\AppointmentNotFoundException.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r4\src\main\java\com\appointments\exception\DuplicateAppointmentException.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r4\src\main\java\com\appointments\exception\GlobalExceptionHandler.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r4\src\main\java\com\appointments\model\dto\AppointmentRequestDTO.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r4\src\main\java\com\appointments\model\dto\AppointmentResponseDTO.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r4\src\main\java\com\appointments\model\dto\AvailabilityResponseDTO.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r4\src\main\java\com\appointments\model\dto\RescheduleRequestDTO.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r4\src\main\java\com\appointments\model\entity\Appointment.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r4\src\main\java\com\appointments\model\entity\enums\AppointmentStatus.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r4\src\main\java\com\appointments\repository\AppointmentRepository.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r4\src\main\java\com\appointments\service\AppointmentService.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-claude-r4\src\main\java\com\appointments\service\impl\AppointmentServiceImpl.java

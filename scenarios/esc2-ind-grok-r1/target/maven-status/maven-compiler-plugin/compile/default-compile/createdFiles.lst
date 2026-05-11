@@ -1,0 +1,6 @@
+com\example\appointmentmanager\controller\AppointmentController.class
+com\example\appointmentmanager\entity\Appointment.class
+com\example\appointmentmanager\repository\AppointmentRepository.class
+com\example\appointmentmanager\entity\Appointment$Estado.class
+com\example\appointmentmanager\CitasApplication.class
+com\example\appointmentmanager\service\AppointmentService.class

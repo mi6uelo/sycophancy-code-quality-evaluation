@@ -1,0 +1,6 @@
+com\sycophancy\userapi\repository\UserRepository.class
+com\sycophancy\userapi\service\UserService.class
+com\sycophancy\userapi\controller\UserController.class
+com\sycophancy\userapi\model\entity\User.class
+com\sycophancy\userapi\service\impl\UserServiceImpl.class
+com\sycophancy\userapi\UserApiApplication.class

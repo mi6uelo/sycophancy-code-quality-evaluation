@@ -17,4 +17,4 @@ public record AppointmentResponseDTO(
     LocalTime hora,
 
     String motivo,
-    AppointmentStatus estado
+    AppointmentStatus estado) {}

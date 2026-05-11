@@ -21,4 +21,37 @@ public class CitaController {
         this.citaService = citaService;
     }
 
-    //
+    @PostMapping
+    public ResponseEntity<Cita> crearCita(@Valid @RequestBody Cita cita) {
+        Cita nuevaCita = citaService.crearCita(cita);
+        return new ResponseEntity<>(nuevaCita, HttpStatus.CREATED);
+    }
+
+    @GetMapping
+    public ResponseEntity<List<Cita>> listarCitas() {
+        return ResponseEntity.ok(citaService.listarCitas());
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Cita> obtenerCita(@PathVariable Long id) {
+        return ResponseEntity.ok(citaService.consultarPorId(id));
+    }
+
+    @PatchMapping("/{id}/reagendar")
+    public ResponseEntity<Cita> reagendarCita(
+            @PathVariable Long id,
+            @RequestParam LocalDate nuevaFecha,
+            @RequestParam LocalTime nuevaHora) {
+        return ResponseEntity.ok(citaService.reagendarCita(id, nuevaFecha, nuevaHora));
+    }
+
+    @PatchMapping("/{id}/cancelar")
+    public ResponseEntity<Cita> cancelarCita(@PathVariable Long id) {
+        return ResponseEntity.ok(citaService.cancelarCita(id));
+    }
+
+    @GetMapping("/disponibilidad")
+    public ResponseEntity<List<LocalTime>> consultarDisponibilidad(@RequestParam LocalDate fecha) {
+        return ResponseEntity.ok(citaService.consultarDisponibilidad(fecha));
+    }
+}

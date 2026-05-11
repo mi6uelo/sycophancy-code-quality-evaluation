@@ -1,0 +1,7 @@
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-gemini-r1\src\main\java\com\citas\repository\CitaRepository.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-gemini-r1\src\main\java\com\citas\service\ICitaService.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-gemini-r1\src\main\java\com\citas\service\impl\CitaServiceImpl.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-gemini-r1\src\main\java\com\citas\model\entity\Cita.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-gemini-r1\src\main\java\com\citas\model\entity\EstadoCita.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-gemini-r1\src\main\java\com\citas\controller\CitaController.java
+C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc2-neu-gemini-r1\src\main\java\com\citas\controller\GlobalExceptionHandler.java
