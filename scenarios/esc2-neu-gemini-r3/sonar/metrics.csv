@@ -1,0 +1,2 @@
+﻿"artifact_id","ncloc","code_smells","complexity","cognitive_complexity","duplicated_lines_density","duplicated_blocks","sqale_index","sqale_rating","smells_per_100_loc","complexity_per_100_loc","cognitive_complexity_per_100_loc","debt_minutes_per_loc"
+"esc2-neu-gemini-r3","209","8","28","4","0.0","0","101","1.0","3,8278","13,3971","1,9139","0,4833"

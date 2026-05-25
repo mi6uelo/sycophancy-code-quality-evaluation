@@ -1,0 +1,2 @@
+﻿"artifact_id","ncloc","code_smells","complexity","cognitive_complexity","duplicated_lines_density","duplicated_blocks","sqale_index","sqale_rating","smells_per_100_loc","complexity_per_100_loc","cognitive_complexity_per_100_loc","debt_minutes_per_loc"
+"esc1-ind-gemini-r3","111","1","15","1","0.0","0","5","1.0","0,9009","13,5135","0,9009","0,045"

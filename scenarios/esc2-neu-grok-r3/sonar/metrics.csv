@@ -1,0 +1,2 @@
+﻿"artifact_id","ncloc","code_smells","complexity","cognitive_complexity","duplicated_lines_density","duplicated_blocks","sqale_index","sqale_rating","smells_per_100_loc","complexity_per_100_loc","cognitive_complexity_per_100_loc","debt_minutes_per_loc"
+"esc2-neu-grok-r3","328","7","39","6","0.0","0","27","1.0","2,1341","11,8902","1,8293","0,0823"

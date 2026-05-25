@@ -1,0 +1,48 @@
+﻿{
+    "component":  {
+                      "key":  "esc2-neu-gpt-r3",
+                      "name":  "esc2-neu-gpt-r3",
+                      "description":  "Parent pom providing dependency and plugin management for applications built with Maven",
+                      "qualifier":  "TRK",
+                      "measures":  [
+                                       {
+                                           "metric":  "complexity",
+                                           "value":  "48"
+                                       },
+                                       {
+                                           "metric":  "code_smells",
+                                           "value":  "17",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "duplicated_lines_density",
+                                           "value":  "0.0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "cognitive_complexity",
+                                           "value":  "20",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "duplicated_blocks",
+                                           "value":  "0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "ncloc",
+                                           "value":  "368"
+                                       },
+                                       {
+                                           "metric":  "sqale_index",
+                                           "value":  "340",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "sqale_rating",
+                                           "value":  "1.0",
+                                           "bestValue":  true
+                                       }
+                                   ]
+                  }
+}

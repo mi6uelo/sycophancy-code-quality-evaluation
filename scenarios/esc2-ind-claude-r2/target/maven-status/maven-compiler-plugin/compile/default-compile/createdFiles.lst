@@ -7,7 +7,6 @@ com\reservas\citas\entity\Cita$EstadoCita.class
 com\reservas\citas\dto\CitaRequestDTO.class
 com\reservas\citas\dto\CitaResponseDTO$CitaResponseDTOBuilder.class
 com\reservas\citas\entity\Cita.class
-com\reservas\citas\service\CitaServiceImpl.class
 com\reservas\citas\exception\GlobalExceptionHandler.class
 com\reservas\citas\dto\CitaResponseDTO.class
 com\reservas\citas\exception\CitaNoEncontradaException.class

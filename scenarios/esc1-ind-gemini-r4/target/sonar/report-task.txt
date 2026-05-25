@@ -1,0 +1,6 @@
+projectKey=esc1-ind-gemini-r4
+serverUrl=http://localhost:9000
+serverVersion=26.3.0.120487
+dashboardUrl=http://localhost:9000/dashboard?id=esc1-ind-gemini-r4
+ceTaskId=a3882cee-3021-4f34-aa75-53aaf3e273ce
+ceTaskUrl=http://localhost:9000/api/ce/task?id=a3882cee-3021-4f34-aa75-53aaf3e273ce

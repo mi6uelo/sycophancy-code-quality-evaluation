@@ -1,0 +1,2 @@
+﻿"artifact_id","ncloc","code_smells","complexity","cognitive_complexity","duplicated_lines_density","duplicated_blocks","sqale_index","sqale_rating","smells_per_100_loc","complexity_per_100_loc","cognitive_complexity_per_100_loc","debt_minutes_per_loc"
+"esc1-neu-claude-r5","306","4","21","5","0.0","0","10","1.0","1,3072","6,8627","1,634","0,0327"

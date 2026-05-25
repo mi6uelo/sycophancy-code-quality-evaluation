@@ -1,0 +1,562 @@
+﻿[
+    {
+        "Proyecto":  "esc1-ind-claude-r1",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc1-ind-claude-r1\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc1-ind-claude-r1.log"
+    },
+    {
+        "Proyecto":  "esc1-ind-claude-r2",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc1-ind-claude-r2\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc1-ind-claude-r2.log"
+    },
+    {
+        "Proyecto":  "esc1-ind-claude-r3",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc1-ind-claude-r3\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc1-ind-claude-r3.log"
+    },
+    {
+        "Proyecto":  "esc1-ind-claude-r4",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc1-ind-claude-r4\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc1-ind-claude-r4.log"
+    },
+    {
+        "Proyecto":  "esc1-ind-claude-r5",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc1-ind-claude-r5\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc1-ind-claude-r5.log"
+    },
+    {
+        "Proyecto":  "esc1-ind-gemini-r1",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc1-ind-gemini-r1\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc1-ind-gemini-r1.log"
+    },
+    {
+        "Proyecto":  "esc1-ind-gemini-r2",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc1-ind-gemini-r2\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc1-ind-gemini-r2.log"
+    },
+    {
+        "Proyecto":  "esc1-ind-gemini-r3",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc1-ind-gemini-r3\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc1-ind-gemini-r3.log"
+    },
+    {
+        "Proyecto":  "esc1-ind-gemini-r4",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc1-ind-gemini-r4\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc1-ind-gemini-r4.log"
+    },
+    {
+        "Proyecto":  "esc1-ind-gemini-r5",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc1-ind-gemini-r5\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc1-ind-gemini-r5.log"
+    },
+    {
+        "Proyecto":  "esc1-ind-gpt-r1",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc1-ind-gpt-r1\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc1-ind-gpt-r1.log"
+    },
+    {
+        "Proyecto":  "esc1-ind-gpt-r2",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc1-ind-gpt-r2\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc1-ind-gpt-r2.log"
+    },
+    {
+        "Proyecto":  "esc1-ind-gpt-r3",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc1-ind-gpt-r3\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc1-ind-gpt-r3.log"
+    },
+    {
+        "Proyecto":  "esc1-ind-gpt-r4",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc1-ind-gpt-r4\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc1-ind-gpt-r4.log"
+    },
+    {
+        "Proyecto":  "esc1-ind-gpt-r5",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc1-ind-gpt-r5\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc1-ind-gpt-r5.log"
+    },
+    {
+        "Proyecto":  "esc1-ind-grok-r1",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc1-ind-grok-r1\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc1-ind-grok-r1.log"
+    },
+    {
+        "Proyecto":  "esc1-ind-grok-r2",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc1-ind-grok-r2\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc1-ind-grok-r2.log"
+    },
+    {
+        "Proyecto":  "esc1-ind-grok-r3",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc1-ind-grok-r3\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc1-ind-grok-r3.log"
+    },
+    {
+        "Proyecto":  "esc1-ind-grok-r4",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc1-ind-grok-r4\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc1-ind-grok-r4.log"
+    },
+    {
+        "Proyecto":  "esc1-ind-grok-r5",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc1-ind-grok-r5\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc1-ind-grok-r5.log"
+    },
+    {
+        "Proyecto":  "esc1-neu-claude-r1",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc1-neu-claude-r1\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc1-neu-claude-r1.log"
+    },
+    {
+        "Proyecto":  "esc1-neu-claude-r2",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc1-neu-claude-r2\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc1-neu-claude-r2.log"
+    },
+    {
+        "Proyecto":  "esc1-neu-claude-r3",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc1-neu-claude-r3\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc1-neu-claude-r3.log"
+    },
+    {
+        "Proyecto":  "esc1-neu-claude-r4",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc1-neu-claude-r4\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc1-neu-claude-r4.log"
+    },
+    {
+        "Proyecto":  "esc1-neu-claude-r5",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc1-neu-claude-r5\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc1-neu-claude-r5.log"
+    },
+    {
+        "Proyecto":  "esc1-neu-gemini-r1",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc1-neu-gemini-r1\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc1-neu-gemini-r1.log"
+    },
+    {
+        "Proyecto":  "esc1-neu-gemini-r2",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc1-neu-gemini-r2\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc1-neu-gemini-r2.log"
+    },
+    {
+        "Proyecto":  "esc1-neu-gemini-r3",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc1-neu-gemini-r3\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc1-neu-gemini-r3.log"
+    },
+    {
+        "Proyecto":  "esc1-neu-gemini-r4",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc1-neu-gemini-r4\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc1-neu-gemini-r4.log"
+    },
+    {
+        "Proyecto":  "esc1-neu-gemini-r5",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc1-neu-gemini-r5\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc1-neu-gemini-r5.log"
+    },
+    {
+        "Proyecto":  "esc1-neu-gpt-r1",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc1-neu-gpt-r1\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc1-neu-gpt-r1.log"
+    },
+    {
+        "Proyecto":  "esc1-neu-gpt-r2",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc1-neu-gpt-r2\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc1-neu-gpt-r2.log"
+    },
+    {
+        "Proyecto":  "esc1-neu-gpt-r3",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc1-neu-gpt-r3\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc1-neu-gpt-r3.log"
+    },
+    {
+        "Proyecto":  "esc1-neu-gpt-r4",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc1-neu-gpt-r4\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc1-neu-gpt-r4.log"
+    },
+    {
+        "Proyecto":  "esc1-neu-gpt-r5",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc1-neu-gpt-r5\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc1-neu-gpt-r5.log"
+    },
+    {
+        "Proyecto":  "esc1-neu-grok-r1",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc1-neu-grok-r1\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc1-neu-grok-r1.log"
+    },
+    {
+        "Proyecto":  "esc1-neu-grok-r2",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc1-neu-grok-r2\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc1-neu-grok-r2.log"
+    },
+    {
+        "Proyecto":  "esc1-neu-grok-r3",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc1-neu-grok-r3\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc1-neu-grok-r3.log"
+    },
+    {
+        "Proyecto":  "esc1-neu-grok-r4",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc1-neu-grok-r4\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc1-neu-grok-r4.log"
+    },
+    {
+        "Proyecto":  "esc1-neu-grok-r5",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc1-neu-grok-r5\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc1-neu-grok-r5.log"
+    },
+    {
+        "Proyecto":  "esc2-ind-claude-r1",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc2-ind-claude-r1\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc2-ind-claude-r1.log"
+    },
+    {
+        "Proyecto":  "esc2-ind-claude-r2",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc2-ind-claude-r2\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc2-ind-claude-r2.log"
+    },
+    {
+        "Proyecto":  "esc2-ind-claude-r3",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc2-ind-claude-r3\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc2-ind-claude-r3.log"
+    },
+    {
+        "Proyecto":  "esc2-ind-claude-r4",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc2-ind-claude-r4\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc2-ind-claude-r4.log"
+    },
+    {
+        "Proyecto":  "esc2-ind-claude-r5",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc2-ind-claude-r5\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc2-ind-claude-r5.log"
+    },
+    {
+        "Proyecto":  "esc2-ind-gemini-r1",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc2-ind-gemini-r1\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc2-ind-gemini-r1.log"
+    },
+    {
+        "Proyecto":  "esc2-ind-gemini-r2",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc2-ind-gemini-r2\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc2-ind-gemini-r2.log"
+    },
+    {
+        "Proyecto":  "esc2-ind-gemini-r3",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc2-ind-gemini-r3\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc2-ind-gemini-r3.log"
+    },
+    {
+        "Proyecto":  "esc2-ind-gemini-r4",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc2-ind-gemini-r4\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc2-ind-gemini-r4.log"
+    },
+    {
+        "Proyecto":  "esc2-ind-gemini-r5",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc2-ind-gemini-r5\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc2-ind-gemini-r5.log"
+    },
+    {
+        "Proyecto":  "esc2-ind-gpt-r1",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc2-ind-gpt-r1\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc2-ind-gpt-r1.log"
+    },
+    {
+        "Proyecto":  "esc2-ind-gpt-r2",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc2-ind-gpt-r2\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc2-ind-gpt-r2.log"
+    },
+    {
+        "Proyecto":  "esc2-ind-gpt-r3",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc2-ind-gpt-r3\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc2-ind-gpt-r3.log"
+    },
+    {
+        "Proyecto":  "esc2-ind-gpt-r4",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc2-ind-gpt-r4\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc2-ind-gpt-r4.log"
+    },
+    {
+        "Proyecto":  "esc2-ind-gpt-r5",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc2-ind-gpt-r5\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc2-ind-gpt-r5.log"
+    },
+    {
+        "Proyecto":  "esc2-ind-grok-r1",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc2-ind-grok-r1\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc2-ind-grok-r1.log"
+    },
+    {
+        "Proyecto":  "esc2-ind-grok-r2",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc2-ind-grok-r2\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc2-ind-grok-r2.log"
+    },
+    {
+        "Proyecto":  "esc2-ind-grok-r3",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc2-ind-grok-r3\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc2-ind-grok-r3.log"
+    },
+    {
+        "Proyecto":  "esc2-ind-grok-r4",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc2-ind-grok-r4\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc2-ind-grok-r4.log"
+    },
+    {
+        "Proyecto":  "esc2-ind-grok-r5",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc2-ind-grok-r5\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc2-ind-grok-r5.log"
+    },
+    {
+        "Proyecto":  "esc2-neu-claude-r1",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc2-neu-claude-r1\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc2-neu-claude-r1.log"
+    },
+    {
+        "Proyecto":  "esc2-neu-claude-r2",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc2-neu-claude-r2\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc2-neu-claude-r2.log"
+    },
+    {
+        "Proyecto":  "esc2-neu-claude-r3",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc2-neu-claude-r3\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc2-neu-claude-r3.log"
+    },
+    {
+        "Proyecto":  "esc2-neu-claude-r4",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc2-neu-claude-r4\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc2-neu-claude-r4.log"
+    },
+    {
+        "Proyecto":  "esc2-neu-claude-r5",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc2-neu-claude-r5\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc2-neu-claude-r5.log"
+    },
+    {
+        "Proyecto":  "esc2-neu-gemini-r1",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc2-neu-gemini-r1\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc2-neu-gemini-r1.log"
+    },
+    {
+        "Proyecto":  "esc2-neu-gemini-r2",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc2-neu-gemini-r2\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc2-neu-gemini-r2.log"
+    },
+    {
+        "Proyecto":  "esc2-neu-gemini-r3",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc2-neu-gemini-r3\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc2-neu-gemini-r3.log"
+    },
+    {
+        "Proyecto":  "esc2-neu-gemini-r4",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc2-neu-gemini-r4\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc2-neu-gemini-r4.log"
+    },
+    {
+        "Proyecto":  "esc2-neu-gemini-r5",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc2-neu-gemini-r5\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc2-neu-gemini-r5.log"
+    },
+    {
+        "Proyecto":  "esc2-neu-gpt-r1",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc2-neu-gpt-r1\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc2-neu-gpt-r1.log"
+    },
+    {
+        "Proyecto":  "esc2-neu-gpt-r2",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc2-neu-gpt-r2\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc2-neu-gpt-r2.log"
+    },
+    {
+        "Proyecto":  "esc2-neu-gpt-r3",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc2-neu-gpt-r3\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc2-neu-gpt-r3.log"
+    },
+    {
+        "Proyecto":  "esc2-neu-gpt-r4",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc2-neu-gpt-r4\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc2-neu-gpt-r4.log"
+    },
+    {
+        "Proyecto":  "esc2-neu-gpt-r5",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc2-neu-gpt-r5\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc2-neu-gpt-r5.log"
+    },
+    {
+        "Proyecto":  "esc2-neu-grok-r1",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc2-neu-grok-r1\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc2-neu-grok-r1.log"
+    },
+    {
+        "Proyecto":  "esc2-neu-grok-r2",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc2-neu-grok-r2\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc2-neu-grok-r2.log"
+    },
+    {
+        "Proyecto":  "esc2-neu-grok-r3",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc2-neu-grok-r3\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc2-neu-grok-r3.log"
+    },
+    {
+        "Proyecto":  "esc2-neu-grok-r4",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc2-neu-grok-r4\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc2-neu-grok-r4.log"
+    },
+    {
+        "Proyecto":  "esc2-neu-grok-r5",
+        "Estado":  "EXITOSO",
+        "ExitCode":  0,
+        "Script":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\esc2-neu-grok-r5\\run-sonar-metrics.ps1",
+        "Log":  "C:\\ws_ui\\sycophancy-code-quality-evaluation\\scenarios\\_sonar_logs\\esc2-neu-grok-r5.log"
+    }
+]

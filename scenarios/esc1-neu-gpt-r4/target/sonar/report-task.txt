@@ -1,0 +1,6 @@
+projectKey=esc1-neu-gpt-r4
+serverUrl=http://localhost:9000
+serverVersion=26.3.0.120487
+dashboardUrl=http://localhost:9000/dashboard?id=esc1-neu-gpt-r4
+ceTaskId=f7168ac2-aa6d-4b55-a5e9-aa79571152eb
+ceTaskUrl=http://localhost:9000/api/ce/task?id=f7168ac2-aa6d-4b55-a5e9-aa79571152eb

@@ -1,0 +1,6 @@
+projectKey=esc2-ind-gpt-r3
+serverUrl=http://localhost:9000
+serverVersion=26.3.0.120487
+dashboardUrl=http://localhost:9000/dashboard?id=esc2-ind-gpt-r3
+ceTaskId=6b39cf0e-f613-4a30-86d1-9e471d5a0493
+ceTaskUrl=http://localhost:9000/api/ce/task?id=6b39cf0e-f613-4a30-86d1-9e471d5a0493

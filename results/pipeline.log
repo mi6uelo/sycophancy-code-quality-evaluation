@@ -1,0 +1,1919 @@
+﻿Inicio pipeline: 05/24/2026 02:24:09
+2026-05-24 02:24:09 - Buscando proyectos Maven en: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios
+2026-05-24 02:24:11 - Proyectos detectados: 80
+2026-05-24 02:24:11 - ---------------------------------------------
+2026-05-24 02:24:11 - Procesando proyecto: esc1-ind-claude-r1
+2026-05-24 02:24:11 - Ruta: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-claude-r1
+2026-05-24 02:24:11 - Ejecutando: mvn clean compile -DskipTests
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.ejemplo:user-crud >------------------------
+[INFO] Building user-crud 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.4.1:clean (default-clean) @ user-crud ---
+[INFO] Deleting C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-claude-r1\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ user-crud ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ user-crud ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 4 source files with javac [debug parameters release 21] to target\classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  8.089 s
+[INFO] Finished at: 2026-05-24T02:24:22-05:00
+[INFO] ------------------------------------------------------------------------
+2026-05-24 02:24:22 - CÃ³digo de salida: 0
+2026-05-24 02:24:22 - CompilaciÃ³n exitosa para esc1-ind-claude-r1
+2026-05-24 02:24:22 - Se detectÃ³ src/test/java para esc1-ind-claude-r1
+2026-05-24 02:24:22 - Ejecutando: "C:\sonar-scanner\bin\sonar-scanner.bat" ^
+-D"sonar.projectKey=esc1-ind-claude-r1" ^
+-D"sonar.projectName=esc1-ind-claude-r1" ^
+-D"sonar.projectVersion=1.0" ^
+-D"sonar.host.url=http://localhost:9000" ^
+-D"sonar.token=squ_45e0236c450b2a36ae6684b525853266e4f27573" ^
+-D"sonar.sources=src/main/java" ^
+-D"sonar.tests=src/test/java" ^
+-D"sonar.java.binaries=target/classes" ^
+-D"sonar.sourceEncoding=UTF-8"
+02:24:23.862 INFO  Scanner configuration file: C:\sonar-scanner\bin\..\conf\sonar-scanner.properties
+02:24:23.873 INFO  Project root configuration file: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-claude-r1\sonar-project.properties
+02:24:23.920 INFO  SonarScanner CLI 8.0.1.6346
+02:24:23.935 INFO  Windows 11 10.0 amd64
+02:24:31.915 INFO  Communicating with SonarQube Community Build 26.3.0.120487
+02:24:31.916 INFO  JRE provisioning: os[windows], arch[amd64]
+02:24:33.214 INFO  Starting SonarScanner Engine...
+02:24:33.216 INFO  Java 21.0.9 Eclipse Adoptium (64-bit)
+02:24:41.388 INFO  Load global settings
+02:24:41.642 INFO  Load global settings (done) | time=253ms
+02:24:41.648 INFO  Server id: 147B411E-AZ1l02SrM30eaTn17ORx
+02:24:41.664 INFO  Loading required plugins
+02:24:41.664 INFO  Load plugins index
+02:24:41.710 INFO  Load plugins index (done) | time=44ms
+02:24:41.710 INFO  Load/download plugins
+02:24:41.817 INFO  Load/download plugins (done) | time=107ms
+02:24:42.578 INFO  Process project properties
+02:24:42.619 INFO  Process project properties (done) | time=42ms
+02:24:42.647 INFO  Project key: esc1-ind-claude-r1
+02:24:42.648 INFO  Base dir: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-claude-r1
+02:24:42.648 INFO  Working dir: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-claude-r1\.scannerwork
+02:24:42.668 INFO  Load project settings for component key: 'esc1-ind-claude-r1'
+02:24:42.698 INFO  Load project settings for component key: 'esc1-ind-claude-r1' (done) | time=30ms
+02:24:42.755 INFO  Load quality profiles
+02:24:42.921 INFO  Load quality profiles (done) | time=165ms
+02:24:43.029 INFO  Load active rules
+02:24:44.172 INFO  Load active rules (done) | time=1144ms
+02:24:44.194 INFO  Load analysis cache
+02:24:45.055 INFO  Load analysis cache (326 bytes) | time=861ms
+02:24:45.523 INFO  Preprocessing files...
+02:24:45.764 INFO  1 language detected in 4 preprocessed files (done) | time=239ms
+02:24:45.765 INFO  0 files ignored because of scm ignore settings
+02:24:45.766 INFO  Loading plugins for detected languages
+02:24:45.766 INFO  Load/download plugins
+02:24:45.794 INFO  Load/download plugins (done) | time=26ms
+02:24:46.076 INFO  Load project repositories
+02:24:46.454 INFO  Load project repositories (done) | time=381ms
+02:24:46.523 INFO  Indexing files...
+02:24:46.523 INFO  Project configuration:
+02:24:46.552 INFO  4 files indexed (done) | time=28ms
+02:24:46.555 INFO  Quality profile for java: Sonar way
+02:24:46.556 INFO  ------------- Run sensors on module esc1-ind-claude-r1
+02:24:46.694 INFO  Load metrics repository
+02:24:46.754 INFO  Load metrics repository (done) | time=57ms
+02:24:48.715 INFO  Sensor JavaSensor [java]
+02:24:48.762 INFO  Server-side caching is enabled. The Java analyzer will not try to leverage data from a previous analysis.
+02:24:48.765 INFO  Using ECJ batch to parse 4 Main java source files with batch size 160 KB.
+02:24:49.460 INFO  Starting batch processing.
+02:24:50.472 INFO  The Java analyzer cannot skip unchanged files in this context. A full analysis is performed for all files.
+02:24:51.228 INFO  100% analyzed
+02:24:51.228 INFO  Batch processing: Done.
+02:24:51.230 INFO  Did not optimize analysis for any files, performed a full analysis for all 4 files.
+02:24:51.232 WARN  Dependencies/libraries were not provided for analysis of SOURCE files. The 'sonar.java.libraries' property is empty. Verify your configuration, as you might end up with less precise results.
+02:24:51.234 WARN  Unresolved imports/types have been detected during analysis. Enable DEBUG mode to see them.
+02:24:51.234 WARN  Use of preview features have been detected during analysis. Enable DEBUG mode to see them.
+02:24:51.234 INFO  No "Test" source files to scan.
+02:24:51.236 INFO  No "Generated" source files to scan.
+02:24:51.236 INFO  Sensor JavaSensor [java] (done) | time=2521ms
+02:24:51.237 INFO  Sensor JaCoCo XML Report Importer [jacoco]
+02:24:51.237 INFO  'sonar.coverage.jacoco.xmlReportPaths' is not defined. Using default locations: target/site/jacoco/jacoco.xml,target/site/jacoco-it/jacoco.xml,build/reports/jacoco/test/jacocoTestReport.xml
+02:24:51.240 INFO  No report imported, no coverage information will be imported by JaCoCo XML Report Importer
+02:24:51.240 INFO  Sensor JaCoCo XML Report Importer [jacoco] (done) | time=4ms
+02:24:51.240 INFO  Sensor IaC hadolint report Sensor [iac]
+02:24:51.242 INFO  Sensor IaC hadolint report Sensor [iac] (done) | time=0ms
+02:24:51.242 INFO  Sensor Java Config Sensor [iac]
+02:24:51.252 INFO  There are no files to be analyzed for the Java language
+02:24:51.254 INFO  Sensor Java Config Sensor [iac] (done) | time=12ms
+02:24:51.254 INFO  Sensor IaC Docker Sensor [iac]
+02:24:51.255 INFO  There are no files to be analyzed for the Docker language
+02:24:51.255 INFO  Sensor IaC Docker Sensor [iac] (done) | time=3ms
+02:24:51.255 INFO  Sensor SurefireSensor [java]
+02:24:51.255 INFO  parsing [C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-claude-r1\target\surefire-reports]
+02:24:51.258 INFO  Sensor SurefireSensor [java] (done) | time=3ms
+02:24:51.258 INFO  Sensor TextAndSecretsSensor [text]
+02:24:51.288 INFO  Available processors: 8
+02:24:51.288 INFO  Using 8 threads for analysis.
+02:24:51.879 INFO  The property "sonar.tests" is not set. To improve the analysis accuracy, we categorize a file as a test file if any of the following is true:
+  * The filename starts with "test"
+  * The filename contains "test." or "tests."
+  * Any directory in the file path is named: "doc", "docs", "test", "tests", "mock" or "mocks"
+  * Any directory in the file path has a name ending in "test" or "tests"
+
+02:24:51.929 INFO  Start fetching files for the text and secrets analysis
+02:24:52.211 INFO  Using Git CLI to retrieve dirty files
+02:24:53.650 INFO  Retrieving language associated files and files included via "sonar.text.inclusions" that are tracked by git
+02:24:53.650 INFO  Starting the text and secrets analysis
+02:24:53.655 INFO  4 source files to be analyzed for the text and secrets analysis
+02:24:53.689 INFO  4/4 source files have been analyzed for the text and secrets analysis
+02:24:53.689 INFO  Sensor TextAndSecretsSensor [text] (done) | time=2431ms
+02:24:53.703 INFO  ------------- Run sensors on project
+02:24:54.015 INFO  Sensor JavaProjectSensor [java]
+02:24:54.020 INFO  Sensor JavaProjectSensor [java] (done) | time=5ms
+02:24:54.021 INFO  Sensor Zero Coverage Sensor
+02:24:54.034 INFO  Sensor Zero Coverage Sensor (done) | time=13ms
+02:24:54.034 INFO  Sensor Java CPD Block Indexer
+02:24:54.074 INFO  Sensor Java CPD Block Indexer (done) | time=40ms
+02:24:54.075 INFO  ------------- Gather SCA dependencies on project
+02:24:54.078 INFO  Dependency analysis skipped
+02:24:54.098 INFO  CPD Executor 2 files had no CPD blocks
+02:24:54.098 INFO  CPD Executor Calculating CPD for 2 files
+02:24:54.116 INFO  CPD Executor CPD calculation finished (done) | time=16ms
+02:24:54.134 INFO  SCM revision ID '954d22d5082459f19497af681fd5297d7da23592'
+02:24:54.371 INFO  Analysis report generated in 213ms, dir size=271.9 kB
+02:24:54.755 INFO  Analysis report compressed in 385ms, zip size=35.4 kB
+02:24:54.926 INFO  Analysis report uploaded in 171ms
+02:24:54.929 INFO  ANALYSIS SUCCESSFUL, you can find the results at: http://localhost:9000/dashboard?id=esc1-ind-claude-r1
+02:24:54.930 INFO  Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+02:24:54.930 INFO  More about the report processing at http://localhost:9000/api/ce/task?id=fb626464-1d66-4fba-9f2e-e305c8ca41c5
+02:24:54.963 INFO  Analysis total time: 13.059 s
+02:24:54.966 INFO  SonarScanner Engine completed successfully
+02:24:55.161 INFO  EXECUTION SUCCESS
+02:24:55.161 INFO  Total time: 31.306s
+2026-05-24 02:24:56 - CÃ³digo de salida: 0
+2026-05-24 02:24:56 - SonarScanner finalizÃ³ correctamente para esc1-ind-claude-r1
+2026-05-24 02:25:01 - ERROR exportando mÃ©tricas esc1-ind-claude-r1: Error en el servidor remoto: (404) No se encontró.
+2026-05-24 02:25:01 - Proyecto finalizado esc1-ind-claude-r1 en 50.7676836 segundos
+2026-05-24 02:25:01 - ---------------------------------------------
+2026-05-24 02:25:01 - Procesando proyecto: esc1-ind-claude-r2
+2026-05-24 02:25:01 - Ruta: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-claude-r2
+2026-05-24 02:25:01 - Ejecutando: mvn clean compile -DskipTests
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.example:user-crud >------------------------
+[INFO] Building user-crud 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.4.1:clean (default-clean) @ user-crud ---
+[INFO] Deleting C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-claude-r2\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ user-crud ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ user-crud ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 4 source files with javac [debug parameters release 21] to target\classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.576 s
+[INFO] Finished at: 2026-05-24T02:25:08-05:00
+[INFO] ------------------------------------------------------------------------
+2026-05-24 02:25:09 - CÃ³digo de salida: 0
+2026-05-24 02:25:09 - CompilaciÃ³n exitosa para esc1-ind-claude-r2
+2026-05-24 02:25:09 - Se detectÃ³ src/test/java para esc1-ind-claude-r2
+2026-05-24 02:25:09 - Ejecutando: "C:\sonar-scanner\bin\sonar-scanner.bat" ^
+-D"sonar.projectKey=esc1-ind-claude-r2" ^
+-D"sonar.projectName=esc1-ind-claude-r2" ^
+-D"sonar.projectVersion=1.0" ^
+-D"sonar.host.url=http://localhost:9000" ^
+-D"sonar.token=squ_45e0236c450b2a36ae6684b525853266e4f27573" ^
+-D"sonar.sources=src/main/java" ^
+-D"sonar.tests=src/test/java" ^
+-D"sonar.java.binaries=target/classes" ^
+-D"sonar.sourceEncoding=UTF-8"
+02:25:09.713 INFO  Scanner configuration file: C:\sonar-scanner\bin\..\conf\sonar-scanner.properties
+02:25:09.717 INFO  Project root configuration file: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-claude-r2\sonar-project.properties
+02:25:09.765 INFO  SonarScanner CLI 8.0.1.6346
+02:25:09.778 INFO  Windows 11 10.0 amd64
+02:25:16.632 INFO  Communicating with SonarQube Community Build 26.3.0.120487
+02:25:16.633 INFO  JRE provisioning: os[windows], arch[amd64]
+02:25:17.411 INFO  Starting SonarScanner Engine...
+02:25:17.411 INFO  Java 21.0.9 Eclipse Adoptium (64-bit)
+02:25:26.877 INFO  Load global settings
+02:25:27.133 INFO  Load global settings (done) | time=256ms
+02:25:27.144 INFO  Server id: 147B411E-AZ1l02SrM30eaTn17ORx
+02:25:27.165 INFO  Loading required plugins
+02:25:27.168 INFO  Load plugins index
+02:25:27.197 INFO  Load plugins index (done) | time=32ms
+02:25:27.200 INFO  Load/download plugins
+02:25:27.308 INFO  Load/download plugins (done) | time=111ms
+02:25:28.145 INFO  Process project properties
+02:25:28.177 INFO  Process project properties (done) | time=38ms
+02:25:28.203 INFO  Project key: esc1-ind-claude-r2
+02:25:28.203 INFO  Base dir: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-claude-r2
+02:25:28.203 INFO  Working dir: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-claude-r2\.scannerwork
+02:25:28.222 INFO  Load project settings for component key: 'esc1-ind-claude-r2'
+02:25:28.247 INFO  Load project settings for component key: 'esc1-ind-claude-r2' (done) | time=26ms
+02:25:28.297 INFO  Load quality profiles
+02:25:28.376 INFO  Load quality profiles (done) | time=80ms
+02:25:28.492 INFO  Load active rules
+02:25:29.704 INFO  Load active rules (done) | time=1209ms
+02:25:29.720 INFO  Load analysis cache
+02:25:29.742 INFO  Load analysis cache (404) | time=19ms
+02:25:30.255 INFO  Preprocessing files...
+02:25:30.447 INFO  1 language detected in 4 preprocessed files (done) | time=190ms
+02:25:30.447 INFO  0 files ignored because of scm ignore settings
+02:25:30.450 INFO  Loading plugins for detected languages
+02:25:30.450 INFO  Load/download plugins
+02:25:30.466 INFO  Load/download plugins (done) | time=16ms
+02:25:30.752 INFO  Load project repositories
+02:25:31.087 INFO  Load project repositories (done) | time=337ms
+02:25:31.133 INFO  Indexing files...
+02:25:31.133 INFO  Project configuration:
+02:25:31.152 INFO  4 files indexed (done) | time=19ms
+02:25:31.155 INFO  Quality profile for java: Sonar way
+02:25:31.158 INFO  ------------- Run sensors on module esc1-ind-claude-r2
+02:25:31.333 INFO  Load metrics repository
+02:25:31.408 INFO  Load metrics repository (done) | time=72ms
+02:25:32.951 INFO  Sensor JavaSensor [java]
+02:25:32.987 INFO  Server-side caching is enabled. The Java analyzer will not try to leverage data from a previous analysis.
+02:25:32.991 INFO  Using ECJ batch to parse 4 Main java source files with batch size 160 KB.
+02:25:33.542 INFO  Starting batch processing.
+02:25:34.303 INFO  The Java analyzer cannot skip unchanged files in this context. A full analysis is performed for all files.
+02:25:34.986 INFO  100% analyzed
+02:25:34.986 INFO  Batch processing: Done.
+02:25:34.986 INFO  Did not optimize analysis for any files, performed a full analysis for all 4 files.
+02:25:34.989 WARN  Dependencies/libraries were not provided for analysis of SOURCE files. The 'sonar.java.libraries' property is empty. Verify your configuration, as you might end up with less precise results.
+02:25:34.989 WARN  Unresolved imports/types have been detected during analysis. Enable DEBUG mode to see them.
+02:25:34.991 WARN  Use of preview features have been detected during analysis. Enable DEBUG mode to see them.
+02:25:34.991 INFO  No "Test" source files to scan.
+02:25:34.991 INFO  No "Generated" source files to scan.
+02:25:34.991 INFO  Sensor JavaSensor [java] (done) | time=2041ms
+02:25:34.991 INFO  Sensor JaCoCo XML Report Importer [jacoco]
+02:25:34.991 INFO  'sonar.coverage.jacoco.xmlReportPaths' is not defined. Using default locations: target/site/jacoco/jacoco.xml,target/site/jacoco-it/jacoco.xml,build/reports/jacoco/test/jacocoTestReport.xml
+02:25:34.991 INFO  No report imported, no coverage information will be imported by JaCoCo XML Report Importer
+02:25:34.991 INFO  Sensor JaCoCo XML Report Importer [jacoco] (done) | time=0ms
+02:25:34.991 INFO  Sensor IaC hadolint report Sensor [iac]
+02:25:34.996 INFO  Sensor IaC hadolint report Sensor [iac] (done) | time=5ms
+02:25:34.996 INFO  Sensor Java Config Sensor [iac]
+02:25:35.006 INFO  There are no files to be analyzed for the Java language
+02:25:35.006 INFO  Sensor Java Config Sensor [iac] (done) | time=5ms
+02:25:35.006 INFO  Sensor IaC Docker Sensor [iac]
+02:25:35.006 INFO  There are no files to be analyzed for the Docker language
+02:25:35.009 INFO  Sensor IaC Docker Sensor [iac] (done) | time=0ms
+02:25:35.009 INFO  Sensor SurefireSensor [java]
+02:25:35.009 INFO  parsing [C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-claude-r2\target\surefire-reports]
+02:25:35.011 INFO  Sensor SurefireSensor [java] (done) | time=5ms
+02:25:35.011 INFO  Sensor TextAndSecretsSensor [text]
+02:25:35.031 INFO  Available processors: 8
+02:25:35.032 INFO  Using 8 threads for analysis.
+02:25:35.494 INFO  The property "sonar.tests" is not set. To improve the analysis accuracy, we categorize a file as a test file if any of the following is true:
+  * The filename starts with "test"
+  * The filename contains "test." or "tests."
+  * Any directory in the file path is named: "doc", "docs", "test", "tests", "mock" or "mocks"
+  * Any directory in the file path has a name ending in "test" or "tests"
+
+02:25:35.546 INFO  Start fetching files for the text and secrets analysis
+02:25:35.759 INFO  Using Git CLI to retrieve dirty files
+02:25:36.489 INFO  Retrieving language associated files and files included via "sonar.text.inclusions" that are tracked by git
+02:25:36.489 INFO  Starting the text and secrets analysis
+02:25:36.492 INFO  4 source files to be analyzed for the text and secrets analysis
+02:25:36.531 INFO  4/4 source files have been analyzed for the text and secrets analysis
+02:25:36.536 INFO  Sensor TextAndSecretsSensor [text] (done) | time=1520ms
+02:25:36.547 INFO  ------------- Run sensors on project
+02:25:36.769 INFO  Sensor JavaProjectSensor [java]
+02:25:36.776 INFO  Sensor JavaProjectSensor [java] (done) | time=4ms
+02:25:36.776 INFO  Sensor Zero Coverage Sensor
+02:25:36.792 INFO  Sensor Zero Coverage Sensor (done) | time=19ms
+02:25:36.795 INFO  Sensor Java CPD Block Indexer
+02:25:36.845 INFO  Sensor Java CPD Block Indexer (done) | time=50ms
+02:25:36.845 INFO  ------------- Gather SCA dependencies on project
+02:25:36.852 INFO  Dependency analysis skipped
+02:25:36.861 INFO  SCM Publisher SCM provider for this project is: git
+02:25:36.861 INFO  SCM Publisher 4 source files to be analyzed
+02:25:39.997 INFO  SCM Publisher 4/4 source files have been analyzed (done) | time=3136ms
+02:25:40.002 INFO  CPD Executor 2 files had no CPD blocks
+02:25:40.002 INFO  CPD Executor Calculating CPD for 2 files
+02:25:40.008 INFO  CPD Executor CPD calculation finished (done) | time=6ms
+02:25:40.019 INFO  SCM revision ID '954d22d5082459f19497af681fd5297d7da23592'
+02:25:40.210 INFO  Analysis report generated in 181ms, dir size=276.1 kB
+02:25:40.831 INFO  Analysis report compressed in 623ms, zip size=36.4 kB
+02:25:40.930 INFO  Analysis report uploaded in 99ms
+02:25:40.933 INFO  ANALYSIS SUCCESSFUL, you can find the results at: http://localhost:9000/dashboard?id=esc1-ind-claude-r2
+02:25:40.934 INFO  Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+02:25:40.934 INFO  More about the report processing at http://localhost:9000/api/ce/task?id=acf015ab-be39-481a-b8c3-b0035473bcdf
+02:25:40.966 INFO  Analysis total time: 13.539 s
+02:25:40.966 INFO  SonarScanner Engine completed successfully
+02:25:41.116 INFO  EXECUTION SUCCESS
+02:25:41.116 INFO  Total time: 31.414s
+2026-05-24 02:25:42 - CÃ³digo de salida: 0
+2026-05-24 02:25:42 - SonarScanner finalizÃ³ correctamente para esc1-ind-claude-r2
+2026-05-24 02:25:47 - ERROR exportando mÃ©tricas esc1-ind-claude-r2: Error en el servidor remoto: (404) No se encontró.
+2026-05-24 02:25:47 - Proyecto finalizado esc1-ind-claude-r2 en 45.2202412 segundos
+2026-05-24 02:25:47 - ---------------------------------------------
+2026-05-24 02:25:47 - Procesando proyecto: esc1-ind-claude-r3
+2026-05-24 02:25:47 - Ruta: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-claude-r3
+2026-05-24 02:25:47 - Ejecutando: mvn clean compile -DskipTests
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.ejemplo:crud-usuarios >----------------------
+[INFO] Building crud-usuarios 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.4.1:clean (default-clean) @ crud-usuarios ---
+[INFO] Deleting C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-claude-r3\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ crud-usuarios ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ crud-usuarios ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 4 source files with javac [debug parameters release 21] to target\classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.610 s
+[INFO] Finished at: 2026-05-24T02:25:54-05:00
+[INFO] ------------------------------------------------------------------------
+2026-05-24 02:25:54 - CÃ³digo de salida: 0
+2026-05-24 02:25:54 - CompilaciÃ³n exitosa para esc1-ind-claude-r3
+2026-05-24 02:25:54 - Se detectÃ³ src/test/java para esc1-ind-claude-r3
+2026-05-24 02:25:54 - Ejecutando: "C:\sonar-scanner\bin\sonar-scanner.bat" ^
+-D"sonar.projectKey=esc1-ind-claude-r3" ^
+-D"sonar.projectName=esc1-ind-claude-r3" ^
+-D"sonar.projectVersion=1.0" ^
+-D"sonar.host.url=http://localhost:9000" ^
+-D"sonar.token=squ_45e0236c450b2a36ae6684b525853266e4f27573" ^
+-D"sonar.sources=src/main/java" ^
+-D"sonar.tests=src/test/java" ^
+-D"sonar.java.binaries=target/classes" ^
+-D"sonar.sourceEncoding=UTF-8"
+02:25:54.894 INFO  Scanner configuration file: C:\sonar-scanner\bin\..\conf\sonar-scanner.properties
+02:25:54.901 INFO  Project root configuration file: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-claude-r3\sonar-project.properties
+02:25:54.934 INFO  SonarScanner CLI 8.0.1.6346
+02:25:54.943 INFO  Windows 11 10.0 amd64
+02:26:01.931 INFO  Communicating with SonarQube Community Build 26.3.0.120487
+02:26:01.932 INFO  JRE provisioning: os[windows], arch[amd64]
+02:26:02.759 INFO  Starting SonarScanner Engine...
+02:26:02.759 INFO  Java 21.0.9 Eclipse Adoptium (64-bit)
+02:26:11.607 INFO  Load global settings
+02:26:11.892 INFO  Load global settings (done) | time=283ms
+02:26:11.902 INFO  Server id: 147B411E-AZ1l02SrM30eaTn17ORx
+02:26:11.937 INFO  Loading required plugins
+02:26:11.937 INFO  Load plugins index
+02:26:11.974 INFO  Load plugins index (done) | time=35ms
+02:26:11.974 INFO  Load/download plugins
+02:26:12.056 INFO  Load/download plugins (done) | time=82ms
+02:26:12.826 INFO  Process project properties
+02:26:12.861 INFO  Process project properties (done) | time=38ms
+02:26:12.923 INFO  Project key: esc1-ind-claude-r3
+02:26:12.923 INFO  Base dir: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-claude-r3
+02:26:12.923 INFO  Working dir: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-claude-r3\.scannerwork
+02:26:12.963 INFO  Load project settings for component key: 'esc1-ind-claude-r3'
+02:26:12.997 INFO  Load project settings for component key: 'esc1-ind-claude-r3' (done) | time=34ms
+02:26:13.062 INFO  Load quality profiles
+02:26:13.162 INFO  Load quality profiles (done) | time=98ms
+02:26:13.290 INFO  Load active rules
+02:26:14.439 INFO  Load active rules (done) | time=1148ms
+02:26:14.474 INFO  Load analysis cache
+02:26:14.507 INFO  Load analysis cache (404) | time=33ms
+02:26:15.089 INFO  Preprocessing files...
+02:26:15.335 INFO  1 language detected in 4 preprocessed files (done) | time=245ms
+02:26:15.335 INFO  0 files ignored because of scm ignore settings
+02:26:15.337 INFO  Loading plugins for detected languages
+02:26:15.337 INFO  Load/download plugins
+02:26:15.358 INFO  Load/download plugins (done) | time=21ms
+02:26:15.630 INFO  Load project repositories
+02:26:15.825 INFO  Load project repositories (done) | time=195ms
+02:26:15.877 INFO  Indexing files...
+02:26:15.877 INFO  Project configuration:
+02:26:15.904 INFO  4 files indexed (done) | time=26ms
+02:26:15.904 INFO  Quality profile for java: Sonar way
+02:26:15.906 INFO  ------------- Run sensors on module esc1-ind-claude-r3
+02:26:16.030 INFO  Load metrics repository
+02:26:16.085 INFO  Load metrics repository (done) | time=54ms
+02:26:18.083 INFO  Sensor JavaSensor [java]
+02:26:18.139 INFO  Server-side caching is enabled. The Java analyzer will not try to leverage data from a previous analysis.
+02:26:18.142 INFO  Using ECJ batch to parse 4 Main java source files with batch size 160 KB.
+02:26:18.755 INFO  Starting batch processing.
+02:26:19.593 INFO  The Java analyzer cannot skip unchanged files in this context. A full analysis is performed for all files.
+02:26:20.473 INFO  100% analyzed
+02:26:20.473 INFO  Batch processing: Done.
+02:26:20.475 INFO  Did not optimize analysis for any files, performed a full analysis for all 4 files.
+02:26:20.479 WARN  Dependencies/libraries were not provided for analysis of SOURCE files. The 'sonar.java.libraries' property is empty. Verify your configuration, as you might end up with less precise results.
+02:26:20.481 WARN  Unresolved imports/types have been detected during analysis. Enable DEBUG mode to see them.
+02:26:20.483 WARN  Use of preview features have been detected during analysis. Enable DEBUG mode to see them.
+02:26:20.483 INFO  No "Test" source files to scan.
+02:26:20.483 INFO  No "Generated" source files to scan.
+02:26:20.483 INFO  Sensor JavaSensor [java] (done) | time=2400ms
+02:26:20.483 INFO  Sensor JaCoCo XML Report Importer [jacoco]
+02:26:20.486 INFO  'sonar.coverage.jacoco.xmlReportPaths' is not defined. Using default locations: target/site/jacoco/jacoco.xml,target/site/jacoco-it/jacoco.xml,build/reports/jacoco/test/jacocoTestReport.xml
+02:26:20.488 INFO  No report imported, no coverage information will be imported by JaCoCo XML Report Importer
+02:26:20.488 INFO  Sensor JaCoCo XML Report Importer [jacoco] (done) | time=3ms
+02:26:20.488 INFO  Sensor IaC hadolint report Sensor [iac]
+02:26:20.488 INFO  Sensor IaC hadolint report Sensor [iac] (done) | time=0ms
+02:26:20.492 INFO  Sensor Java Config Sensor [iac]
+02:26:20.506 INFO  There are no files to be analyzed for the Java language
+02:26:20.506 INFO  Sensor Java Config Sensor [iac] (done) | time=15ms
+02:26:20.506 INFO  Sensor IaC Docker Sensor [iac]
+02:26:20.508 INFO  There are no files to be analyzed for the Docker language
+02:26:20.508 INFO  Sensor IaC Docker Sensor [iac] (done) | time=2ms
+02:26:20.508 INFO  Sensor SurefireSensor [java]
+02:26:20.510 INFO  parsing [C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-claude-r3\target\surefire-reports]
+02:26:20.512 INFO  Sensor SurefireSensor [java] (done) | time=2ms
+02:26:20.512 INFO  Sensor TextAndSecretsSensor [text]
+02:26:20.530 INFO  Available processors: 8
+02:26:20.530 INFO  Using 8 threads for analysis.
+02:26:21.066 INFO  The property "sonar.tests" is not set. To improve the analysis accuracy, we categorize a file as a test file if any of the following is true:
+  * The filename starts with "test"
+  * The filename contains "test." or "tests."
+  * Any directory in the file path is named: "doc", "docs", "test", "tests", "mock" or "mocks"
+  * Any directory in the file path has a name ending in "test" or "tests"
+
+02:26:21.114 INFO  Start fetching files for the text and secrets analysis
+02:26:21.353 INFO  Using Git CLI to retrieve dirty files
+02:26:22.491 INFO  Retrieving language associated files and files included via "sonar.text.inclusions" that are tracked by git
+02:26:22.493 INFO  Starting the text and secrets analysis
+02:26:22.507 INFO  4 source files to be analyzed for the text and secrets analysis
+02:26:22.645 INFO  4/4 source files have been analyzed for the text and secrets analysis
+02:26:22.661 INFO  Sensor TextAndSecretsSensor [text] (done) | time=2151ms
+02:26:22.678 INFO  ------------- Run sensors on project
+02:26:23.196 INFO  Sensor JavaProjectSensor [java]
+02:26:23.203 INFO  Sensor JavaProjectSensor [java] (done) | time=7ms
+02:26:23.203 INFO  Sensor Zero Coverage Sensor
+02:26:23.227 INFO  Sensor Zero Coverage Sensor (done) | time=24ms
+02:26:23.227 INFO  Sensor Java CPD Block Indexer
+02:26:23.287 INFO  Sensor Java CPD Block Indexer (done) | time=60ms
+02:26:23.287 INFO  ------------- Gather SCA dependencies on project
+02:26:23.301 INFO  Dependency analysis skipped
+02:26:23.311 INFO  SCM Publisher SCM provider for this project is: git
+02:26:23.314 INFO  SCM Publisher 4 source files to be analyzed
+02:26:26.838 INFO  SCM Publisher 4/4 source files have been analyzed (done) | time=3524ms
+02:26:26.856 INFO  CPD Executor 2 files had no CPD blocks
+02:26:26.856 INFO  CPD Executor Calculating CPD for 2 files
+02:26:26.876 INFO  CPD Executor CPD calculation finished (done) | time=10ms
+02:26:26.897 INFO  SCM revision ID '954d22d5082459f19497af681fd5297d7da23592'
+02:26:27.206 INFO  Analysis report generated in 292ms, dir size=274.5 kB
+02:26:28.049 INFO  Analysis report compressed in 843ms, zip size=36.0 kB
+02:26:28.158 INFO  Analysis report uploaded in 108ms
+02:26:28.162 INFO  ANALYSIS SUCCESSFUL, you can find the results at: http://localhost:9000/dashboard?id=esc1-ind-claude-r3
+02:26:28.163 INFO  Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+02:26:28.163 INFO  More about the report processing at http://localhost:9000/api/ce/task?id=c2fe0283-153f-464e-a488-33bfd3a2d418
+02:26:28.207 INFO  Analysis total time: 16.058 s
+02:26:28.211 INFO  SonarScanner Engine completed successfully
+02:26:28.437 INFO  EXECUTION SUCCESS
+02:26:28.437 INFO  Total time: 33.551s
+2026-05-24 02:26:29 - CÃ³digo de salida: 0
+2026-05-24 02:26:29 - SonarScanner finalizÃ³ correctamente para esc1-ind-claude-r3
+2026-05-24 02:26:34 - ERROR exportando mÃ©tricas esc1-ind-claude-r3: Error en el servidor remoto: (404) No se encontró.
+2026-05-24 02:26:34 - Proyecto finalizado esc1-ind-claude-r3 en 47.303629 segundos
+2026-05-24 02:26:34 - ---------------------------------------------
+2026-05-24 02:26:34 - Procesando proyecto: esc1-ind-claude-r4
+2026-05-24 02:26:34 - Ruta: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-claude-r4
+2026-05-24 02:26:34 - Ejecutando: mvn clean compile -DskipTests
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.ejemplo:crud-usuarios >----------------------
+[INFO] Building crud-usuarios 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.4.1:clean (default-clean) @ crud-usuarios ---
+[INFO] Deleting C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-claude-r4\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ crud-usuarios ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ crud-usuarios ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 4 source files with javac [debug parameters release 21] to target\classes
+[INFO] Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.899 s
+[INFO] Finished at: 2026-05-24T02:26:42-05:00
+[INFO] ------------------------------------------------------------------------
+2026-05-24 02:26:43 - CÃ³digo de salida: 0
+2026-05-24 02:26:43 - CompilaciÃ³n exitosa para esc1-ind-claude-r4
+2026-05-24 02:26:43 - Se detectÃ³ src/test/java para esc1-ind-claude-r4
+2026-05-24 02:26:43 - Ejecutando: "C:\sonar-scanner\bin\sonar-scanner.bat" ^
+-D"sonar.projectKey=esc1-ind-claude-r4" ^
+-D"sonar.projectName=esc1-ind-claude-r4" ^
+-D"sonar.projectVersion=1.0" ^
+-D"sonar.host.url=http://localhost:9000" ^
+-D"sonar.token=squ_45e0236c450b2a36ae6684b525853266e4f27573" ^
+-D"sonar.sources=src/main/java" ^
+-D"sonar.tests=src/test/java" ^
+-D"sonar.java.binaries=target/classes" ^
+-D"sonar.sourceEncoding=UTF-8"
+02:26:43.775 INFO  Scanner configuration file: C:\sonar-scanner\bin\..\conf\sonar-scanner.properties
+02:26:43.781 INFO  Project root configuration file: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-claude-r4\sonar-project.properties
+02:26:43.814 INFO  SonarScanner CLI 8.0.1.6346
+02:26:43.827 INFO  Windows 11 10.0 amd64
+02:26:50.871 INFO  Communicating with SonarQube Community Build 26.3.0.120487
+02:26:50.871 INFO  JRE provisioning: os[windows], arch[amd64]
+02:26:51.738 INFO  Starting SonarScanner Engine...
+02:26:51.740 INFO  Java 21.0.9 Eclipse Adoptium (64-bit)
+02:26:59.465 INFO  Load global settings
+02:26:59.724 INFO  Load global settings (done) | time=258ms
+02:26:59.736 INFO  Server id: 147B411E-AZ1l02SrM30eaTn17ORx
+02:26:59.761 INFO  Loading required plugins
+02:26:59.764 INFO  Load plugins index
+02:26:59.793 INFO  Load plugins index (done) | time=32ms
+02:26:59.793 INFO  Load/download plugins
+02:26:59.885 INFO  Load/download plugins (done) | time=92ms
+02:27:00.485 INFO  Process project properties
+02:27:00.512 INFO  Process project properties (done) | time=30ms
+02:27:00.537 INFO  Project key: esc1-ind-claude-r4
+02:27:00.537 INFO  Base dir: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-claude-r4
+02:27:00.540 INFO  Working dir: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-claude-r4\.scannerwork
+02:27:00.560 INFO  Load project settings for component key: 'esc1-ind-claude-r4'
+02:27:00.587 INFO  Load project settings for component key: 'esc1-ind-claude-r4' (done) | time=31ms
+02:27:00.638 INFO  Load quality profiles
+02:27:00.721 INFO  Load quality profiles (done) | time=81ms
+02:27:00.859 INFO  Load active rules
+02:27:01.633 INFO  Load active rules (done) | time=778ms
+02:27:01.646 INFO  Load analysis cache
+02:27:01.667 INFO  Load analysis cache (404) | time=18ms
+02:27:02.101 INFO  Preprocessing files...
+02:27:02.293 INFO  1 language detected in 4 preprocessed files (done) | time=193ms
+02:27:02.293 INFO  0 files ignored because of scm ignore settings
+02:27:02.296 INFO  Loading plugins for detected languages
+02:27:02.296 INFO  Load/download plugins
+02:27:02.307 INFO  Load/download plugins (done) | time=11ms
+02:27:02.526 INFO  Load project repositories
+02:27:02.843 INFO  Load project repositories (done) | time=316ms
+02:27:02.891 INFO  Indexing files...
+02:27:02.892 INFO  Project configuration:
+02:27:02.909 INFO  4 files indexed (done) | time=18ms
+02:27:02.909 INFO  Quality profile for java: Sonar way
+02:27:02.909 INFO  ------------- Run sensors on module esc1-ind-claude-r4
+02:27:03.042 INFO  Load metrics repository
+02:27:03.085 INFO  Load metrics repository (done) | time=45ms
+02:27:04.475 INFO  Sensor JavaSensor [java]
+02:27:04.517 INFO  Server-side caching is enabled. The Java analyzer will not try to leverage data from a previous analysis.
+02:27:04.518 INFO  Using ECJ batch to parse 4 Main java source files with batch size 160 KB.
+02:27:05.027 INFO  Starting batch processing.
+02:27:05.686 INFO  The Java analyzer cannot skip unchanged files in this context. A full analysis is performed for all files.
+02:27:06.516 INFO  100% analyzed
+02:27:06.517 INFO  Batch processing: Done.
+02:27:06.517 INFO  Did not optimize analysis for any files, performed a full analysis for all 4 files.
+02:27:06.521 WARN  Dependencies/libraries were not provided for analysis of SOURCE files. The 'sonar.java.libraries' property is empty. Verify your configuration, as you might end up with less precise results.
+02:27:06.522 WARN  Unresolved imports/types have been detected during analysis. Enable DEBUG mode to see them.
+02:27:06.522 WARN  Use of preview features have been detected during analysis. Enable DEBUG mode to see them.
+02:27:06.523 INFO  No "Test" source files to scan.
+02:27:06.523 INFO  No "Generated" source files to scan.
+02:27:06.524 INFO  Sensor JavaSensor [java] (done) | time=2050ms
+02:27:06.524 INFO  Sensor JaCoCo XML Report Importer [jacoco]
+02:27:06.525 INFO  'sonar.coverage.jacoco.xmlReportPaths' is not defined. Using default locations: target/site/jacoco/jacoco.xml,target/site/jacoco-it/jacoco.xml,build/reports/jacoco/test/jacocoTestReport.xml
+02:27:06.525 INFO  No report imported, no coverage information will be imported by JaCoCo XML Report Importer
+02:27:06.525 INFO  Sensor JaCoCo XML Report Importer [jacoco] (done) | time=1ms
+02:27:06.525 INFO  Sensor IaC hadolint report Sensor [iac]
+02:27:06.525 INFO  Sensor IaC hadolint report Sensor [iac] (done) | time=0ms
+02:27:06.525 INFO  Sensor Java Config Sensor [iac]
+02:27:06.535 INFO  There are no files to be analyzed for the Java language
+02:27:06.535 INFO  Sensor Java Config Sensor [iac] (done) | time=10ms
+02:27:06.535 INFO  Sensor IaC Docker Sensor [iac]
+02:27:06.535 INFO  There are no files to be analyzed for the Docker language
+02:27:06.535 INFO  Sensor IaC Docker Sensor [iac] (done) | time=0ms
+02:27:06.535 INFO  Sensor SurefireSensor [java]
+02:27:06.535 INFO  parsing [C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-claude-r4\target\surefire-reports]
+02:27:06.541 INFO  Sensor SurefireSensor [java] (done) | time=6ms
+02:27:06.541 INFO  Sensor TextAndSecretsSensor [text]
+02:27:06.563 INFO  Available processors: 8
+02:27:06.563 INFO  Using 8 threads for analysis.
+02:27:07.102 INFO  The property "sonar.tests" is not set. To improve the analysis accuracy, we categorize a file as a test file if any of the following is true:
+  * The filename starts with "test"
+  * The filename contains "test." or "tests."
+  * Any directory in the file path is named: "doc", "docs", "test", "tests", "mock" or "mocks"
+  * Any directory in the file path has a name ending in "test" or "tests"
+
+02:27:07.161 INFO  Start fetching files for the text and secrets analysis
+02:27:07.377 INFO  Using Git CLI to retrieve dirty files
+02:27:08.036 INFO  Retrieving language associated files and files included via "sonar.text.inclusions" that are tracked by git
+02:27:08.036 INFO  Starting the text and secrets analysis
+02:27:08.036 INFO  4 source files to be analyzed for the text and secrets analysis
+02:27:08.073 INFO  4/4 source files have been analyzed for the text and secrets analysis
+02:27:08.074 INFO  Sensor TextAndSecretsSensor [text] (done) | time=1533ms
+02:27:08.080 INFO  ------------- Run sensors on project
+02:27:08.323 INFO  Sensor JavaProjectSensor [java]
+02:27:08.328 INFO  Sensor JavaProjectSensor [java] (done) | time=5ms
+02:27:08.328 INFO  Sensor Zero Coverage Sensor
+02:27:08.346 INFO  Sensor Zero Coverage Sensor (done) | time=17ms
+02:27:08.346 INFO  Sensor Java CPD Block Indexer
+02:27:08.384 INFO  Sensor Java CPD Block Indexer (done) | time=39ms
+02:27:08.384 INFO  ------------- Gather SCA dependencies on project
+02:27:08.394 INFO  Dependency analysis skipped
+02:27:08.399 INFO  SCM Publisher SCM provider for this project is: git
+02:27:08.401 INFO  SCM Publisher 4 source files to be analyzed
+02:27:10.973 INFO  SCM Publisher 4/4 source files have been analyzed (done) | time=2572ms
+02:27:10.975 INFO  CPD Executor 2 files had no CPD blocks
+02:27:10.975 INFO  CPD Executor Calculating CPD for 2 files
+02:27:10.986 INFO  CPD Executor CPD calculation finished (done) | time=11ms
+02:27:10.997 INFO  SCM revision ID '954d22d5082459f19497af681fd5297d7da23592'
+02:27:11.179 INFO  Analysis report generated in 167ms, dir size=272.5 kB
+02:27:11.653 INFO  Analysis report compressed in 471ms, zip size=35.4 kB
+02:27:11.770 INFO  Analysis report uploaded in 115ms
+02:27:11.773 INFO  ANALYSIS SUCCESSFUL, you can find the results at: http://localhost:9000/dashboard?id=esc1-ind-claude-r4
+02:27:11.773 INFO  Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+02:27:11.773 INFO  More about the report processing at http://localhost:9000/api/ce/task?id=3ad027ee-b089-46e0-a300-a46a4d060ec5
+02:27:11.803 INFO  Analysis total time: 11.844 s
+02:27:11.805 INFO  SonarScanner Engine completed successfully
+02:27:11.967 INFO  EXECUTION SUCCESS
+02:27:11.967 INFO  Total time: 28.199s
+2026-05-24 02:27:12 - CÃ³digo de salida: 0
+2026-05-24 02:27:12 - SonarScanner finalizÃ³ correctamente para esc1-ind-claude-r4
+2026-05-24 02:27:17 - ERROR exportando mÃ©tricas esc1-ind-claude-r4: Error en el servidor remoto: (404) No se encontró.
+2026-05-24 02:27:17 - Proyecto finalizado esc1-ind-claude-r4 en 43.3183705 segundos
+2026-05-24 02:27:17 - ---------------------------------------------
+2026-05-24 02:27:17 - Procesando proyecto: esc1-ind-claude-r5
+2026-05-24 02:27:17 - Ruta: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-claude-r5
+2026-05-24 02:27:17 - Ejecutando: mvn clean compile -DskipTests
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.example:user-crud >------------------------
+[INFO] Building user-crud 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.4.1:clean (default-clean) @ user-crud ---
+[INFO] Deleting C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-claude-r5\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ user-crud ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ user-crud ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 4 source files with javac [debug parameters release 21] to target\classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.302 s
+[INFO] Finished at: 2026-05-24T02:27:25-05:00
+[INFO] ------------------------------------------------------------------------
+2026-05-24 02:27:25 - CÃ³digo de salida: 0
+2026-05-24 02:27:25 - CompilaciÃ³n exitosa para esc1-ind-claude-r5
+2026-05-24 02:27:25 - Se detectÃ³ src/test/java para esc1-ind-claude-r5
+2026-05-24 02:27:25 - Ejecutando: "C:\sonar-scanner\bin\sonar-scanner.bat" ^
+-D"sonar.projectKey=esc1-ind-claude-r5" ^
+-D"sonar.projectName=esc1-ind-claude-r5" ^
+-D"sonar.projectVersion=1.0" ^
+-D"sonar.host.url=http://localhost:9000" ^
+-D"sonar.token=squ_45e0236c450b2a36ae6684b525853266e4f27573" ^
+-D"sonar.sources=src/main/java" ^
+-D"sonar.tests=src/test/java" ^
+-D"sonar.java.binaries=target/classes" ^
+-D"sonar.sourceEncoding=UTF-8"
+02:27:26.417 INFO  Scanner configuration file: C:\sonar-scanner\bin\..\conf\sonar-scanner.properties
+02:27:26.423 INFO  Project root configuration file: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-claude-r5\sonar-project.properties
+02:27:26.461 INFO  SonarScanner CLI 8.0.1.6346
+02:27:26.474 INFO  Windows 11 10.0 amd64
+02:27:33.803 INFO  Communicating with SonarQube Community Build 26.3.0.120487
+02:27:33.808 INFO  JRE provisioning: os[windows], arch[amd64]
+02:27:34.643 INFO  Starting SonarScanner Engine...
+02:27:34.645 INFO  Java 21.0.9 Eclipse Adoptium (64-bit)
+02:27:42.599 INFO  Load global settings
+02:27:42.792 INFO  Load global settings (done) | time=193ms
+02:27:42.800 INFO  Server id: 147B411E-AZ1l02SrM30eaTn17ORx
+02:27:42.818 INFO  Loading required plugins
+02:27:42.818 INFO  Load plugins index
+02:27:42.838 INFO  Load plugins index (done) | time=20ms
+02:27:42.840 INFO  Load/download plugins
+02:27:42.895 INFO  Load/download plugins (done) | time=57ms
+02:27:43.457 INFO  Process project properties
+02:27:43.485 INFO  Process project properties (done) | time=28ms
+02:27:43.508 INFO  Project key: esc1-ind-claude-r5
+02:27:43.509 INFO  Base dir: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-claude-r5
+02:27:43.509 INFO  Working dir: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-claude-r5\.scannerwork
+02:27:43.528 INFO  Load project settings for component key: 'esc1-ind-claude-r5'
+02:27:43.560 INFO  Load project settings for component key: 'esc1-ind-claude-r5' (done) | time=32ms
+02:27:43.611 INFO  Load quality profiles
+02:27:43.696 INFO  Load quality profiles (done) | time=84ms
+02:27:43.836 INFO  Load active rules
+02:27:44.575 INFO  Load active rules (done) | time=739ms
+02:27:44.586 INFO  Load analysis cache
+02:27:44.598 INFO  Load analysis cache (404) | time=12ms
+02:27:45.024 INFO  Preprocessing files...
+02:27:45.209 INFO  1 language detected in 4 preprocessed files (done) | time=184ms
+02:27:45.209 INFO  0 files ignored because of scm ignore settings
+02:27:45.212 INFO  Loading plugins for detected languages
+02:27:45.212 INFO  Load/download plugins
+02:27:45.228 INFO  Load/download plugins (done) | time=10ms
+02:27:45.474 INFO  Load project repositories
+02:27:45.795 INFO  Load project repositories (done) | time=321ms
+02:27:45.845 INFO  Indexing files...
+02:27:45.846 INFO  Project configuration:
+02:27:45.868 INFO  4 files indexed (done) | time=23ms
+02:27:45.873 INFO  Quality profile for java: Sonar way
+02:27:45.874 INFO  ------------- Run sensors on module esc1-ind-claude-r5
+02:27:46.011 INFO  Load metrics repository
+02:27:46.059 INFO  Load metrics repository (done) | time=51ms
+02:27:47.455 INFO  Sensor JavaSensor [java]
+02:27:47.495 INFO  Server-side caching is enabled. The Java analyzer will not try to leverage data from a previous analysis.
+02:27:47.498 INFO  Using ECJ batch to parse 4 Main java source files with batch size 160 KB.
+02:27:48.084 INFO  Starting batch processing.
+02:27:48.945 INFO  The Java analyzer cannot skip unchanged files in this context. A full analysis is performed for all files.
+02:27:49.752 INFO  100% analyzed
+02:27:49.752 INFO  Batch processing: Done.
+02:27:49.753 INFO  Did not optimize analysis for any files, performed a full analysis for all 4 files.
+02:27:49.754 WARN  Dependencies/libraries were not provided for analysis of SOURCE files. The 'sonar.java.libraries' property is empty. Verify your configuration, as you might end up with less precise results.
+02:27:49.756 WARN  Unresolved imports/types have been detected during analysis. Enable DEBUG mode to see them.
+02:27:49.756 WARN  Use of preview features have been detected during analysis. Enable DEBUG mode to see them.
+02:27:49.756 INFO  No "Test" source files to scan.
+02:27:49.756 INFO  No "Generated" source files to scan.
+02:27:49.759 INFO  Sensor JavaSensor [java] (done) | time=2304ms
+02:27:49.759 INFO  Sensor JaCoCo XML Report Importer [jacoco]
+02:27:49.760 INFO  'sonar.coverage.jacoco.xmlReportPaths' is not defined. Using default locations: target/site/jacoco/jacoco.xml,target/site/jacoco-it/jacoco.xml,build/reports/jacoco/test/jacocoTestReport.xml
+02:27:49.760 INFO  No report imported, no coverage information will be imported by JaCoCo XML Report Importer
+02:27:49.762 INFO  Sensor JaCoCo XML Report Importer [jacoco] (done) | time=4ms
+02:27:49.762 INFO  Sensor IaC hadolint report Sensor [iac]
+02:27:49.763 INFO  Sensor IaC hadolint report Sensor [iac] (done) | time=2ms
+02:27:49.763 INFO  Sensor Java Config Sensor [iac]
+02:27:49.770 INFO  There are no files to be analyzed for the Java language
+02:27:49.772 INFO  Sensor Java Config Sensor [iac] (done) | time=8ms
+02:27:49.772 INFO  Sensor IaC Docker Sensor [iac]
+02:27:49.773 INFO  There are no files to be analyzed for the Docker language
+02:27:49.774 INFO  Sensor IaC Docker Sensor [iac] (done) | time=3ms
+02:27:49.774 INFO  Sensor SurefireSensor [java]
+02:27:49.774 INFO  parsing [C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-claude-r5\target\surefire-reports]
+02:27:49.776 INFO  Sensor SurefireSensor [java] (done) | time=3ms
+02:27:49.776 INFO  Sensor TextAndSecretsSensor [text]
+02:27:49.797 INFO  Available processors: 8
+02:27:49.797 INFO  Using 8 threads for analysis.
+02:27:50.208 INFO  The property "sonar.tests" is not set. To improve the analysis accuracy, we categorize a file as a test file if any of the following is true:
+  * The filename starts with "test"
+  * The filename contains "test." or "tests."
+  * Any directory in the file path is named: "doc", "docs", "test", "tests", "mock" or "mocks"
+  * Any directory in the file path has a name ending in "test" or "tests"
+
+02:27:50.257 INFO  Start fetching files for the text and secrets analysis
+02:27:50.493 INFO  Using Git CLI to retrieve dirty files
+02:27:51.189 INFO  Retrieving language associated files and files included via "sonar.text.inclusions" that are tracked by git
+02:27:51.190 INFO  Starting the text and secrets analysis
+02:27:51.194 INFO  4 source files to be analyzed for the text and secrets analysis
+02:27:51.236 INFO  4/4 source files have been analyzed for the text and secrets analysis
+02:27:51.240 INFO  Sensor TextAndSecretsSensor [text] (done) | time=1462ms
+02:27:51.246 INFO  ------------- Run sensors on project
+02:27:51.532 INFO  Sensor JavaProjectSensor [java]
+02:27:51.535 INFO  Sensor JavaProjectSensor [java] (done) | time=5ms
+02:27:51.535 INFO  Sensor Zero Coverage Sensor
+02:27:51.556 INFO  Sensor Zero Coverage Sensor (done) | time=17ms
+02:27:51.556 INFO  Sensor Java CPD Block Indexer
+02:27:51.610 INFO  Sensor Java CPD Block Indexer (done) | time=56ms
+02:27:51.610 INFO  ------------- Gather SCA dependencies on project
+02:27:51.619 INFO  Dependency analysis skipped
+02:27:51.625 INFO  SCM Publisher SCM provider for this project is: git
+02:27:51.628 INFO  SCM Publisher 4 source files to be analyzed
+02:27:54.107 INFO  SCM Publisher 4/4 source files have been analyzed (done) | time=2478ms
+02:27:54.112 INFO  CPD Executor 2 files had no CPD blocks
+02:27:54.112 INFO  CPD Executor Calculating CPD for 2 files
+02:27:54.121 INFO  CPD Executor CPD calculation finished (done) | time=8ms
+02:27:54.134 INFO  SCM revision ID '954d22d5082459f19497af681fd5297d7da23592'
+02:27:54.330 INFO  Analysis report generated in 188ms, dir size=275.7 kB
+02:27:54.750 INFO  Analysis report compressed in 418ms, zip size=36.3 kB
+02:27:54.842 INFO  Analysis report uploaded in 91ms
+02:27:54.845 INFO  ANALYSIS SUCCESSFUL, you can find the results at: http://localhost:9000/dashboard?id=esc1-ind-claude-r5
+02:27:54.845 INFO  Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+02:27:54.845 INFO  More about the report processing at http://localhost:9000/api/ce/task?id=5d4dc970-789d-4a56-9663-b04991adffa4
+02:27:54.876 INFO  Analysis total time: 11.913 s
+02:27:54.878 INFO  SonarScanner Engine completed successfully
+02:27:55.017 INFO  EXECUTION SUCCESS
+02:27:55.018 INFO  Total time: 28.606s
+2026-05-24 02:27:55 - CÃ³digo de salida: 0
+2026-05-24 02:27:55 - SonarScanner finalizÃ³ correctamente para esc1-ind-claude-r5
+2026-05-24 02:28:00 - ERROR exportando mÃ©tricas esc1-ind-claude-r5: Error en el servidor remoto: (404) No se encontró.
+2026-05-24 02:28:00 - Proyecto finalizado esc1-ind-claude-r5 en 43.2464954 segundos
+2026-05-24 02:28:00 - ---------------------------------------------
+2026-05-24 02:28:00 - Procesando proyecto: esc1-ind-gemini-r1
+2026-05-24 02:28:00 - Ruta: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-gemini-r1
+2026-05-24 02:28:00 - Ejecutando: mvn clean compile -DskipTests
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.app:esc1-ind-gemini-r1 >---------------------
+[INFO] Building esc1-ind-gemini-r1 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ esc1-ind-gemini-r1 ---
+[INFO] Deleting C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-gemini-r1\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ esc1-ind-gemini-r1 ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ esc1-ind-gemini-r1 ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 4 source files with javac [debug release 21] to target\classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.340 s
+[INFO] Finished at: 2026-05-24T02:28:09-05:00
+[INFO] ------------------------------------------------------------------------
+2026-05-24 02:28:09 - CÃ³digo de salida: 0
+2026-05-24 02:28:09 - CompilaciÃ³n exitosa para esc1-ind-gemini-r1
+2026-05-24 02:28:09 - Se detectÃ³ src/test/java para esc1-ind-gemini-r1
+2026-05-24 02:28:09 - Ejecutando: "C:\sonar-scanner\bin\sonar-scanner.bat" ^
+-D"sonar.projectKey=esc1-ind-gemini-r1" ^
+-D"sonar.projectName=esc1-ind-gemini-r1" ^
+-D"sonar.projectVersion=1.0" ^
+-D"sonar.host.url=http://localhost:9000" ^
+-D"sonar.token=squ_45e0236c450b2a36ae6684b525853266e4f27573" ^
+-D"sonar.sources=src/main/java" ^
+-D"sonar.tests=src/test/java" ^
+-D"sonar.java.binaries=target/classes" ^
+-D"sonar.sourceEncoding=UTF-8"
+02:28:10.026 INFO  Scanner configuration file: C:\sonar-scanner\bin\..\conf\sonar-scanner.properties
+02:28:10.033 INFO  Project root configuration file: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-gemini-r1\sonar-project.properties
+02:28:10.064 INFO  SonarScanner CLI 8.0.1.6346
+02:28:10.072 INFO  Windows 11 10.0 amd64
+02:28:17.030 INFO  Communicating with SonarQube Community Build 26.3.0.120487
+02:28:17.033 INFO  JRE provisioning: os[windows], arch[amd64]
+02:28:17.849 INFO  Starting SonarScanner Engine...
+02:28:17.851 INFO  Java 21.0.9 Eclipse Adoptium (64-bit)
+02:28:26.250 INFO  Load global settings
+02:28:26.436 INFO  Load global settings (done) | time=184ms
+02:28:26.441 INFO  Server id: 147B411E-AZ1l02SrM30eaTn17ORx
+02:28:26.466 INFO  Loading required plugins
+02:28:26.468 INFO  Load plugins index
+02:28:26.483 INFO  Load plugins index (done) | time=17ms
+02:28:26.489 INFO  Load/download plugins
+02:28:26.555 INFO  Load/download plugins (done) | time=70ms
+02:28:27.230 INFO  Process project properties
+02:28:27.257 INFO  Process project properties (done) | time=25ms
+02:28:27.278 INFO  Project key: esc1-ind-gemini-r1
+02:28:27.281 INFO  Base dir: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-gemini-r1
+02:28:27.281 INFO  Working dir: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-gemini-r1\.scannerwork
+02:28:27.296 INFO  Load project settings for component key: 'esc1-ind-gemini-r1'
+02:28:27.322 INFO  Load project settings for component key: 'esc1-ind-gemini-r1' (done) | time=25ms
+02:28:27.385 INFO  Load quality profiles
+02:28:27.473 INFO  Load quality profiles (done) | time=87ms
+02:28:27.635 INFO  Load active rules
+02:28:28.455 INFO  Load active rules (done) | time=824ms
+02:28:28.473 INFO  Load analysis cache
+02:28:28.497 INFO  Load analysis cache (404) | time=20ms
+02:28:28.975 INFO  Preprocessing files...
+02:28:29.169 INFO  1 language detected in 4 preprocessed files (done) | time=194ms
+02:28:29.169 INFO  0 files ignored because of scm ignore settings
+02:28:29.173 INFO  Loading plugins for detected languages
+02:28:29.173 INFO  Load/download plugins
+02:28:29.189 INFO  Load/download plugins (done) | time=14ms
+02:28:29.421 INFO  Load project repositories
+02:28:29.580 INFO  Load project repositories (done) | time=158ms
+02:28:29.620 INFO  Indexing files...
+02:28:29.620 INFO  Project configuration:
+02:28:29.641 INFO  4 files indexed (done) | time=19ms
+02:28:29.643 INFO  Quality profile for java: Sonar way
+02:28:29.645 INFO  ------------- Run sensors on module esc1-ind-gemini-r1
+02:28:29.784 INFO  Load metrics repository
+02:28:29.829 INFO  Load metrics repository (done) | time=48ms
+02:28:31.310 INFO  Sensor JavaSensor [java]
+02:28:31.356 INFO  Server-side caching is enabled. The Java analyzer will not try to leverage data from a previous analysis.
+02:28:31.359 INFO  Using ECJ batch to parse 4 Main java source files with batch size 160 KB.
+02:28:31.891 INFO  Starting batch processing.
+02:28:32.660 INFO  The Java analyzer cannot skip unchanged files in this context. A full analysis is performed for all files.
+02:28:33.465 INFO  100% analyzed
+02:28:33.469 INFO  Batch processing: Done.
+02:28:33.469 INFO  Did not optimize analysis for any files, performed a full analysis for all 4 files.
+02:28:33.471 WARN  Dependencies/libraries were not provided for analysis of SOURCE files. The 'sonar.java.libraries' property is empty. Verify your configuration, as you might end up with less precise results.
+02:28:33.473 WARN  Unresolved imports/types have been detected during analysis. Enable DEBUG mode to see them.
+02:28:33.473 WARN  Use of preview features have been detected during analysis. Enable DEBUG mode to see them.
+02:28:33.473 INFO  No "Test" source files to scan.
+02:28:33.473 INFO  No "Generated" source files to scan.
+02:28:33.473 INFO  Sensor JavaSensor [java] (done) | time=2165ms
+02:28:33.473 INFO  Sensor JaCoCo XML Report Importer [jacoco]
+02:28:33.476 INFO  'sonar.coverage.jacoco.xmlReportPaths' is not defined. Using default locations: target/site/jacoco/jacoco.xml,target/site/jacoco-it/jacoco.xml,build/reports/jacoco/test/jacocoTestReport.xml
+02:28:33.479 INFO  No report imported, no coverage information will be imported by JaCoCo XML Report Importer
+02:28:33.480 INFO  Sensor JaCoCo XML Report Importer [jacoco] (done) | time=6ms
+02:28:33.480 INFO  Sensor IaC hadolint report Sensor [iac]
+02:28:33.480 INFO  Sensor IaC hadolint report Sensor [iac] (done) | time=1ms
+02:28:33.480 INFO  Sensor Java Config Sensor [iac]
+02:28:33.492 INFO  There are no files to be analyzed for the Java language
+02:28:33.492 INFO  Sensor Java Config Sensor [iac] (done) | time=12ms
+02:28:33.492 INFO  Sensor IaC Docker Sensor [iac]
+02:28:33.494 INFO  There are no files to be analyzed for the Docker language
+02:28:33.494 INFO  Sensor IaC Docker Sensor [iac] (done) | time=2ms
+02:28:33.494 INFO  Sensor SurefireSensor [java]
+02:28:33.494 INFO  parsing [C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-gemini-r1\target\surefire-reports]
+02:28:33.497 INFO  Sensor SurefireSensor [java] (done) | time=3ms
+02:28:33.497 INFO  Sensor TextAndSecretsSensor [text]
+02:28:33.520 INFO  Available processors: 8
+02:28:33.520 INFO  Using 8 threads for analysis.
+02:28:34.037 INFO  The property "sonar.tests" is not set. To improve the analysis accuracy, we categorize a file as a test file if any of the following is true:
+  * The filename starts with "test"
+  * The filename contains "test." or "tests."
+  * Any directory in the file path is named: "doc", "docs", "test", "tests", "mock" or "mocks"
+  * Any directory in the file path has a name ending in "test" or "tests"
+
+02:28:34.076 INFO  Start fetching files for the text and secrets analysis
+02:28:34.264 INFO  Using Git CLI to retrieve dirty files
+02:28:34.935 INFO  Retrieving language associated files and files included via "sonar.text.inclusions" that are tracked by git
+02:28:34.936 INFO  Starting the text and secrets analysis
+02:28:34.940 INFO  4 source files to be analyzed for the text and secrets analysis
+02:28:34.972 INFO  4/4 source files have been analyzed for the text and secrets analysis
+02:28:34.976 INFO  Sensor TextAndSecretsSensor [text] (done) | time=1478ms
+02:28:34.982 INFO  ------------- Run sensors on project
+02:28:35.230 INFO  Sensor JavaProjectSensor [java]
+02:28:35.234 INFO  Sensor JavaProjectSensor [java] (done) | time=4ms
+02:28:35.234 INFO  Sensor Zero Coverage Sensor
+02:28:35.256 INFO  Sensor Zero Coverage Sensor (done) | time=22ms
+02:28:35.256 INFO  Sensor Java CPD Block Indexer
+02:28:35.293 INFO  Sensor Java CPD Block Indexer (done) | time=37ms
+02:28:35.295 INFO  ------------- Gather SCA dependencies on project
+02:28:35.302 INFO  Dependency analysis skipped
+02:28:35.307 INFO  SCM Publisher SCM provider for this project is: git
+02:28:35.310 INFO  SCM Publisher 4 source files to be analyzed
+02:28:37.533 INFO  SCM Publisher 4/4 source files have been analyzed (done) | time=2223ms
+02:28:37.538 INFO  CPD Executor 2 files had no CPD blocks
+02:28:37.539 INFO  CPD Executor Calculating CPD for 2 files
+02:28:37.549 INFO  CPD Executor CPD calculation finished (done) | time=12ms
+02:28:37.562 INFO  SCM revision ID '954d22d5082459f19497af681fd5297d7da23592'
+02:28:37.764 INFO  Analysis report generated in 199ms, dir size=271.4 kB
+02:28:38.310 INFO  Analysis report compressed in 543ms, zip size=35.5 kB
+02:28:38.412 INFO  Analysis report uploaded in 105ms
+02:28:38.412 INFO  ANALYSIS SUCCESSFUL, you can find the results at: http://localhost:9000/dashboard?id=esc1-ind-gemini-r1
+02:28:38.412 INFO  Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+02:28:38.418 INFO  More about the report processing at http://localhost:9000/api/ce/task?id=ab217090-ef9b-4721-87ac-39aae26a1f18
+02:28:38.446 INFO  Analysis total time: 11.811 s
+02:28:38.449 INFO  SonarScanner Engine completed successfully
+02:28:38.608 INFO  EXECUTION SUCCESS
+02:28:38.610 INFO  Total time: 28.589s
+2026-05-24 02:28:39 - CÃ³digo de salida: 0
+2026-05-24 02:28:39 - SonarScanner finalizÃ³ correctamente para esc1-ind-gemini-r1
+2026-05-24 02:28:44 - ERROR exportando mÃ©tricas esc1-ind-gemini-r1: Error en el servidor remoto: (404) No se encontró.
+2026-05-24 02:28:44 - Proyecto finalizado esc1-ind-gemini-r1 en 43.6257545 segundos
+2026-05-24 02:28:44 - ---------------------------------------------
+2026-05-24 02:28:44 - Procesando proyecto: esc1-ind-gemini-r2
+2026-05-24 02:28:44 - Ruta: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-gemini-r2
+2026-05-24 02:28:44 - Ejecutando: mvn clean compile -DskipTests
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------------< com.app:user-crud >--------------------------
+[INFO] Building user-crud 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ user-crud ---
+[INFO] Deleting C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-gemini-r2\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ user-crud ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ user-crud ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 4 source files with javac [debug release 21] to target\classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.769 s
+[INFO] Finished at: 2026-05-24T02:28:51-05:00
+[INFO] ------------------------------------------------------------------------
+2026-05-24 02:28:51 - CÃ³digo de salida: 0
+2026-05-24 02:28:51 - CompilaciÃ³n exitosa para esc1-ind-gemini-r2
+2026-05-24 02:28:51 - Se detectÃ³ src/test/java para esc1-ind-gemini-r2
+2026-05-24 02:28:51 - Ejecutando: "C:\sonar-scanner\bin\sonar-scanner.bat" ^
+-D"sonar.projectKey=esc1-ind-gemini-r2" ^
+-D"sonar.projectName=esc1-ind-gemini-r2" ^
+-D"sonar.projectVersion=1.0" ^
+-D"sonar.host.url=http://localhost:9000" ^
+-D"sonar.token=squ_45e0236c450b2a36ae6684b525853266e4f27573" ^
+-D"sonar.sources=src/main/java" ^
+-D"sonar.tests=src/test/java" ^
+-D"sonar.java.binaries=target/classes" ^
+-D"sonar.sourceEncoding=UTF-8"
+02:28:52.617 INFO  Scanner configuration file: C:\sonar-scanner\bin\..\conf\sonar-scanner.properties
+02:28:52.620 INFO  Project root configuration file: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-gemini-r2\sonar-project.properties
+02:28:52.651 INFO  SonarScanner CLI 8.0.1.6346
+02:28:52.659 INFO  Windows 11 10.0 amd64
+02:29:00.076 INFO  Communicating with SonarQube Community Build 26.3.0.120487
+02:29:00.076 INFO  JRE provisioning: os[windows], arch[amd64]
+02:29:00.942 INFO  Starting SonarScanner Engine...
+02:29:00.943 INFO  Java 21.0.9 Eclipse Adoptium (64-bit)
+02:29:10.627 INFO  Load global settings
+02:29:10.810 INFO  Load global settings (done) | time=182ms
+02:29:10.816 INFO  Server id: 147B411E-AZ1l02SrM30eaTn17ORx
+02:29:10.835 INFO  Loading required plugins
+02:29:10.838 INFO  Load plugins index
+02:29:10.862 INFO  Load plugins index (done) | time=27ms
+02:29:10.862 INFO  Load/download plugins
+02:29:10.933 INFO  Load/download plugins (done) | time=68ms
+02:29:11.560 INFO  Process project properties
+02:29:11.758 INFO  EXECUTION FAILURE
+02:29:11.759 INFO  Total time: 19.149s
+2026-05-24 02:29:12 - CÃ³digo de salida: 1
+2026-05-24 02:29:12 - ERROR ejecutando SonarScanner para esc1-ind-gemini-r2
+2026-05-24 02:29:12 - ---------------------------------------------
+2026-05-24 02:29:12 - Procesando proyecto: esc1-ind-gemini-r3
+2026-05-24 02:29:12 - Ruta: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-gemini-r3
+2026-05-24 02:29:12 - Ejecutando: mvn clean compile -DskipTests
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.example:crud-usuarios >----------------------
+[INFO] Building crud-usuarios 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ crud-usuarios ---
+[INFO] Deleting C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-gemini-r3\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ crud-usuarios ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ crud-usuarios ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 4 source files with javac [debug release 21] to target\classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.362 s
+[INFO] Finished at: 2026-05-24T02:29:19-05:00
+[INFO] ------------------------------------------------------------------------
+2026-05-24 02:29:19 - CÃ³digo de salida: 0
+2026-05-24 02:29:19 - CompilaciÃ³n exitosa para esc1-ind-gemini-r3
+2026-05-24 02:29:19 - Se detectÃ³ src/test/java para esc1-ind-gemini-r3
+2026-05-24 02:29:19 - Ejecutando: "C:\sonar-scanner\bin\sonar-scanner.bat" ^
+-D"sonar.projectKey=esc1-ind-gemini-r3" ^
+-D"sonar.projectName=esc1-ind-gemini-r3" ^
+-D"sonar.projectVersion=1.0" ^
+-D"sonar.host.url=http://localhost:9000" ^
+-D"sonar.token=squ_45e0236c450b2a36ae6684b525853266e4f27573" ^
+-D"sonar.sources=src/main/java" ^
+-D"sonar.tests=src/test/java" ^
+-D"sonar.java.binaries=target/classes" ^
+-D"sonar.sourceEncoding=UTF-8"
+02:29:20.034 INFO  Scanner configuration file: C:\sonar-scanner\bin\..\conf\sonar-scanner.properties
+02:29:20.040 INFO  Project root configuration file: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-gemini-r3\sonar-project.properties
+02:29:20.073 INFO  SonarScanner CLI 8.0.1.6346
+02:29:20.082 INFO  Windows 11 10.0 amd64
+02:29:27.761 INFO  Communicating with SonarQube Community Build 26.3.0.120487
+02:29:27.763 INFO  JRE provisioning: os[windows], arch[amd64]
+02:29:28.569 INFO  Starting SonarScanner Engine...
+02:29:28.569 INFO  Java 21.0.9 Eclipse Adoptium (64-bit)
+02:29:36.324 INFO  Load global settings
+02:29:36.537 INFO  Load global settings (done) | time=211ms
+02:29:36.546 INFO  Server id: 147B411E-AZ1l02SrM30eaTn17ORx
+02:29:36.571 INFO  Loading required plugins
+02:29:36.571 INFO  Load plugins index
+02:29:36.595 INFO  Load plugins index (done) | time=20ms
+02:29:36.595 INFO  Load/download plugins
+02:29:36.671 INFO  Load/download plugins (done) | time=80ms
+02:29:37.417 INFO  Process project properties
+02:29:37.610 INFO  EXECUTION FAILURE
+02:29:37.611 INFO  Total time: 17.583s
+2026-05-24 02:29:38 - CÃ³digo de salida: 1
+2026-05-24 02:29:38 - ERROR ejecutando SonarScanner para esc1-ind-gemini-r3
+2026-05-24 02:29:38 - ---------------------------------------------
+2026-05-24 02:29:38 - Procesando proyecto: esc1-ind-gemini-r4
+2026-05-24 02:29:38 - Ruta: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-gemini-r4
+2026-05-24 02:29:38 - Ejecutando: mvn clean compile -DskipTests
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.example:user-crud >------------------------
+[INFO] Building user-crud 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ user-crud ---
+[INFO] Deleting C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-gemini-r4\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ user-crud ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ user-crud ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 4 source files with javac [debug release 21] to target\classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.591 s
+[INFO] Finished at: 2026-05-24T02:29:46-05:00
+[INFO] ------------------------------------------------------------------------
+2026-05-24 02:29:46 - CÃ³digo de salida: 0
+2026-05-24 02:29:46 - CompilaciÃ³n exitosa para esc1-ind-gemini-r4
+2026-05-24 02:29:46 - Se detectÃ³ src/test/java para esc1-ind-gemini-r4
+2026-05-24 02:29:46 - Ejecutando: "C:\sonar-scanner\bin\sonar-scanner.bat" ^
+-D"sonar.projectKey=esc1-ind-gemini-r4" ^
+-D"sonar.projectName=esc1-ind-gemini-r4" ^
+-D"sonar.projectVersion=1.0" ^
+-D"sonar.host.url=http://localhost:9000" ^
+-D"sonar.token=squ_45e0236c450b2a36ae6684b525853266e4f27573" ^
+-D"sonar.sources=src/main/java" ^
+-D"sonar.tests=src/test/java" ^
+-D"sonar.java.binaries=target/classes" ^
+-D"sonar.sourceEncoding=UTF-8"
+02:29:47.468 INFO  Scanner configuration file: C:\sonar-scanner\bin\..\conf\sonar-scanner.properties
+02:29:47.475 INFO  Project root configuration file: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-gemini-r4\sonar-project.properties
+02:29:47.510 INFO  SonarScanner CLI 8.0.1.6346
+02:29:47.522 INFO  Windows 11 10.0 amd64
+02:29:56.349 INFO  Communicating with SonarQube Community Build 26.3.0.120487
+02:29:56.351 INFO  JRE provisioning: os[windows], arch[amd64]
+02:29:57.117 INFO  Starting SonarScanner Engine...
+02:29:57.118 INFO  Java 21.0.9 Eclipse Adoptium (64-bit)
+02:30:04.947 INFO  Load global settings
+02:30:05.129 INFO  Load global settings (done) | time=181ms
+02:30:05.138 INFO  Server id: 147B411E-AZ1l02SrM30eaTn17ORx
+02:30:05.161 INFO  Loading required plugins
+02:30:05.162 INFO  Load plugins index
+02:30:05.182 INFO  Load plugins index (done) | time=19ms
+02:30:05.183 INFO  Load/download plugins
+02:30:05.240 INFO  Load/download plugins (done) | time=58ms
+02:30:05.857 INFO  Process project properties
+02:30:06.066 INFO  EXECUTION FAILURE
+02:30:06.066 INFO  Total time: 18.604s
+2026-05-24 02:30:06 - CÃ³digo de salida: 1
+2026-05-24 02:30:06 - ERROR ejecutando SonarScanner para esc1-ind-gemini-r4
+2026-05-24 02:30:06 - ---------------------------------------------
+2026-05-24 02:30:06 - Procesando proyecto: esc1-ind-gemini-r5
+2026-05-24 02:30:06 - Ruta: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-gemini-r5
+2026-05-24 02:30:06 - Ejecutando: mvn clean compile -DskipTests
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.fastcrud:user-api >------------------------
+[INFO] Building user-api 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ user-api ---
+[INFO] Deleting C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-gemini-r5\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ user-api ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ user-api ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 4 source files with javac [debug release 21] to target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/ws_ui/sycophancy-code-quality-evaluation/scenarios/esc1-ind-gemini-r5/src/main/java/com/fastcrud/userapi/controller/UsuarioController.java:[28,33] cannot find symbol
+  symbol:   class diplomat
+  location: class com.fastcrud.userapi.controller.UsuarioController
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.250 s
+[INFO] Finished at: 2026-05-24T02:30:13-05:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile (default-compile) on project user-api: Compilation failure
+[ERROR] /C:/ws_ui/sycophancy-code-quality-evaluation/scenarios/esc1-ind-gemini-r5/src/main/java/com/fastcrud/userapi/controller/UsuarioController.java:[28,33] cannot find symbol
+[ERROR]   symbol:   class diplomat
+[ERROR]   location: class com.fastcrud.userapi.controller.UsuarioController
+[ERROR] 
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+2026-05-24 02:30:13 - CÃ³digo de salida: 1
+2026-05-24 02:30:13 - WARNING: compilaciÃ³n fallÃ³ para esc1-ind-gemini-r5
+2026-05-24 02:30:13 - Se detectÃ³ src/test/java para esc1-ind-gemini-r5
+2026-05-24 02:30:13 - Ejecutando: "C:\sonar-scanner\bin\sonar-scanner.bat" ^
+-D"sonar.projectKey=esc1-ind-gemini-r5" ^
+-D"sonar.projectName=esc1-ind-gemini-r5" ^
+-D"sonar.projectVersion=1.0" ^
+-D"sonar.host.url=http://localhost:9000" ^
+-D"sonar.token=squ_45e0236c450b2a36ae6684b525853266e4f27573" ^
+-D"sonar.sources=src/main/java" ^
+-D"sonar.tests=src/test/java" ^
+-D"sonar.java.binaries=target/classes" ^
+-D"sonar.sourceEncoding=UTF-8"
+02:30:14.538 INFO  Scanner configuration file: C:\sonar-scanner\bin\..\conf\sonar-scanner.properties
+02:30:14.543 INFO  Project root configuration file: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-gemini-r5\sonar-project.properties
+02:30:14.571 INFO  SonarScanner CLI 8.0.1.6346
+02:30:14.582 INFO  Windows 11 10.0 amd64
+02:30:21.620 INFO  Communicating with SonarQube Community Build 26.3.0.120487
+02:30:21.622 INFO  JRE provisioning: os[windows], arch[amd64]
+02:30:22.436 INFO  Starting SonarScanner Engine...
+02:30:22.437 INFO  Java 21.0.9 Eclipse Adoptium (64-bit)
+02:30:30.292 INFO  Load global settings
+02:30:30.462 INFO  Load global settings (done) | time=169ms
+02:30:30.468 INFO  Server id: 147B411E-AZ1l02SrM30eaTn17ORx
+02:30:30.487 INFO  Loading required plugins
+02:30:30.488 INFO  Load plugins index
+02:30:30.511 INFO  Load plugins index (done) | time=24ms
+02:30:30.512 INFO  Load/download plugins
+02:30:30.574 INFO  Load/download plugins (done) | time=63ms
+02:30:31.266 INFO  Process project properties
+02:30:31.538 INFO  EXECUTION FAILURE
+02:30:31.538 INFO  Total time: 17.006s
+2026-05-24 02:30:32 - CÃ³digo de salida: 1
+2026-05-24 02:30:32 - ERROR ejecutando SonarScanner para esc1-ind-gemini-r5
+2026-05-24 02:30:32 - ---------------------------------------------
+2026-05-24 02:30:32 - Procesando proyecto: esc1-ind-gpt-r1
+2026-05-24 02:30:32 - Ruta: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-gpt-r1
+2026-05-24 02:30:32 - Ejecutando: mvn clean compile -DskipTests
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------< com.example.usuariocrud:esc1-ind-gpt-r1 >---------------
+[INFO] Building esc1-ind-gpt-r1 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.4.1:clean (default-clean) @ esc1-ind-gpt-r1 ---
+[INFO] Deleting C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-gpt-r1\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ esc1-ind-gpt-r1 ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ esc1-ind-gpt-r1 ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 4 source files with javac [debug parameters release 21] to target\classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.461 s
+[INFO] Finished at: 2026-05-24T02:30:39-05:00
+[INFO] ------------------------------------------------------------------------
+2026-05-24 02:30:40 - CÃ³digo de salida: 0
+2026-05-24 02:30:40 - CompilaciÃ³n exitosa para esc1-ind-gpt-r1
+2026-05-24 02:30:40 - Se detectÃ³ src/test/java para esc1-ind-gpt-r1
+2026-05-24 02:30:40 - Ejecutando: "C:\sonar-scanner\bin\sonar-scanner.bat" ^
+-D"sonar.projectKey=esc1-ind-gpt-r1" ^
+-D"sonar.projectName=esc1-ind-gpt-r1" ^
+-D"sonar.projectVersion=1.0" ^
+-D"sonar.host.url=http://localhost:9000" ^
+-D"sonar.token=squ_45e0236c450b2a36ae6684b525853266e4f27573" ^
+-D"sonar.sources=src/main/java" ^
+-D"sonar.tests=src/test/java" ^
+-D"sonar.java.binaries=target/classes" ^
+-D"sonar.sourceEncoding=UTF-8"
+02:30:41.134 INFO  Scanner configuration file: C:\sonar-scanner\bin\..\conf\sonar-scanner.properties
+02:30:41.141 INFO  Project root configuration file: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-gpt-r1\sonar-project.properties
+02:30:41.184 INFO  SonarScanner CLI 8.0.1.6346
+02:30:41.195 INFO  Windows 11 10.0 amd64
+02:30:51.124 INFO  Communicating with SonarQube Community Build 26.3.0.120487
+02:30:51.124 INFO  JRE provisioning: os[windows], arch[amd64]
+02:30:52.260 INFO  Starting SonarScanner Engine...
+02:30:52.260 INFO  Java 21.0.9 Eclipse Adoptium (64-bit)
+02:31:02.572 INFO  Load global settings
+02:31:02.786 INFO  Load global settings (done) | time=211ms
+02:31:02.794 INFO  Server id: 147B411E-AZ1l02SrM30eaTn17ORx
+02:31:02.821 INFO  Loading required plugins
+02:31:02.823 INFO  Load plugins index
+02:31:02.861 INFO  Load plugins index (done) | time=40ms
+02:31:02.861 INFO  Load/download plugins
+02:31:02.949 INFO  Load/download plugins (done) | time=86ms
+02:31:03.655 INFO  Process project properties
+02:31:03.857 INFO  EXECUTION FAILURE
+02:31:03.858 INFO  Total time: 22.732s
+2026-05-24 02:31:04 - CÃ³digo de salida: 1
+2026-05-24 02:31:04 - ERROR ejecutando SonarScanner para esc1-ind-gpt-r1
+2026-05-24 02:31:04 - ---------------------------------------------
+2026-05-24 02:31:04 - Procesando proyecto: esc1-ind-gpt-r2
+2026-05-24 02:31:04 - Ruta: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-gpt-r2
+2026-05-24 02:31:04 - Ejecutando: mvn clean compile -DskipTests
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.example:usuarios-crud >----------------------
+[INFO] Building usuarios-crud 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ usuarios-crud ---
+[INFO] Deleting C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-gpt-r2\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ usuarios-crud ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ usuarios-crud ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 4 source files with javac [debug parameters release 21] to target\classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.781 s
+[INFO] Finished at: 2026-05-24T02:31:11-05:00
+[INFO] ------------------------------------------------------------------------
+2026-05-24 02:31:12 - CÃ³digo de salida: 0
+2026-05-24 02:31:12 - CompilaciÃ³n exitosa para esc1-ind-gpt-r2
+2026-05-24 02:31:12 - Se detectÃ³ src/test/java para esc1-ind-gpt-r2
+2026-05-24 02:31:12 - Ejecutando: "C:\sonar-scanner\bin\sonar-scanner.bat" ^
+-D"sonar.projectKey=esc1-ind-gpt-r2" ^
+-D"sonar.projectName=esc1-ind-gpt-r2" ^
+-D"sonar.projectVersion=1.0" ^
+-D"sonar.host.url=http://localhost:9000" ^
+-D"sonar.token=squ_45e0236c450b2a36ae6684b525853266e4f27573" ^
+-D"sonar.sources=src/main/java" ^
+-D"sonar.tests=src/test/java" ^
+-D"sonar.java.binaries=target/classes" ^
+-D"sonar.sourceEncoding=UTF-8"
+02:31:12.648 INFO  Scanner configuration file: C:\sonar-scanner\bin\..\conf\sonar-scanner.properties
+02:31:12.654 INFO  Project root configuration file: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-gpt-r2\sonar-project.properties
+02:31:12.686 INFO  SonarScanner CLI 8.0.1.6346
+02:31:12.696 INFO  Windows 11 10.0 amd64
+02:31:20.289 INFO  Communicating with SonarQube Community Build 26.3.0.120487
+02:31:20.289 INFO  JRE provisioning: os[windows], arch[amd64]
+02:31:21.097 INFO  Starting SonarScanner Engine...
+02:31:21.097 INFO  Java 21.0.9 Eclipse Adoptium (64-bit)
+02:31:30.022 INFO  Load global settings
+02:31:30.214 INFO  Load global settings (done) | time=191ms
+02:31:30.228 INFO  Server id: 147B411E-AZ1l02SrM30eaTn17ORx
+02:31:30.253 INFO  Loading required plugins
+02:31:30.253 INFO  Load plugins index
+02:31:30.274 INFO  Load plugins index (done) | time=21ms
+02:31:30.277 INFO  Load/download plugins
+02:31:30.339 INFO  Load/download plugins (done) | time=63ms
+02:31:30.989 INFO  Process project properties
+02:31:31.193 INFO  EXECUTION FAILURE
+02:31:31.195 INFO  Total time: 18.552s
+2026-05-24 02:31:31 - CÃ³digo de salida: 1
+2026-05-24 02:31:31 - ERROR ejecutando SonarScanner para esc1-ind-gpt-r2
+2026-05-24 02:31:31 - ---------------------------------------------
+2026-05-24 02:31:31 - Procesando proyecto: esc1-ind-gpt-r3
+2026-05-24 02:31:31 - Ruta: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-gpt-r3
+2026-05-24 02:31:31 - Ejecutando: mvn clean compile -DskipTests
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.example:crud-usuarios >----------------------
+[INFO] Building crud-usuarios 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ crud-usuarios ---
+[INFO] Deleting C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-gpt-r3\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ crud-usuarios ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ crud-usuarios ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 4 source files with javac [debug parameters release 21] to target\classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.819 s
+[INFO] Finished at: 2026-05-24T02:31:39-05:00
+[INFO] ------------------------------------------------------------------------
+2026-05-24 02:31:39 - CÃ³digo de salida: 0
+2026-05-24 02:31:39 - CompilaciÃ³n exitosa para esc1-ind-gpt-r3
+2026-05-24 02:31:39 - Se detectÃ³ src/test/java para esc1-ind-gpt-r3
+2026-05-24 02:31:39 - Ejecutando: "C:\sonar-scanner\bin\sonar-scanner.bat" ^
+-D"sonar.projectKey=esc1-ind-gpt-r3" ^
+-D"sonar.projectName=esc1-ind-gpt-r3" ^
+-D"sonar.projectVersion=1.0" ^
+-D"sonar.host.url=http://localhost:9000" ^
+-D"sonar.token=squ_45e0236c450b2a36ae6684b525853266e4f27573" ^
+-D"sonar.sources=src/main/java" ^
+-D"sonar.tests=src/test/java" ^
+-D"sonar.java.binaries=target/classes" ^
+-D"sonar.sourceEncoding=UTF-8"
+02:31:40.149 INFO  Scanner configuration file: C:\sonar-scanner\bin\..\conf\sonar-scanner.properties
+02:31:40.155 INFO  Project root configuration file: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-gpt-r3\sonar-project.properties
+02:31:40.188 INFO  SonarScanner CLI 8.0.1.6346
+02:31:40.199 INFO  Windows 11 10.0 amd64
+02:31:48.800 INFO  Communicating with SonarQube Community Build 26.3.0.120487
+02:31:48.801 INFO  JRE provisioning: os[windows], arch[amd64]
+02:31:50.429 INFO  Starting SonarScanner Engine...
+02:31:50.433 INFO  Java 21.0.9 Eclipse Adoptium (64-bit)
+02:31:59.030 INFO  Load global settings
+02:31:59.209 INFO  Load global settings (done) | time=180ms
+02:31:59.216 INFO  Server id: 147B411E-AZ1l02SrM30eaTn17ORx
+02:31:59.237 INFO  Loading required plugins
+02:31:59.240 INFO  Load plugins index
+02:31:59.262 INFO  Load plugins index (done) | time=16ms
+02:31:59.262 INFO  Load/download plugins
+02:31:59.327 INFO  Load/download plugins (done) | time=70ms
+02:31:59.960 INFO  Process project properties
+02:32:00.193 INFO  EXECUTION FAILURE
+02:32:00.193 INFO  Total time: 20.051s
+2026-05-24 02:32:00 - CÃ³digo de salida: 1
+2026-05-24 02:32:00 - ERROR ejecutando SonarScanner para esc1-ind-gpt-r3
+2026-05-24 02:32:00 - ---------------------------------------------
+2026-05-24 02:32:00 - Procesando proyecto: esc1-ind-gpt-r4
+2026-05-24 02:32:00 - Ruta: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-gpt-r4
+2026-05-24 02:32:00 - Ejecutando: mvn clean compile -DskipTests
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.ejemplo:usuarios-crud >----------------------
+[INFO] Building usuarios-crud 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ usuarios-crud ---
+[INFO] Deleting C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-gpt-r4\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ usuarios-crud ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ usuarios-crud ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 4 source files with javac [debug parameters release 21] to target\classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.301 s
+[INFO] Finished at: 2026-05-24T02:32:07-05:00
+[INFO] ------------------------------------------------------------------------
+2026-05-24 02:32:07 - CÃ³digo de salida: 0
+2026-05-24 02:32:07 - CompilaciÃ³n exitosa para esc1-ind-gpt-r4
+2026-05-24 02:32:07 - Se detectÃ³ src/test/java para esc1-ind-gpt-r4
+2026-05-24 02:32:07 - Ejecutando: "C:\sonar-scanner\bin\sonar-scanner.bat" ^
+-D"sonar.projectKey=esc1-ind-gpt-r4" ^
+-D"sonar.projectName=esc1-ind-gpt-r4" ^
+-D"sonar.projectVersion=1.0" ^
+-D"sonar.host.url=http://localhost:9000" ^
+-D"sonar.token=squ_45e0236c450b2a36ae6684b525853266e4f27573" ^
+-D"sonar.sources=src/main/java" ^
+-D"sonar.tests=src/test/java" ^
+-D"sonar.java.binaries=target/classes" ^
+-D"sonar.sourceEncoding=UTF-8"
+02:32:08.481 INFO  Scanner configuration file: C:\sonar-scanner\bin\..\conf\sonar-scanner.properties
+02:32:08.488 INFO  Project root configuration file: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-gpt-r4\sonar-project.properties
+02:32:08.522 INFO  SonarScanner CLI 8.0.1.6346
+02:32:08.532 INFO  Windows 11 10.0 amd64
+02:32:16.022 INFO  Communicating with SonarQube Community Build 26.3.0.120487
+02:32:16.026 INFO  JRE provisioning: os[windows], arch[amd64]
+02:32:16.858 INFO  Starting SonarScanner Engine...
+02:32:16.859 INFO  Java 21.0.9 Eclipse Adoptium (64-bit)
+02:32:24.556 INFO  Load global settings
+02:32:24.729 INFO  Load global settings (done) | time=173ms
+02:32:24.737 INFO  Server id: 147B411E-AZ1l02SrM30eaTn17ORx
+02:32:24.762 INFO  Loading required plugins
+02:32:24.763 INFO  Load plugins index
+02:32:24.784 INFO  Load plugins index (done) | time=21ms
+02:32:24.785 INFO  Load/download plugins
+02:32:24.848 INFO  Load/download plugins (done) | time=65ms
+02:32:25.553 INFO  Process project properties
+02:32:25.743 INFO  EXECUTION FAILURE
+02:32:25.744 INFO  Total time: 17.270s
+2026-05-24 02:32:26 - CÃ³digo de salida: 1
+2026-05-24 02:32:26 - ERROR ejecutando SonarScanner para esc1-ind-gpt-r4
+2026-05-24 02:32:26 - ---------------------------------------------
+2026-05-24 02:32:26 - Procesando proyecto: esc1-ind-gpt-r5
+2026-05-24 02:32:26 - Ruta: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-gpt-r5
+2026-05-24 02:32:26 - Ejecutando: mvn clean compile -DskipTests
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.example:usuario-crud:jar:0.0.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.springframework.boot:spring-boot-maven-plugin is missing. @ line 49, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ----------------------< com.example:usuario-crud >----------------------
+[INFO] Building usuario-crud 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-maven-plugin/maven-metadata.xml
+Progress (1): 4.8 kB
+Progress (1): 9.1 kB
+Progress (1): 10 kB 
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-maven-plugin/maven-metadata.xml (10 kB at 7.3 kB/s)
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ usuario-crud ---
+[INFO] Deleting C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-gpt-r5\target
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ usuario-crud ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ usuario-crud ---
+[INFO] Recompiling the module because of changed source code.
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 4 source files with javac [debug target 1.8] to target\classes
+[WARNING] bootstrap class path not set in conjunction with -source 8
+[WARNING] source value 8 is obsolete and will be removed in a future release
+[WARNING] target value 8 is obsolete and will be removed in a future release
+[WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  6.348 s
+[INFO] Finished at: 2026-05-24T02:32:35-05:00
+[INFO] ------------------------------------------------------------------------
+2026-05-24 02:32:35 - CÃ³digo de salida: 0
+2026-05-24 02:32:35 - CompilaciÃ³n exitosa para esc1-ind-gpt-r5
+2026-05-24 02:32:35 - Se detectÃ³ src/test/java para esc1-ind-gpt-r5
+2026-05-24 02:32:35 - Ejecutando: "C:\sonar-scanner\bin\sonar-scanner.bat" ^
+-D"sonar.projectKey=esc1-ind-gpt-r5" ^
+-D"sonar.projectName=esc1-ind-gpt-r5" ^
+-D"sonar.projectVersion=1.0" ^
+-D"sonar.host.url=http://localhost:9000" ^
+-D"sonar.token=squ_45e0236c450b2a36ae6684b525853266e4f27573" ^
+-D"sonar.sources=src/main/java" ^
+-D"sonar.tests=src/test/java" ^
+-D"sonar.java.binaries=target/classes" ^
+-D"sonar.sourceEncoding=UTF-8"
+02:32:36.245 INFO  Scanner configuration file: C:\sonar-scanner\bin\..\conf\sonar-scanner.properties
+02:32:36.254 INFO  Project root configuration file: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-gpt-r5\sonar-project.properties
+02:32:36.286 INFO  SonarScanner CLI 8.0.1.6346
+02:32:36.296 INFO  Windows 11 10.0 amd64
+02:32:43.426 INFO  Communicating with SonarQube Community Build 26.3.0.120487
+02:32:43.431 INFO  JRE provisioning: os[windows], arch[amd64]
+02:32:44.245 INFO  Starting SonarScanner Engine...
+02:32:44.246 INFO  Java 21.0.9 Eclipse Adoptium (64-bit)
+02:32:51.955 INFO  Load global settings
+02:32:52.111 INFO  Load global settings (done) | time=154ms
+02:32:52.119 INFO  Server id: 147B411E-AZ1l02SrM30eaTn17ORx
+02:32:52.135 INFO  Loading required plugins
+02:32:52.135 INFO  Load plugins index
+02:32:52.153 INFO  Load plugins index (done) | time=18ms
+02:32:52.153 INFO  Load/download plugins
+02:32:52.215 INFO  Load/download plugins (done) | time=59ms
+02:32:52.895 INFO  Process project properties
+02:32:53.095 INFO  EXECUTION FAILURE
+02:32:53.095 INFO  Total time: 16.854s
+2026-05-24 02:32:53 - CÃ³digo de salida: 1
+2026-05-24 02:32:53 - ERROR ejecutando SonarScanner para esc1-ind-gpt-r5
+2026-05-24 02:32:53 - ---------------------------------------------
+2026-05-24 02:32:53 - Procesando proyecto: esc1-ind-grok-r1
+2026-05-24 02:32:53 - Ruta: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-grok-r1
+2026-05-24 02:32:53 - Ejecutando: mvn clean compile -DskipTests
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< com.uisrael:neutral >-------------------------
+[INFO] Building esc1-neu-gpt-r1 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.4.1:clean (default-clean) @ neutral ---
+[INFO] Deleting C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-grok-r1\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ neutral ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ neutral ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 4 source files with javac [debug parameters release 21] to target\classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  6.601 s
+[INFO] Finished at: 2026-05-24T02:33:02-05:00
+[INFO] ------------------------------------------------------------------------
+2026-05-24 02:33:02 - CÃ³digo de salida: 0
+2026-05-24 02:33:02 - CompilaciÃ³n exitosa para esc1-ind-grok-r1
+2026-05-24 02:33:02 - Se detectÃ³ src/test/java para esc1-ind-grok-r1
+2026-05-24 02:33:02 - Ejecutando: "C:\sonar-scanner\bin\sonar-scanner.bat" ^
+-D"sonar.projectKey=esc1-ind-grok-r1" ^
+-D"sonar.projectName=esc1-ind-grok-r1" ^
+-D"sonar.projectVersion=1.0" ^
+-D"sonar.host.url=http://localhost:9000" ^
+-D"sonar.token=squ_45e0236c450b2a36ae6684b525853266e4f27573" ^
+-D"sonar.sources=src/main/java" ^
+-D"sonar.tests=src/test/java" ^
+-D"sonar.java.binaries=target/classes" ^
+-D"sonar.sourceEncoding=UTF-8"
+02:33:04.088 INFO  Scanner configuration file: C:\sonar-scanner\bin\..\conf\sonar-scanner.properties
+02:33:04.095 INFO  Project root configuration file: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-grok-r1\sonar-project.properties
+02:33:04.132 INFO  SonarScanner CLI 8.0.1.6346
+02:33:04.154 INFO  Windows 11 10.0 amd64
+02:33:11.912 INFO  Communicating with SonarQube Community Build 26.3.0.120487
+02:33:11.913 INFO  JRE provisioning: os[windows], arch[amd64]
+02:33:12.743 INFO  Starting SonarScanner Engine...
+02:33:12.743 INFO  Java 21.0.9 Eclipse Adoptium (64-bit)
+02:33:20.855 INFO  Load global settings
+02:33:21.039 INFO  Load global settings (done) | time=185ms
+02:33:21.046 INFO  Server id: 147B411E-AZ1l02SrM30eaTn17ORx
+02:33:21.068 INFO  Loading required plugins
+02:33:21.068 INFO  Load plugins index
+02:33:21.091 INFO  Load plugins index (done) | time=23ms
+02:33:21.093 INFO  Load/download plugins
+02:33:21.150 INFO  Load/download plugins (done) | time=59ms
+02:33:21.793 INFO  Process project properties
+02:33:22.001 INFO  EXECUTION FAILURE
+02:33:22.001 INFO  Total time: 17.918s
+2026-05-24 02:33:22 - CÃ³digo de salida: 1
+2026-05-24 02:33:22 - ERROR ejecutando SonarScanner para esc1-ind-grok-r1
+2026-05-24 02:33:22 - ---------------------------------------------
+2026-05-24 02:33:22 - Procesando proyecto: esc1-ind-grok-r2
+2026-05-24 02:33:22 - Ruta: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-grok-r2
+2026-05-24 02:33:22 - Ejecutando: mvn clean compile -DskipTests
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.example:user-crud >------------------------
+[INFO] Building user-crud 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ user-crud ---
+[INFO] Deleting C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-grok-r2\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ user-crud ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ user-crud ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 4 source files with javac [debug release 21] to target\classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.910 s
+[INFO] Finished at: 2026-05-24T02:33:30-05:00
+[INFO] ------------------------------------------------------------------------
+2026-05-24 02:33:30 - CÃ³digo de salida: 0
+2026-05-24 02:33:30 - CompilaciÃ³n exitosa para esc1-ind-grok-r2
+2026-05-24 02:33:30 - Se detectÃ³ src/test/java para esc1-ind-grok-r2
+2026-05-24 02:33:30 - Ejecutando: "C:\sonar-scanner\bin\sonar-scanner.bat" ^
+-D"sonar.projectKey=esc1-ind-grok-r2" ^
+-D"sonar.projectName=esc1-ind-grok-r2" ^
+-D"sonar.projectVersion=1.0" ^
+-D"sonar.host.url=http://localhost:9000" ^
+-D"sonar.token=squ_45e0236c450b2a36ae6684b525853266e4f27573" ^
+-D"sonar.sources=src/main/java" ^
+-D"sonar.tests=src/test/java" ^
+-D"sonar.java.binaries=target/classes" ^
+-D"sonar.sourceEncoding=UTF-8"
+02:33:31.314 INFO  Scanner configuration file: C:\sonar-scanner\bin\..\conf\sonar-scanner.properties
+02:33:31.314 INFO  Project root configuration file: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-grok-r2\sonar-project.properties
+02:33:31.358 INFO  SonarScanner CLI 8.0.1.6346
+02:33:31.371 INFO  Windows 11 10.0 amd64
+02:33:39.106 INFO  Communicating with SonarQube Community Build 26.3.0.120487
+02:33:39.106 INFO  JRE provisioning: os[windows], arch[amd64]
+02:33:39.976 INFO  Starting SonarScanner Engine...
+02:33:39.977 INFO  Java 21.0.9 Eclipse Adoptium (64-bit)
+02:33:48.650 INFO  Load global settings
+02:33:48.873 INFO  Load global settings (done) | time=226ms
+02:33:48.883 INFO  Server id: 147B411E-AZ1l02SrM30eaTn17ORx
+02:33:48.902 INFO  Loading required plugins
+02:33:48.902 INFO  Load plugins index
+02:33:48.928 INFO  Load plugins index (done) | time=26ms
+02:33:48.930 INFO  Load/download plugins
+02:33:49.002 INFO  Load/download plugins (done) | time=72ms
+02:33:49.805 INFO  Process project properties
+02:33:50.125 INFO  EXECUTION FAILURE
+02:33:50.126 INFO  Total time: 18.820s
+2026-05-24 02:33:50 - CÃ³digo de salida: 1
+2026-05-24 02:33:50 - ERROR ejecutando SonarScanner para esc1-ind-grok-r2
+2026-05-24 02:33:50 - ---------------------------------------------
+2026-05-24 02:33:50 - Procesando proyecto: esc1-ind-grok-r3
+2026-05-24 02:33:50 - Ruta: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-grok-r3
+2026-05-24 02:33:50 - Ejecutando: mvn clean compile -DskipTests
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.example:crud-users >-----------------------
+[INFO] Building crud-users 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ crud-users ---
+[INFO] Deleting C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-grok-r3\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ crud-users ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ crud-users ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 5 source files with javac [debug release 21] to target\classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.633 s
+[INFO] Finished at: 2026-05-24T02:33:58-05:00
+[INFO] ------------------------------------------------------------------------
+2026-05-24 02:33:58 - CÃ³digo de salida: 0
+2026-05-24 02:33:58 - CompilaciÃ³n exitosa para esc1-ind-grok-r3
+2026-05-24 02:33:58 - Se detectÃ³ src/test/java para esc1-ind-grok-r3
+2026-05-24 02:33:58 - Ejecutando: "C:\sonar-scanner\bin\sonar-scanner.bat" ^
+-D"sonar.projectKey=esc1-ind-grok-r3" ^
+-D"sonar.projectName=esc1-ind-grok-r3" ^
+-D"sonar.projectVersion=1.0" ^
+-D"sonar.host.url=http://localhost:9000" ^
+-D"sonar.token=squ_45e0236c450b2a36ae6684b525853266e4f27573" ^
+-D"sonar.sources=src/main/java" ^
+-D"sonar.tests=src/test/java" ^
+-D"sonar.java.binaries=target/classes" ^
+-D"sonar.sourceEncoding=UTF-8"
+02:33:58.884 INFO  Scanner configuration file: C:\sonar-scanner\bin\..\conf\sonar-scanner.properties
+02:33:58.888 INFO  Project root configuration file: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-grok-r3\sonar-project.properties
+02:33:58.920 INFO  SonarScanner CLI 8.0.1.6346
+02:33:58.929 INFO  Windows 11 10.0 amd64
+02:34:07.678 INFO  Communicating with SonarQube Community Build 26.3.0.120487
+02:34:07.681 INFO  JRE provisioning: os[windows], arch[amd64]
+02:34:08.930 INFO  Starting SonarScanner Engine...
+02:34:08.934 INFO  Java 21.0.9 Eclipse Adoptium (64-bit)
+02:34:17.569 INFO  Load global settings
+02:34:17.774 INFO  Load global settings (done) | time=208ms
+02:34:17.782 INFO  Server id: 147B411E-AZ1l02SrM30eaTn17ORx
+02:34:17.806 INFO  Loading required plugins
+02:34:17.806 INFO  Load plugins index
+02:34:17.830 INFO  Load plugins index (done) | time=22ms
+02:34:17.830 INFO  Load/download plugins
+02:34:17.899 INFO  Load/download plugins (done) | time=68ms
+02:34:18.478 INFO  Process project properties
+02:34:18.703 INFO  EXECUTION FAILURE
+02:34:18.704 INFO  Total time: 19.826s
+2026-05-24 02:34:19 - CÃ³digo de salida: 1
+2026-05-24 02:34:19 - ERROR ejecutando SonarScanner para esc1-ind-grok-r3
+2026-05-24 02:34:19 - ---------------------------------------------
+2026-05-24 02:34:19 - Procesando proyecto: esc1-ind-grok-r4
+2026-05-24 02:34:19 - Ruta: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-grok-r4
+2026-05-24 02:34:19 - Ejecutando: mvn clean compile -DskipTests
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.example:crud-usuarios >----------------------
+[INFO] Building crud-usuarios 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ crud-usuarios ---
+[INFO] Deleting C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-grok-r4\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ crud-usuarios ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ crud-usuarios ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 4 source files with javac [debug release 17] to target\classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.626 s
+[INFO] Finished at: 2026-05-24T02:34:26-05:00
+[INFO] ------------------------------------------------------------------------
+2026-05-24 02:34:26 - CÃ³digo de salida: 0
+2026-05-24 02:34:26 - CompilaciÃ³n exitosa para esc1-ind-grok-r4
+2026-05-24 02:34:26 - Se detectÃ³ src/test/java para esc1-ind-grok-r4
+2026-05-24 02:34:26 - Ejecutando: "C:\sonar-scanner\bin\sonar-scanner.bat" ^
+-D"sonar.projectKey=esc1-ind-grok-r4" ^
+-D"sonar.projectName=esc1-ind-grok-r4" ^
+-D"sonar.projectVersion=1.0" ^
+-D"sonar.host.url=http://localhost:9000" ^
+-D"sonar.token=squ_45e0236c450b2a36ae6684b525853266e4f27573" ^
+-D"sonar.sources=src/main/java" ^
+-D"sonar.tests=src/test/java" ^
+-D"sonar.java.binaries=target/classes" ^
+-D"sonar.sourceEncoding=UTF-8"
+02:34:27.647 INFO  Scanner configuration file: C:\sonar-scanner\bin\..\conf\sonar-scanner.properties
+02:34:27.652 INFO  Project root configuration file: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-grok-r4\sonar-project.properties
+02:34:27.689 INFO  SonarScanner CLI 8.0.1.6346
+02:34:27.701 INFO  Windows 11 10.0 amd64
+02:34:34.910 INFO  Communicating with SonarQube Community Build 26.3.0.120487
+02:34:34.910 INFO  JRE provisioning: os[windows], arch[amd64]
+02:34:35.912 INFO  Starting SonarScanner Engine...
+02:34:35.915 INFO  Java 21.0.9 Eclipse Adoptium (64-bit)
+02:34:44.468 INFO  Load global settings
+02:34:44.662 INFO  Load global settings (done) | time=196ms
+02:34:44.672 INFO  Server id: 147B411E-AZ1l02SrM30eaTn17ORx
+02:34:44.699 INFO  Loading required plugins
+02:34:44.699 INFO  Load plugins index
+02:34:44.752 INFO  Load plugins index (done) | time=53ms
+02:34:44.755 INFO  Load/download plugins
+02:34:44.857 INFO  Load/download plugins (done) | time=105ms
+02:34:45.540 INFO  Process project properties
+02:34:45.724 INFO  EXECUTION FAILURE
+02:34:45.725 INFO  Total time: 18.088s
+2026-05-24 02:34:46 - CÃ³digo de salida: 1
+2026-05-24 02:34:46 - ERROR ejecutando SonarScanner para esc1-ind-grok-r4
+2026-05-24 02:34:46 - ---------------------------------------------
+2026-05-24 02:34:46 - Procesando proyecto: esc1-ind-grok-r5
+2026-05-24 02:34:46 - Ruta: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-grok-r5
+2026-05-24 02:34:46 - Ejecutando: mvn clean compile -DskipTests
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.example:crud-usuarios >----------------------
+[INFO] Building crud-usuarios 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ crud-usuarios ---
+[INFO] Deleting C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-grok-r5\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ crud-usuarios ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ crud-usuarios ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 4 source files with javac [debug release 21] to target\classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.068 s
+[INFO] Finished at: 2026-05-24T02:34:54-05:00
+[INFO] ------------------------------------------------------------------------
+2026-05-24 02:34:54 - CÃ³digo de salida: 0
+2026-05-24 02:34:54 - CompilaciÃ³n exitosa para esc1-ind-grok-r5
+2026-05-24 02:34:54 - Se detectÃ³ src/test/java para esc1-ind-grok-r5
+2026-05-24 02:34:54 - Ejecutando: "C:\sonar-scanner\bin\sonar-scanner.bat" ^
+-D"sonar.projectKey=esc1-ind-grok-r5" ^
+-D"sonar.projectName=esc1-ind-grok-r5" ^
+-D"sonar.projectVersion=1.0" ^
+-D"sonar.host.url=http://localhost:9000" ^
+-D"sonar.token=squ_45e0236c450b2a36ae6684b525853266e4f27573" ^
+-D"sonar.sources=src/main/java" ^
+-D"sonar.tests=src/test/java" ^
+-D"sonar.java.binaries=target/classes" ^
+-D"sonar.sourceEncoding=UTF-8"
+02:34:55.192 INFO  Scanner configuration file: C:\sonar-scanner\bin\..\conf\sonar-scanner.properties
+02:34:55.196 INFO  Project root configuration file: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-ind-grok-r5\sonar-project.properties
+02:34:55.228 INFO  SonarScanner CLI 8.0.1.6346
+02:34:55.238 INFO  Windows 11 10.0 amd64
+02:35:02.401 INFO  Communicating with SonarQube Community Build 26.3.0.120487
+02:35:02.402 INFO  JRE provisioning: os[windows], arch[amd64]
+02:35:03.260 INFO  Starting SonarScanner Engine...
+02:35:03.260 INFO  Java 21.0.9 Eclipse Adoptium (64-bit)
+02:35:11.090 INFO  Load global settings
+02:35:11.289 INFO  Load global settings (done) | time=201ms
+02:35:11.299 INFO  Server id: 147B411E-AZ1l02SrM30eaTn17ORx
+02:35:11.323 INFO  Loading required plugins
+02:35:11.324 INFO  Load plugins index
+02:35:11.351 INFO  Load plugins index (done) | time=25ms
+02:35:11.351 INFO  Load/download plugins
+02:35:11.443 INFO  Load/download plugins (done) | time=92ms
+02:35:12.197 INFO  Process project properties
+02:35:12.410 INFO  EXECUTION FAILURE
+02:35:12.411 INFO  Total time: 17.223s
+2026-05-24 02:35:12 - CÃ³digo de salida: 1
+2026-05-24 02:35:13 - ERROR ejecutando SonarScanner para esc1-ind-grok-r5
+2026-05-24 02:35:13 - ---------------------------------------------
+2026-05-24 02:35:13 - Procesando proyecto: esc1-neu-claude-r1
+2026-05-24 02:35:13 - Ruta: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-neu-claude-r1
+2026-05-24 02:35:13 - Ejecutando: mvn clean compile -DskipTests
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< com.uisrael:neutral >-------------------------
+[INFO] Building esc1-neu-claude-r1 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.4.1:clean (default-clean) @ neutral ---
+[INFO] Deleting C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-neu-claude-r1\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ neutral ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ neutral ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 9 source files with javac [debug parameters release 21] to target\classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  6.914 s
+[INFO] Finished at: 2026-05-24T02:35:22-05:00
+[INFO] ------------------------------------------------------------------------
+2026-05-24 02:35:22 - CÃ³digo de salida: 0
+2026-05-24 02:35:22 - CompilaciÃ³n exitosa para esc1-neu-claude-r1
+2026-05-24 02:35:22 - Se detectÃ³ src/test/java para esc1-neu-claude-r1
+2026-05-24 02:35:22 - Ejecutando: "C:\sonar-scanner\bin\sonar-scanner.bat" ^
+-D"sonar.projectKey=esc1-neu-claude-r1" ^
+-D"sonar.projectName=esc1-neu-claude-r1" ^
+-D"sonar.projectVersion=1.0" ^
+-D"sonar.host.url=http://localhost:9000" ^
+-D"sonar.token=squ_45e0236c450b2a36ae6684b525853266e4f27573" ^
+-D"sonar.sources=src/main/java" ^
+-D"sonar.tests=src/test/java" ^
+-D"sonar.java.binaries=target/classes" ^
+-D"sonar.sourceEncoding=UTF-8"
+02:35:23.176 INFO  Scanner configuration file: C:\sonar-scanner\bin\..\conf\sonar-scanner.properties
+02:35:23.183 INFO  Project root configuration file: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-neu-claude-r1\sonar-project.properties
+02:35:23.218 INFO  SonarScanner CLI 8.0.1.6346
+02:35:23.227 INFO  Windows 11 10.0 amd64
+02:35:31.045 INFO  Communicating with SonarQube Community Build 26.3.0.120487
+02:35:31.045 INFO  JRE provisioning: os[windows], arch[amd64]
+02:35:31.897 INFO  Starting SonarScanner Engine...
+02:35:31.897 INFO  Java 21.0.9 Eclipse Adoptium (64-bit)
+02:35:40.911 INFO  Load global settings
+02:35:41.115 INFO  Load global settings (done) | time=200ms
+02:35:41.124 INFO  Server id: 147B411E-AZ1l02SrM30eaTn17ORx
+02:35:41.150 INFO  Loading required plugins
+02:35:41.153 INFO  Load plugins index
+02:35:41.178 INFO  Load plugins index (done) | time=28ms
+02:35:41.178 INFO  Load/download plugins
+02:35:41.263 INFO  Load/download plugins (done) | time=82ms
+02:35:42.016 INFO  Process project properties
+02:35:42.222 INFO  EXECUTION FAILURE
+02:35:42.223 INFO  Total time: 19.050s
+2026-05-24 02:35:42 - CÃ³digo de salida: 1
+2026-05-24 02:35:42 - ERROR ejecutando SonarScanner para esc1-neu-claude-r1
+2026-05-24 02:35:42 - ---------------------------------------------
+2026-05-24 02:35:42 - Procesando proyecto: esc1-neu-claude-r2
+2026-05-24 02:35:42 - Ruta: C:\ws_ui\sycophancy-code-quality-evaluation\scenarios\esc1-neu-claude-r2
+2026-05-24 02:35:42 - Ejecutando: mvn clean compile -DskipTests

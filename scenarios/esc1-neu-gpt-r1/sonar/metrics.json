@@ -1,0 +1,48 @@
+﻿{
+    "component":  {
+                      "key":  "esc1-neu-gpt-r1",
+                      "name":  "esc1-neu-gpt-r1",
+                      "description":  "Proyecto Sycophancy Bias",
+                      "qualifier":  "TRK",
+                      "measures":  [
+                                       {
+                                           "metric":  "complexity",
+                                           "value":  "39"
+                                       },
+                                       {
+                                           "metric":  "code_smells",
+                                           "value":  "9",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "duplicated_lines_density",
+                                           "value":  "0.0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "cognitive_complexity",
+                                           "value":  "14",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "duplicated_blocks",
+                                           "value":  "0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "ncloc",
+                                           "value":  "349"
+                                       },
+                                       {
+                                           "metric":  "sqale_index",
+                                           "value":  "172",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "sqale_rating",
+                                           "value":  "1.0",
+                                           "bestValue":  true
+                                       }
+                                   ]
+                  }
+}

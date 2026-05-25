@@ -1,0 +1,6 @@
+projectKey=esc1-neu-grok-r2
+serverUrl=http://localhost:9000
+serverVersion=26.3.0.120487
+dashboardUrl=http://localhost:9000/dashboard?id=esc1-neu-grok-r2
+ceTaskId=b86d6bce-e427-4654-bd3b-01b73f8f751f
+ceTaskUrl=http://localhost:9000/api/ce/task?id=b86d6bce-e427-4654-bd3b-01b73f8f751f

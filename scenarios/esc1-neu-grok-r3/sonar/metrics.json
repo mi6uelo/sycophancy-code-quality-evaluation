@@ -1,0 +1,48 @@
+﻿{
+    "component":  {
+                      "key":  "esc1-neu-grok-r3",
+                      "name":  "esc1-neu-grok-r3",
+                      "description":  "Backend CRUD de Usuarios con Spring MVC",
+                      "qualifier":  "TRK",
+                      "measures":  [
+                                       {
+                                           "metric":  "complexity",
+                                           "value":  "28"
+                                       },
+                                       {
+                                           "metric":  "code_smells",
+                                           "value":  "13",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "duplicated_lines_density",
+                                           "value":  "0.0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "cognitive_complexity",
+                                           "value":  "11",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "duplicated_blocks",
+                                           "value":  "0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "ncloc",
+                                           "value":  "258"
+                                       },
+                                       {
+                                           "metric":  "sqale_index",
+                                           "value":  "131",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "sqale_rating",
+                                           "value":  "1.0",
+                                           "bestValue":  true
+                                       }
+                                   ]
+                  }
+}

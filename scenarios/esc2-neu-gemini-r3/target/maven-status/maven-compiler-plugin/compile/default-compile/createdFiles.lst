@@ -1,5 +1,2 @@
 com\gestion\citas\repository\CitaRepository.class
-com\gestion\citas\controller\CitaController.class
-com\gestion\citas\service\CitaService.class
 com\gestion\citas\model\entity\Cita.class
-com\gestion\citas\service\impl\CitaServiceImpl.class

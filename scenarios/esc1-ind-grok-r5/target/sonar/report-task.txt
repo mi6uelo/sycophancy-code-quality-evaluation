@@ -1,0 +1,6 @@
+projectKey=esc1-ind-grok-r5
+serverUrl=http://localhost:9000
+serverVersion=26.3.0.120487
+dashboardUrl=http://localhost:9000/dashboard?id=esc1-ind-grok-r5
+ceTaskId=cdcb6935-834d-4ac8-9207-e8e9335644be
+ceTaskUrl=http://localhost:9000/api/ce/task?id=cdcb6935-834d-4ac8-9207-e8e9335644be

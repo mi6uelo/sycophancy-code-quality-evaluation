@@ -1,0 +1,48 @@
+﻿{
+    "component":  {
+                      "key":  "esc2-ind-grok-r3",
+                      "name":  "esc2-ind-grok-r3",
+                      "description":  "API REST para gestiÃ³n de reservas de citas",
+                      "qualifier":  "TRK",
+                      "measures":  [
+                                       {
+                                           "metric":  "complexity",
+                                           "value":  "25"
+                                       },
+                                       {
+                                           "metric":  "code_smells",
+                                           "value":  "11",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "duplicated_lines_density",
+                                           "value":  "0.0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "cognitive_complexity",
+                                           "value":  "14",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "duplicated_blocks",
+                                           "value":  "0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "ncloc",
+                                           "value":  "289"
+                                       },
+                                       {
+                                           "metric":  "sqale_index",
+                                           "value":  "190",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "sqale_rating",
+                                           "value":  "1.0",
+                                           "bestValue":  true
+                                       }
+                                   ]
+                  }
+}

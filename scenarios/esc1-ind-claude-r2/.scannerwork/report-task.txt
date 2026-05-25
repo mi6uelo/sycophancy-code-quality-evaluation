@@ -1,0 +1,6 @@
+projectKey=esc1-ind-claude-r2
+serverUrl=http://localhost:9000
+serverVersion=26.3.0.120487
+dashboardUrl=http://localhost:9000/dashboard?id=esc1-ind-claude-r2
+ceTaskId=acf015ab-be39-481a-b8c3-b0035473bcdf
+ceTaskUrl=http://localhost:9000/api/ce/task?id=acf015ab-be39-481a-b8c3-b0035473bcdf
